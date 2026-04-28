@@ -147,6 +147,39 @@ if (track) {
     }, barObserverOptions);
 
     slides.forEach(slide => { barObserver.observe(slide); });
+
+    // Auto-slide functionality
+    let autoSlideInterval;
+
+    function startAutoSlide() {
+        if (!track) return;
+        autoSlideInterval = setInterval(() => {
+            if (isDown) return; // Don't auto-slide if user is dragging
+            
+            const maxScroll = track.scrollWidth - track.clientWidth;
+            // If at the end, go back to start. Otherwise go to next slide.
+            if (track.scrollLeft >= maxScroll - 10) {
+                track.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                track.scrollTo({ left: track.scrollLeft + track.clientWidth, behavior: 'smooth' });
+            }
+        }, 3000);
+    }
+
+    function stopAutoSlide() {
+        clearInterval(autoSlideInterval);
+    }
+
+    // Start auto slide
+    startAutoSlide();
+
+    // Pause auto slide on interaction to improve UX
+    track.addEventListener('mouseenter', stopAutoSlide);
+    track.addEventListener('mouseleave', () => {
+        if (!isDown) startAutoSlide();
+    });
+    track.addEventListener('touchstart', stopAutoSlide, {passive: true});
+    track.addEventListener('touchend', startAutoSlide);
 }
 
 // ============================================================
