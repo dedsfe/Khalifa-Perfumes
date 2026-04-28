@@ -312,8 +312,19 @@ button {
   font-size: 6rem;
   line-height: 1.1;
   color: var(--color-white);
-  margin-bottom: 48px;
+  margin-bottom: 24px;
   animation: fadeInUp 1s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+.hero-desc {
+  font-family: var(--font-sans);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 600px;
+  margin: 0 auto 48px;
+  animation: fadeInUp 1s ease-out 0.5s forwards;
   opacity: 0;
 }
 
@@ -457,6 +468,11 @@ button {
   
   .title {
     font-size: 3.5rem;
+  }
+  
+  .hero-desc {
+    font-size: 1rem;
+    margin-bottom: 32px;
   }
   
   .btn-group {
