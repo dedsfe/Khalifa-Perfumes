@@ -43,13 +43,10 @@ function updateHighlight() {
 
         if (distance < range) {
             const intensity = 1 - distance / range;
-
             if (intensity > 0.55 && word.classList.contains('word-gold-candidate')) {
-                word.classList.add('gold');
-                word.classList.remove('lit');
+                word.classList.add('gold'); word.classList.remove('lit');
             } else if (intensity > 0.2) {
-                word.classList.add('lit');
-                word.classList.remove('gold');
+                word.classList.add('lit'); word.classList.remove('gold');
             } else {
                 word.classList.remove('lit', 'gold');
             }
@@ -64,10 +61,7 @@ splitIntoWordSpans();
 let ticking = false;
 window.addEventListener('scroll', () => {
     if (!ticking) {
-        requestAnimationFrame(() => {
-            updateHighlight();
-            ticking = false;
-        });
+        requestAnimationFrame(() => { updateHighlight(); ticking = false; });
         ticking = true;
     }
 });
@@ -101,19 +95,19 @@ if (track) {
         scrollLeft = track.scrollLeft;
         track.style.scrollSnapType = 'none';
     });
-    
+
     track.addEventListener('mouseleave', () => {
         isDown = false;
         showcaseSection.style.cursor = 'grab';
         track.style.scrollSnapType = 'x mandatory';
     });
-    
+
     track.addEventListener('mouseup', () => {
         isDown = false;
         showcaseSection.style.cursor = 'grab';
         track.style.scrollSnapType = 'x mandatory';
     });
-    
+
     track.addEventListener('mousemove', (e) => {
         if (!isDown) return;
         e.preventDefault();
@@ -123,12 +117,11 @@ if (track) {
     });
 
     const slides = document.querySelectorAll('.showcase-slide');
-    
+
     track.addEventListener('scroll', () => {
         slides.forEach(slide => {
             const slideLeft = slide.getBoundingClientRect().left;
             const viewportWidth = window.innerWidth;
-            
             if (slideLeft > -viewportWidth && slideLeft < viewportWidth) {
                 const percentage = slideLeft / viewportWidth;
                 const bgText = slide.querySelector('.slide-bg-text');
@@ -157,19 +150,17 @@ if (track) {
 }
 
 // ============================================================
-// PRODUCTS BENTO GRID + FLIP MODAL
+// PRODUCTS GRID + MODAL
 // ============================================================
 
-const WHATSAPP_NUMBER = '5513999999999';
+const WHATSAPP = '5513999999999';
 
 const products = [
     {
-        id: 'afeef',
-        name: 'Afeef',
-        brand: 'Lattafa',
-        image: './Assets/afeef_ai_nobg.png',
-        glowColor: 'rgba(212, 154, 137, 0.3)',
-        size: 'large',
+        id: 'afeef', name: 'Afeef', brand: 'Lattafa',
+        coverImage: './Assets/afeef_ai.png',
+        modalImage: './Assets/afeef_ai_nobg.png',
+        glowColor: 'rgba(212,154,137,0.3)',
         description: 'Uma fragrância floral e amadeirada que evoca a elegância do Oriente em cada nota.',
         notes: {
             top:   ['Bergamota', 'Limão', 'Aldeídos'],
@@ -178,8 +169,120 @@ const products = [
         }
     },
     {
-        id: 'yara',
-        name: 'Yara Pink',
-        brand: 'Lattafa',
-        image: './Assets/yara_ai_nobg.png',
-        glowColor: 'rgba(201, 122, 126, 0.3)',
+        id: 'yara', name: 'Yara Pink', brand: 'Lattafa',
+        coverImage: './Assets/yara_ai.png',
+        modalImage: './Assets/yara_ai_nobg.png',
+        glowColor: 'rgba(201,122,126,0.3)',
+        description: 'Doçura tropical com alma árabe. Uma fragrância irresistivelmente feminina.',
+        notes: {
+            top:   ['Pêssego', 'Frutas Tropicais', 'Lichia'],
+            heart: ['Flor de Laranjeira', 'Baunilha', 'Rosa'],
+            base:  ['Almíscar Branco', 'Atalcado', 'Sândalo']
+        }
+    },
+    {
+        id: 'asad', name: 'Asad', brand: 'Lattafa',
+        coverImage: './Assets/asad_ai.png',
+        modalImage: './Assets/asad_ai_nobg.png',
+        glowColor: 'rgba(212,175,55,0.25)',
+        description: 'Intensidade e poder em cada gota. O leão do Oriente Médio.',
+        notes: {
+            top:   ['Canela', 'Pimenta Preta', 'Cardamomo'],
+            heart: ['Âmbar', 'Oud', 'Rosa'],
+            base:  ['Baunilha', 'Madeira de Cedro', 'Almíscar']
+        }
+    },
+    {
+        id: 'dalal', name: 'Dalal', brand: 'Al Rehab',
+        coverImage: './Assets/dalal_ai.png',
+        modalImage: './Assets/dalal_ai_nobg.png',
+        glowColor: 'rgba(212,175,55,0.2)',
+        description: 'Sofisticação árabe com doçura envolvente. Uma fragrância que seduz.',
+        notes: {
+            top:   ['Cítrico', 'Laranja', 'Bergamota'],
+            heart: ['Caramelo', 'Baunilha', 'Doce'],
+            base:  ['Almíscar', 'Âmbar', 'Sândalo']
+        }
+    }
+];
+
+function renderProductGrid() {
+    const grid = document.getElementById('products-grid');
+    if (!grid) return;
+
+    grid.innerHTML = products.map(p => `
+        <div class="pcard" data-id="${p.id}" role="button" tabindex="0" aria-label="Ver detalhes de ${p.name}">
+            <img class="pcard-img" src="${p.coverImage}" alt="${p.name}" loading="lazy">
+            <div class="pcard-overlay"></div>
+            <div class="pcard-info">
+                <span class="pcard-brand">${p.brand}</span>
+                <span class="pcard-name">${p.name}</span>
+                <div class="pcard-cta">
+                    <div class="pcard-cta-line"></div>
+                    <span class="pcard-cta-text">Ver Detalhes</span>
+                </div>
+            </div>
+        </div>
+    `).join('');
+
+    grid.querySelectorAll('.pcard').forEach(card => {
+        const open = () => {
+            const p = products.find(x => x.id === card.dataset.id);
+            if (p) openPModal(p);
+        };
+        card.addEventListener('click', open);
+        card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') open(); });
+    });
+}
+
+// Modal elements
+const pOverlay = document.getElementById('pmodal-overlay');
+const pClose   = document.getElementById('pmodal-close');
+const pImg     = document.getElementById('pmodal-img');
+const pGlow    = document.getElementById('pmodal-glow');
+const pBrand   = document.getElementById('pmodal-brand');
+const pName    = document.getElementById('pmodal-name');
+const pDesc    = document.getElementById('pmodal-desc');
+const pTagsTop = document.getElementById('pnote-tags-top');
+const pTagsHrt = document.getElementById('pnote-tags-heart');
+const pTagsBse = document.getElementById('pnote-tags-base');
+const pWaBtn   = document.getElementById('pmodal-wa-btn');
+
+let pModalOpen = false;
+
+function openPModal(product) {
+    if (pModalOpen) return;
+    pModalOpen = true;
+
+    pImg.src   = product.modalImage;
+    pImg.alt   = product.name;
+    pBrand.textContent = product.brand;
+    pName.textContent  = product.name;
+    pDesc.textContent  = product.description;
+    pGlow.style.background = `radial-gradient(circle, ${product.glowColor} 0%, transparent 65%)`;
+    pWaBtn.href = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent('Olá! Tenho interesse no perfume ' + product.name + ' (' + product.brand + ').')}`;
+
+    const tags = (el, arr) => { el.innerHTML = arr.map(n => `<span class="pnote-tag">${n}</span>`).join(''); };
+    tags(pTagsTop, product.notes.top);
+    tags(pTagsHrt, product.notes.heart);
+    tags(pTagsBse, product.notes.base);
+
+    pOverlay.classList.add('active');
+    pOverlay.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    lucide.createIcons();
+}
+
+function closePModal() {
+    if (!pModalOpen) return;
+    pModalOpen = false;
+    pOverlay.classList.remove('active');
+    pOverlay.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+}
+
+if (pClose)   pClose.addEventListener('click', closePModal);
+if (pOverlay) pOverlay.addEventListener('click', e => { if (e.target === pOverlay) closePModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && pModalOpen) closePModal(); });
+
+renderProductGrid();
