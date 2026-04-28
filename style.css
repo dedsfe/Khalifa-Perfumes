@@ -1395,6 +1395,15 @@ button {
   background: rgba(212,175,55,0.05);
 }
 
+/* Action Buttons Container */
+.pmodal-action-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: auto;
+  align-self: flex-start;
+  flex-wrap: wrap;
+}
+
 /* WhatsApp CTA */
 .pmodal-wa-btn {
   display: inline-flex;
@@ -1409,14 +1418,32 @@ button {
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 3px;
-  align-self: flex-start;
-  margin-top: auto;
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 0.4s ease 0.40s, transform 0.4s ease 0.40s, background 0.3s, box-shadow 0.3s;
 }
 
-.pmodal-overlay.active .pmodal-wa-btn {
+/* Compare CTA */
+.pmodal-compare-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 32px;
+  background: transparent;
+  color: var(--color-white);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease 0.45s, transform 0.4s ease 0.45s, background 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.pmodal-overlay.active .pmodal-wa-btn,
+.pmodal-overlay.active .pmodal-compare-btn {
   opacity: 1;
   transform: translateY(0);
 }

@@ -389,12 +389,15 @@ const pTagsTop = document.getElementById('pnote-tags-top');
 const pTagsHrt = document.getElementById('pnote-tags-heart');
 const pTagsBse = document.getElementById('pnote-tags-base');
 const pWaBtn   = document.getElementById('pmodal-wa-btn');
+const pCompareBtn = document.getElementById('pmodal-compare-btn');
 
 let pModalOpen = false;
+let currentProductId = null;
 
 function openPModal(product) {
     if (pModalOpen) return;
     pModalOpen = true;
+    currentProductId = product.id;
 
     pImg.src   = product.modalImage;
     pImg.alt   = product.name;
@@ -408,6 +411,32 @@ function openPModal(product) {
     tags(pTagsTop, product.notes.top);
     tags(pTagsHrt, product.notes.heart);
     tags(pTagsBse, product.notes.base);
+
+    // Update Compare button state based on whether it's already in the comparison array
+    if (pCompareBtn) {
+        if (perfumesToCompare.includes(product.id)) {
+            pCompareBtn.innerHTML = '<i data-lucide="check" stroke-width="1.5"></i> Selecionado';
+            pCompareBtn.style.color = 'var(--color-gold)';
+            pCompareBtn.style.borderColor = 'var(--color-gold)';
+        } else {
+            pCompareBtn.innerHTML = '<i data-lucide="scale" stroke-width="1.5"></i> Comparar';
+            pCompareBtn.style.color = 'var(--color-white)';
+            pCompareBtn.style.borderColor = 'rgba(255, 255, 255, 0.2)';
+        }
+        
+        pCompareBtn.onclick = () => {
+            if (!perfumesToCompare.includes(currentProductId) && perfumesToCompare.length < 2) {
+                toggleCompare(currentProductId);
+            } else if (perfumesToCompare.includes(currentProductId)) {
+                toggleCompare(currentProductId); // removes it
+            } else {
+                alert("Você já selecionou 2 perfumes para comparar.");
+            }
+            closePModal();
+            // Scroll to the collection section so the user can see the comparison bar and other products
+            document.getElementById('colecao').scrollIntoView({ behavior: 'smooth' });
+        };
+    }
 
     pOverlay.classList.add('active');
     pOverlay.setAttribute('aria-hidden', 'false');
