@@ -1463,6 +1463,17 @@ button {
   }
   .pmodal-info-panel { padding: 24px 28px 32px; }
   .pmodal-name { font-size: 1.8rem; }
+  
+  .pmodal-action-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+  .pmodal-wa-btn, 
+  .pmodal-compare-btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 /* =========================================
