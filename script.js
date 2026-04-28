@@ -158,7 +158,7 @@ const WHATSAPP = '5513999999999';
 const products = [
     {
         id: 'afeef', name: 'Afeef', brand: 'Lattafa',
-        coverImage: './Assets/afeef_ai.png',
+        coverImage: './Assets/afeef_ai_nobg.png',
         modalImage: './Assets/afeef_ai_nobg.png',
         glowColor: 'rgba(212,154,137,0.3)',
         description: 'Uma fragrância floral e amadeirada que evoca a elegância do Oriente em cada nota.',
@@ -170,7 +170,7 @@ const products = [
     },
     {
         id: 'yara', name: 'Yara Pink', brand: 'Lattafa',
-        coverImage: './Assets/yara_ai.png',
+        coverImage: './Assets/yara_ai_nobg.png',
         modalImage: './Assets/yara_ai_nobg.png',
         glowColor: 'rgba(201,122,126,0.3)',
         description: 'Doçura tropical com alma árabe. Uma fragrância irresistivelmente feminina.',
@@ -182,7 +182,7 @@ const products = [
     },
     {
         id: 'asad', name: 'Asad', brand: 'Lattafa',
-        coverImage: './Assets/asad_ai.png',
+        coverImage: './Assets/asad_ai_nobg.png',
         modalImage: './Assets/asad_ai_nobg.png',
         glowColor: 'rgba(212,175,55,0.25)',
         description: 'Intensidade e poder em cada gota. O leão do Oriente Médio.',
@@ -194,7 +194,7 @@ const products = [
     },
     {
         id: 'dalal', name: 'Dalal', brand: 'Al Rehab',
-        coverImage: './Assets/dalal_ai.png',
+        coverImage: './Assets/dalal_ai_nobg.png',
         modalImage: './Assets/dalal_ai_nobg.png',
         glowColor: 'rgba(212,175,55,0.2)',
         description: 'Sofisticação árabe com doçura envolvente. Uma fragrância que seduz.',
