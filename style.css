@@ -1388,63 +1388,206 @@ button {
 }
 
 /* =========================================
-   FOOTER
+   INSTAGRAM SECTION
    ========================================= */
-.site-footer {
-  background: #020202;
-  padding: 100px 40px 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.03);
-  position: relative;
-  z-index: 10;
-}
-
-.footer-top {
+.instagram-section {
+  padding: 120px 40px;
+  background-color: var(--color-black);
   text-align: center;
-  margin-bottom: 80px;
 }
 
-.footer-logo {
-  font-family: var(--font-serif);
-  font-size: 3rem;
-  letter-spacing: 14px;
-  color: var(--color-white);
-  margin-bottom: 24px;
+.insta-header {
+  margin-bottom: 60px;
 }
 
-.footer-quote {
+.insta-label {
   font-family: var(--font-sans);
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.5);
-  letter-spacing: 2px;
+  font-size: 0.75rem;
+  letter-spacing: 4px;
+  color: var(--color-gold);
   text-transform: uppercase;
+  display: block;
+  margin-bottom: 16px;
 }
 
-.footer-bottom {
-  width: 100%;
-  max-width: 1200px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  padding-top: 40px;
-}
-
-.footer-links {
-  display: flex;
-  gap: 32px;
-}
-
-.footer-links a {
+.insta-title {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
   color: var(--color-white);
-  text-decoration: none;
+  line-height: 1.2;
+}
+
+.insta-title em {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.insta-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto 60px;
+}
+
+.insta-item {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 4px;
+  display: block;
+  background: #080808;
+}
+
+.insta-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: scale(1);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 80%);
+}
+
+.insta-item:hover img {
+  transform: scale(1.08);
+}
+
+.insta-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.insta-item:hover .insta-overlay {
+  opacity: 1;
+}
+
+.insta-overlay i {
+  color: var(--color-white);
+  width: 36px;
+  height: 36px;
+  transform: translateY(20px);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.insta-item:hover .insta-overlay i {
+  transform: translateY(0);
+}
+
+.insta-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.insta-follow-btn {
+  display: inline-block;
+  padding: 16px 40px;
+  background: transparent;
+  color: var(--color-white);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
   font-family: var(--font-sans);
   font-size: 0.8rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  transition: color 0.3s ease;
+  transition: var(--transition-smooth);
+}
+
+.insta-follow-btn:hover {
+  background: var(--color-gold);
+  border-color: var(--color-gold);
+  color: var(--color-black);
+}
+
+@media (max-width: 1024px) {
+  .insta-grid { grid-template-columns: repeat(2, 1fr); }
+  .insta-title { font-size: 2.5rem; }
+}
+@media (max-width: 600px) {
+  .insta-grid { grid-template-columns: 1fr; }
+}
+
+/* =========================================
+   CINEMATIC FOOTER
+   ========================================= */
+.site-footer {
+  position: relative;
+  background: #000;
+  overflow: hidden;
+  padding: 180px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 85vh;
+}
+
+/* Giant Typography Background */
+.footer-bg-text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-serif);
+  font-size: 23vw;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.015);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-top {
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.footer-quote {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-style: italic;
+  color: var(--color-gold);
+  letter-spacing: 2px;
+}
+
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 32px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.4s ease;
 }
 
 .footer-links a:hover {
@@ -1461,7 +1604,9 @@ button {
 @media (max-width: 768px) {
   .footer-bottom {
     flex-direction: column;
-    gap: 24px;
+    gap: 32px;
     text-align: center;
   }
+  .footer-bg-text { font-size: 28vw; top: 40%; }
+  .footer-quote { font-size: 1.4rem; }
 }
