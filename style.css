@@ -596,6 +596,53 @@ button {
   transform: translate(-50%, -50%) scale(1);
 }
 
+/* Minimalist Showcase Arrows */
+.showcase-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 50;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.showcase-arrow:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(212, 175, 55, 0.3);
+  color: var(--color-gold);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.showcase-arrow-prev {
+  left: 32px;
+}
+
+.showcase-arrow-next {
+  right: 32px;
+}
+
+@media (max-width: 768px) {
+  .showcase-arrow {
+    width: 44px;
+    height: 44px;
+    background: rgba(0,0,0,0.5); /* Mais visível no mobile */
+  }
+  .showcase-arrow-prev { left: 16px; }
+  .showcase-arrow-next { right: 16px; }
+  .showcase-section:hover .drag-cursor { display: none; } /* Oculta custom cursor no mobile */
+}
+
 .showcase-track {
   display: flex;
   height: 100%;
@@ -1921,8 +1968,8 @@ button {
 
 .cmodal-close {
   position: absolute;
-  top: 30px;
-  right: 40px;
+  top: 20px;
+  right: 20px;
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -2128,6 +2175,12 @@ button {
     width: 100%;
     border-bottom: 1px solid rgba(255,255,255,0.1);
     flex-shrink: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(5,5,5,0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   .cmodal-tab {
@@ -2175,5 +2228,6 @@ button {
   .cmodal-name { font-size: 1.6rem; margin-bottom: 20px; }
   .cmodal-img-wrapper { height: 28vh; margin-bottom: 20px; }
   .cmodal-vs-badge { display: none; }
-  .cmodal-close { top: 12px; right: 12px; width: 40px; height: 40px; }
+  /* Make close button smaller and out of the way on mobile */
+  .cmodal-close { top: 12px; right: 12px; width: 32px; height: 32px; z-index: 150; }
 }

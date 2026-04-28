@@ -116,6 +116,19 @@ if (track) {
         track.scrollLeft = scrollLeft - walk;
     });
 
+    // Arrow navigation
+    const prevBtn = document.getElementById('showcase-prev');
+    const nextBtn = document.getElementById('showcase-next');
+    
+    if (prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', () => {
+            track.scrollBy({ left: -window.innerWidth * 0.8, behavior: 'smooth' });
+        });
+        nextBtn.addEventListener('click', () => {
+            track.scrollBy({ left: window.innerWidth * 0.8, behavior: 'smooth' });
+        });
+    }
+
     const slides = document.querySelectorAll('.showcase-slide');
 
     track.addEventListener('scroll', () => {
