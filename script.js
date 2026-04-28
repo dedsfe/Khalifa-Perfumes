@@ -525,7 +525,37 @@ function openCompareModal() {
         `;
     }
 
-    container.innerHTML = renderSide(p1) + '<div class="cmodal-vs-badge">vs</div>' + renderSide(p2);
+    // Build tabs for mobile
+    const tabsHtml = `
+        <div class="cmodal-tabs">
+            <button class="cmodal-tab active" data-tab="0">${p1.name}</button>
+            <button class="cmodal-tab" data-tab="1">${p2.name}</button>
+        </div>
+    `;
+
+    container.innerHTML = tabsHtml + renderSide(p1, 0) + '<div class="cmodal-vs-badge">vs</div>' + renderSide(p2, 1);
+    
+    // Add data-index to sides
+    const sides = container.querySelectorAll('.cmodal-side');
+    sides.forEach((s, i) => s.setAttribute('data-index', i));
+
+    // Tab switching logic
+    container.querySelectorAll('.cmodal-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+            const idx = tab.dataset.tab;
+            container.querySelectorAll('.cmodal-tab').forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            sides.forEach(s => {
+                s.classList.toggle('cmodal-side--active', s.dataset.index === idx);
+                s.classList.toggle('cmodal-side--hidden', s.dataset.index !== idx);
+            });
+        });
+    });
+
+    // Set initial state on mobile
+    if (sides[0]) sides[0].classList.add('cmodal-side--active');
+    if (sides[1]) sides[1].classList.add('cmodal-side--hidden');
+
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
     lucide.createIcons();

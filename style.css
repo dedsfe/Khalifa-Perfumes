@@ -2116,7 +2116,39 @@ button {
   z-index: 10;
 }
 
+/* Tabs — hidden on desktop */
+.cmodal-tabs {
+  display: none;
+}
+
 @media (max-width: 768px) {
+  /* Show tabs on mobile */
+  .cmodal-tabs {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    flex-shrink: 0;
+  }
+
+  .cmodal-tab {
+    flex: 1;
+    padding: 16px 12px;
+    font-family: var(--font-serif);
+    font-size: 1rem;
+    color: rgba(255,255,255,0.4);
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+
+  .cmodal-tab.active {
+    color: var(--color-gold);
+    border-bottom-color: var(--color-gold);
+  }
+
   .cmodal-container {
     flex-direction: column;
     height: 92vh;
@@ -2124,17 +2156,24 @@ button {
     scrollbar-width: none;
   }
   .cmodal-container::-webkit-scrollbar { display: none; }
+
   .cmodal-side {
     padding: 24px 20px;
     flex: none;
+    border-right: none !important;
+    border-bottom: none !important;
   }
-  .cmodal-side:first-child {
-    border-right: none;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    padding-bottom: 32px;
+
+  .cmodal-side--hidden {
+    display: none;
   }
+
+  .cmodal-side--active {
+    display: flex;
+  }
+
   .cmodal-name { font-size: 1.6rem; margin-bottom: 20px; }
-  .cmodal-img-wrapper { height: 22vh; margin-bottom: 20px; }
+  .cmodal-img-wrapper { height: 28vh; margin-bottom: 20px; }
   .cmodal-vs-badge { display: none; }
   .cmodal-close { top: 12px; right: 12px; width: 40px; height: 40px; }
 }
