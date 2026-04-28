@@ -38,12 +38,8 @@
 
             <!-- Right: Actions -->
             <div class="navbar-right">
-                <button class="icon-btn">
+                <button class="icon-btn" id="nav-search-btn">
                     <i data-lucide="search" stroke-width="1.5"></i>
-                </button>
-                <button class="icon-btn cart-btn">
-                    <i data-lucide="shopping-bag" stroke-width="1.5"></i>
-                    <span class="cart-count">0</span>
                 </button>
             </div>
         </div>
@@ -265,6 +261,12 @@
             <span class="products-label">COLEÇÃO EXCLUSIVA</span>
             <h2 class="products-title">Nossas <em>Fragrâncias</em></h2>
         </div>
+
+        <div class="products-search" id="products-search">
+            <i data-lucide="search" class="search-icon"></i>
+            <input type="text" id="search-input" placeholder="Buscar perfume ou marca..." autocomplete="off">
+        </div>
+
         <div class="products-filters" id="products-filters">
             <button class="filter-btn active" data-filter="all">Todas</button>
             <button class="filter-btn" data-filter="brand-Lattafa">Lattafa</button>

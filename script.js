@@ -158,12 +158,27 @@ const WHATSAPP = '5513999999999';
 let currentPage = 1;
 const PRODUCTS_PER_PAGE = 12;
 let filteredProducts = [];
+let currentFilter = 'all';
+let searchQuery = '';
 
 function initProducts() {
     if (typeof windowProducts === 'undefined') return;
     filteredProducts = [...windowProducts];
     renderProductGrid(true);
     setupFilters();
+    setupSearch();
+    
+    // Navbar search button smooth scroll to search
+    const navSearchBtn = document.getElementById('nav-search-btn');
+    if (navSearchBtn) {
+        navSearchBtn.addEventListener('click', () => {
+            const searchInput = document.getElementById('search-input');
+            if (searchInput) {
+                searchInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                setTimeout(() => searchInput.focus(), 800);
+            }
+        });
+    }
     
     const loadMoreBtn = document.getElementById('load-more-btn');
     if (loadMoreBtn) {
@@ -244,6 +259,50 @@ function updateLoadMoreVisibility() {
     }
 }
 
+function applyFiltersAndSearch() {
+    let results = [...windowProducts];
+
+    // 1. Filter by category
+    if (currentFilter !== 'all') {
+        if (currentFilter.startsWith('brand-')) {
+            const brand = currentFilter.split('-')[1];
+            results = results.filter(p => p.brand === brand);
+        } else if (currentFilter.startsWith('cat-')) {
+            const cat = currentFilter.split('-')[1];
+            results = results.filter(p => p.category === cat);
+        }
+    }
+
+    // 2. Search query
+    if (searchQuery) {
+        results = results.filter(p => 
+            p.name.toLowerCase().includes(searchQuery) || 
+            p.brand.toLowerCase().includes(searchQuery) ||
+            p.category.toLowerCase().includes(searchQuery)
+        );
+    }
+
+    filteredProducts = results;
+    
+    const grid = document.getElementById('products-grid');
+    grid.style.transition = 'opacity 0.3s ease';
+    grid.style.opacity = 0;
+    setTimeout(() => {
+        renderProductGrid(true);
+        grid.style.opacity = 1;
+    }, 300);
+}
+
+function setupSearch() {
+    const searchInput = document.getElementById('search-input');
+    if (!searchInput) return;
+
+    searchInput.addEventListener('input', (e) => {
+        searchQuery = e.target.value.toLowerCase().trim();
+        applyFiltersAndSearch();
+    });
+}
+
 function setupFilters() {
     const filterBtns = document.querySelectorAll('.filter-btn');
     filterBtns.forEach(btn => {
@@ -251,25 +310,8 @@ function setupFilters() {
             filterBtns.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             
-            const filterValue = btn.dataset.filter;
-            
-            if (filterValue === 'all') {
-                filteredProducts = [...windowProducts];
-            } else if (filterValue.startsWith('brand-')) {
-                const brand = filterValue.split('-')[1];
-                filteredProducts = windowProducts.filter(p => p.brand === brand);
-            } else if (filterValue.startsWith('cat-')) {
-                const cat = filterValue.split('-')[1];
-                filteredProducts = windowProducts.filter(p => p.category === cat);
-            }
-            
-            const grid = document.getElementById('products-grid');
-            grid.style.transition = 'opacity 0.3s ease';
-            grid.style.opacity = 0;
-            setTimeout(() => {
-                renderProductGrid(true);
-                grid.style.opacity = 1;
-            }, 300);
+            currentFilter = btn.dataset.filter;
+            applyFiltersAndSearch();
         });
     });
 }
