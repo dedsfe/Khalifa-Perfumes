@@ -367,3 +367,11 @@ if (pOverlay) pOverlay.addEventListener('click', e => { if (e.target === pOverla
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && pModalOpen) closePModal(); });
 
 initProducts();
+
+// Preloader Scroll Lock
+document.body.style.overflow = 'hidden';
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        document.body.style.overflow = '';
+    }, 2800);
+});

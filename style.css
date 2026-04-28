@@ -32,6 +32,93 @@ body {
   overflow-x: hidden;
 }
 
+/* =========================================
+   PRELOADER
+   ========================================= */
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  pointer-events: all;
+  animation: hidePreloader 0s 2.8s forwards;
+}
+
+.preloader-curtain {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  background: #000;
+  z-index: 1;
+}
+
+.preloader-curtain.top {
+  top: 0;
+  animation: slideUp 1s cubic-bezier(0.77, 0, 0.175, 1) 1.8s forwards;
+}
+
+.preloader-curtain.bottom {
+  bottom: 0;
+  animation: slideDown 1s cubic-bezier(0.77, 0, 0.175, 1) 1.8s forwards;
+}
+
+.preloader-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeOut 0.5s ease 1.3s forwards;
+}
+
+.preloader-text {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  letter-spacing: 14px;
+  color: var(--color-white);
+  opacity: 0;
+  transform: translateY(10px);
+  animation: textReveal 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.preloader-line {
+  width: 100%;
+  height: 1px;
+  background: var(--color-gold);
+  margin-top: 20px;
+  transform: scaleX(0);
+  transform-origin: center;
+  animation: lineExpand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s forwards;
+}
+
+@keyframes textReveal {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes lineExpand {
+  to { transform: scaleX(1); }
+}
+
+@keyframes fadeOut {
+  to { opacity: 0; visibility: hidden; }
+}
+
+@keyframes slideUp {
+  to { transform: translateY(-100%); }
+}
+
+@keyframes slideDown {
+  to { transform: translateY(100%); }
+}
+
+@keyframes hidePreloader {
+  to { visibility: hidden; pointer-events: none; }
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif);
   font-weight: 400;
@@ -1300,3 +1387,81 @@ button {
   .pmodal-name { font-size: 1.8rem; }
 }
 
+/* =========================================
+   FOOTER
+   ========================================= */
+.site-footer {
+  background: #020202;
+  padding: 100px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  position: relative;
+  z-index: 10;
+}
+
+.footer-top {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.footer-logo {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  letter-spacing: 14px;
+  color: var(--color-white);
+  margin-bottom: 24px;
+}
+
+.footer-quote {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.footer-bottom {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 40px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 32px;
+}
+
+.footer-links a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--color-gold);
+}
+
+.footer-copy {
+  color: rgba(255, 255, 255, 0.3);
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+}
