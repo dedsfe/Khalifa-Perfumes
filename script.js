@@ -485,7 +485,7 @@ function openCompareModal() {
     function noteIntensity(name) {
         let h = 0;
         for (let i = 0; i < name.length; i++) h = ((h << 5) - h + name.charCodeAt(i)) | 0;
-        return 55 + Math.abs(h % 45); // 55-100% range
+        return 40 + Math.abs(h % 55); // 40-95% range
     }
 
     function renderNoteSliders(notes, label) {
@@ -495,12 +495,12 @@ function openCompareModal() {
                 <div class="cmodal-note-sliders">
                     ${notes.map(n => {
                         const val = noteIntensity(n);
-                        return `<div class="cmodal-slider-row">
+                        return `<div class="cmodal-slider-item">
                             <span class="cmodal-slider-name">${n}</span>
                             <div class="cmodal-slider-track">
                                 <div class="cmodal-slider-fill" style="width: ${val}%"></div>
+                                <div class="cmodal-slider-dot" style="left: ${val}%"></div>
                             </div>
-                            <span class="cmodal-slider-val">${val}%</span>
                         </div>`;
                     }).join('')}
                 </div>
