@@ -1900,6 +1900,57 @@ button {
   border-radius: 20px;
 }
 
+/* Compare Slider Bars */
+.cmodal-note-sliders {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.cmodal-slider-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cmodal-slider-name {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.7);
+  min-width: 90px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.cmodal-slider-track {
+  flex: 1;
+  height: 6px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.cmodal-slider-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-gold), #e8c547);
+  border-radius: 3px;
+  transition: width 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cmodal-slider-val {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.35);
+  min-width: 32px;
+  text-align: left;
+}
+
+@media (max-width: 500px) {
+  .cmodal-slider-name { min-width: 60px; font-size: 0.7rem; }
+  .cmodal-slider-val { display: none; }
+}
+
 .cmodal-vs-badge {
   position: absolute;
   top: 50%;

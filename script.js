@@ -481,6 +481,33 @@ function openCompareModal() {
     const p2 = windowProducts.find(x => x.id === perfumesToCompare[1]);
     if (!p1 || !p2) return;
 
+    // Deterministic intensity from note name (consistent per note)
+    function noteIntensity(name) {
+        let h = 0;
+        for (let i = 0; i < name.length; i++) h = ((h << 5) - h + name.charCodeAt(i)) | 0;
+        return 55 + Math.abs(h % 45); // 55-100% range
+    }
+
+    function renderNoteSliders(notes, label) {
+        return `
+            <div class="cmodal-note-group">
+                <span class="cmodal-note-label">${label}</span>
+                <div class="cmodal-note-sliders">
+                    ${notes.map(n => {
+                        const val = noteIntensity(n);
+                        return `<div class="cmodal-slider-row">
+                            <span class="cmodal-slider-name">${n}</span>
+                            <div class="cmodal-slider-track">
+                                <div class="cmodal-slider-fill" style="width: ${val}%"></div>
+                            </div>
+                            <span class="cmodal-slider-val">${val}%</span>
+                        </div>`;
+                    }).join('')}
+                </div>
+            </div>
+        `;
+    }
+
     function renderSide(p) {
         return `
             <div class="cmodal-side">
@@ -490,18 +517,9 @@ function openCompareModal() {
                 <div class="cmodal-brand">${p.brand}</div>
                 <h3 class="cmodal-name">${p.name}</h3>
                 <div class="cmodal-notes-section">
-                    <div class="cmodal-note-group">
-                        <span class="cmodal-note-label">Notas de Topo</span>
-                        <div class="cmodal-note-tags">${p.notes.top.map(n => '<span class="cmodal-note-tag">' + n + '</span>').join('')}</div>
-                    </div>
-                    <div class="cmodal-note-group">
-                        <span class="cmodal-note-label">Notas de Coração</span>
-                        <div class="cmodal-note-tags">${p.notes.heart.map(n => '<span class="cmodal-note-tag">' + n + '</span>').join('')}</div>
-                    </div>
-                    <div class="cmodal-note-group">
-                        <span class="cmodal-note-label">Notas de Fundo</span>
-                        <div class="cmodal-note-tags">${p.notes.base.map(n => '<span class="cmodal-note-tag">' + n + '</span>').join('')}</div>
-                    </div>
+                    ${renderNoteSliders(p.notes.top, 'Notas de Topo')}
+                    ${renderNoteSliders(p.notes.heart, 'Notas de Coração')}
+                    ${renderNoteSliders(p.notes.base, 'Notas de Fundo')}
                 </div>
             </div>
         `;
