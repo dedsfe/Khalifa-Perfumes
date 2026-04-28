@@ -155,63 +155,62 @@ if (track) {
 
 const WHATSAPP = '5513999999999';
 
-const products = [
-    {
-        id: 'afeef', name: 'Afeef', brand: 'Lattafa',
-        coverImage: './Assets/afeef_ai_nobg.png',
-        modalImage: './Assets/afeef_ai_nobg.png',
-        glowColor: 'rgba(212,154,137,0.3)',
-        description: 'Uma fragrância floral e amadeirada que evoca a elegância do Oriente em cada nota.',
-        notes: {
-            top:   ['Bergamota', 'Limão', 'Aldeídos'],
-            heart: ['Flor Branca', 'Tuberosa', 'Rosa'],
-            base:  ['Almíscar', 'Amadeirado', 'Sândalo']
-        }
-    },
-    {
-        id: 'yara', name: 'Yara Pink', brand: 'Lattafa',
-        coverImage: './Assets/yara_ai_nobg.png',
-        modalImage: './Assets/yara_ai_nobg.png',
-        glowColor: 'rgba(201,122,126,0.3)',
-        description: 'Doçura tropical com alma árabe. Uma fragrância irresistivelmente feminina.',
-        notes: {
-            top:   ['Pêssego', 'Frutas Tropicais', 'Lichia'],
-            heart: ['Flor de Laranjeira', 'Baunilha', 'Rosa'],
-            base:  ['Almíscar Branco', 'Atalcado', 'Sândalo']
-        }
-    },
-    {
-        id: 'asad', name: 'Asad', brand: 'Lattafa',
-        coverImage: './Assets/asad_ai_nobg.png',
-        modalImage: './Assets/asad_ai_nobg.png',
-        glowColor: 'rgba(212,175,55,0.25)',
-        description: 'Intensidade e poder em cada gota. O leão do Oriente Médio.',
-        notes: {
-            top:   ['Canela', 'Pimenta Preta', 'Cardamomo'],
-            heart: ['Âmbar', 'Oud', 'Rosa'],
-            base:  ['Baunilha', 'Madeira de Cedro', 'Almíscar']
-        }
-    },
-    {
-        id: 'dalal', name: 'Dalal', brand: 'Al Rehab',
-        coverImage: './Assets/dalal_ai_nobg.png',
-        modalImage: './Assets/dalal_ai_nobg.png',
-        glowColor: 'rgba(212,175,55,0.2)',
-        description: 'Sofisticação árabe com doçura envolvente. Uma fragrância que seduz.',
-        notes: {
-            top:   ['Cítrico', 'Laranja', 'Bergamota'],
-            heart: ['Caramelo', 'Baunilha', 'Doce'],
-            base:  ['Almíscar', 'Âmbar', 'Sândalo']
-        }
-    }
-];
+let currentPage = 1;
+const PRODUCTS_PER_PAGE = 12;
+let filteredProducts = [];
 
-function renderProductGrid() {
+function initProducts() {
+    if (typeof windowProducts === 'undefined') return;
+    filteredProducts = [...windowProducts];
+    renderProductGrid(true);
+    setupFilters();
+    
+    const loadMoreBtn = document.getElementById('load-more-btn');
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', () => {
+            currentPage++;
+            renderProductGrid(false);
+        });
+    }
+    
+    // Event delegation for opening modal
+    const grid = document.getElementById('products-grid');
+    if (grid) {
+        grid.addEventListener('click', (e) => {
+            const card = e.target.closest('.pcard');
+            if (card) {
+                const p = windowProducts.find(x => x.id === card.dataset.id);
+                if (p) openPModal(p);
+            }
+        });
+        grid.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                const card = e.target.closest('.pcard');
+                if (card) {
+                    e.preventDefault();
+                    const p = windowProducts.find(x => x.id === card.dataset.id);
+                    if (p) openPModal(p);
+                }
+            }
+        });
+    }
+}
+
+function renderProductGrid(clear = true) {
     const grid = document.getElementById('products-grid');
     if (!grid) return;
 
-    grid.innerHTML = products.map(p => `
-        <div class="pcard" data-id="${p.id}" role="button" tabindex="0" aria-label="Ver detalhes de ${p.name}">
+    if (clear) {
+        grid.innerHTML = '';
+        currentPage = 1;
+    }
+
+    const startIndex = (currentPage - 1) * PRODUCTS_PER_PAGE;
+    const endIndex = startIndex + PRODUCTS_PER_PAGE;
+    const productsToShow = filteredProducts.slice(startIndex, endIndex);
+
+    const html = productsToShow.map((p, index) => `
+        <div class="pcard" data-id="${p.id}" style="animation-delay: ${index * 0.05}s" role="button" tabindex="0" aria-label="Ver detalhes de ${p.name}">
             <img class="pcard-img" src="${p.coverImage}" alt="${p.name}" loading="lazy">
             <div class="pcard-overlay"></div>
             <div class="pcard-info">
@@ -225,13 +224,53 @@ function renderProductGrid() {
         </div>
     `).join('');
 
-    grid.querySelectorAll('.pcard').forEach(card => {
-        const open = () => {
-            const p = products.find(x => x.id === card.dataset.id);
-            if (p) openPModal(p);
-        };
-        card.addEventListener('click', open);
-        card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') open(); });
+    if (clear) {
+        grid.innerHTML = html;
+    } else {
+        grid.insertAdjacentHTML('beforeend', html);
+    }
+    
+    updateLoadMoreVisibility();
+}
+
+function updateLoadMoreVisibility() {
+    const loadMoreContainer = document.getElementById('products-load-more');
+    if (!loadMoreContainer) return;
+    
+    if (currentPage * PRODUCTS_PER_PAGE >= filteredProducts.length) {
+        loadMoreContainer.style.display = 'none';
+    } else {
+        loadMoreContainer.style.display = 'flex';
+    }
+}
+
+function setupFilters() {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            const filterValue = btn.dataset.filter;
+            
+            if (filterValue === 'all') {
+                filteredProducts = [...windowProducts];
+            } else if (filterValue.startsWith('brand-')) {
+                const brand = filterValue.split('-')[1];
+                filteredProducts = windowProducts.filter(p => p.brand === brand);
+            } else if (filterValue.startsWith('cat-')) {
+                const cat = filterValue.split('-')[1];
+                filteredProducts = windowProducts.filter(p => p.category === cat);
+            }
+            
+            const grid = document.getElementById('products-grid');
+            grid.style.transition = 'opacity 0.3s ease';
+            grid.style.opacity = 0;
+            setTimeout(() => {
+                renderProductGrid(true);
+                grid.style.opacity = 1;
+            }, 300);
+        });
     });
 }
 
@@ -285,4 +324,4 @@ if (pClose)   pClose.addEventListener('click', closePModal);
 if (pOverlay) pOverlay.addEventListener('click', e => { if (e.target === pOverlay) closePModal(); });
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && pModalOpen) closePModal(); });
 
-renderProductGrid();
+initProducts();
