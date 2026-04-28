@@ -1382,12 +1382,12 @@ button {
 
 @media (max-width: 700px) {
   .pmodal { flex-direction: column; max-height: 92vh; }
-  .pmodal-image-panel { flex: 0 0 240px; min-height: 240px; }
+  .pmodal-image-panel { flex: 0 0 280px; min-height: 280px; }
   .pmodal-img {
-    height: 125%;
-    transform: scale(1) translateY(-10%);
+    height: 95%;
+    transform: translateY(5%);
   }
-  .pmodal-info-panel { padding: 32px 28px; }
+  .pmodal-info-panel { padding: 24px 28px 32px; }
   .pmodal-name { font-size: 1.8rem; }
 }
 
