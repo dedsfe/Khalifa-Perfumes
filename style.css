@@ -278,7 +278,7 @@ button {
     rgba(10, 10, 10, 0.4) 0%,
     rgba(10, 10, 10, 0.2) 50%,
     rgba(10, 10, 10, 0.8) 100%
-  ), url('./Assets/correct_bg.png');
+  ), url('./Assets/realbgheader.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -429,6 +429,15 @@ button {
 
 /* Responsiveness */
 @media (max-width: 768px) {
+  .header {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0.4) 0%,
+      rgba(10, 10, 10, 0.2) 50%,
+      rgba(10, 10, 10, 0.8) 100%
+    ), url('./Assets/realbgmobile.png');
+  }
+
   .navbar-container {
     padding: 0 24px;
   }
