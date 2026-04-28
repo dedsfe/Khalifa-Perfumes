@@ -407,7 +407,7 @@ function openPModal(product) {
     pGlow.style.background = `radial-gradient(circle, ${product.glowColor} 0%, transparent 65%)`;
     pWaBtn.href = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent('Olá! Tenho interesse no perfume ' + product.name + ' (' + product.brand + ').')}`;
 
-    const tags = (el, arr) => { el.innerHTML = arr.map(n => `<span class="pnote-tag">${n}</span>`).join(''); };
+    const tags = (el, arr) => { el.innerHTML = arr.map(n => `<span class="pnote-tag">${n.name}</span>`).join(''); };
     tags(pTagsTop, product.notes.top);
     tags(pTagsHrt, product.notes.heart);
     tags(pTagsBse, product.notes.base);
@@ -523,23 +523,17 @@ function openCompareModal() {
     const p2 = windowProducts.find(x => x.id === perfumesToCompare[1]);
     if (!p1 || !p2) return;
 
-    // Deterministic intensity from note name and product id (consistent per note per product)
-    function noteIntensity(name, productId) {
-        let str = name + productId;
-        let h = 0;
-        for (let i = 0; i < str.length; i++) h = ((h << 5) - h + str.charCodeAt(i)) | 0;
-        return 40 + Math.abs(h % 55); // 40-95% range
-    }
 
-    function renderNoteSliders(notes, label, productId) {
+
+    function renderNoteSliders(notes, label) {
         return `
             <div class="cmodal-note-group">
                 <span class="cmodal-note-label">${label}</span>
                 <div class="cmodal-note-sliders">
                     ${notes.map(n => {
-                        const val = noteIntensity(n, productId);
+                        const val = n.value;
                         return `<div class="cmodal-slider-item">
-                            <span class="cmodal-slider-name">${n}</span>
+                            <span class="cmodal-slider-name">${n.name}</span>
                             <div class="cmodal-slider-track">
                                 <div class="cmodal-slider-fill" style="width: ${val}%"></div>
                                 <div class="cmodal-slider-dot" style="left: ${val}%"></div>
@@ -560,9 +554,9 @@ function openCompareModal() {
                 <div class="cmodal-brand">${p.brand}</div>
                 <h3 class="cmodal-name">${p.name}</h3>
                 <div class="cmodal-notes-section">
-                    ${renderNoteSliders(p.notes.top, 'Notas de Topo', p.id)}
-                    ${renderNoteSliders(p.notes.heart, 'Notas de Coração', p.id)}
-                    ${renderNoteSliders(p.notes.base, 'Notas de Fundo', p.id)}
+                    ${renderNoteSliders(p.notes.top, 'Notas de Topo')}
+                    ${renderNoteSliders(p.notes.heart, 'Notas de Coração')}
+                    ${renderNoteSliders(p.notes.base, 'Notas de Fundo')}
                 </div>
             </div>
         `;

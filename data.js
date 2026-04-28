@@ -10,19 +10,46 @@ const windowProducts = [
         "description": "Uma fragrância floral e amadeirada que evoca a elegância do Oriente em cada nota.",
         "notes": {
             "top": [
-                "Bergamota",
-                "Limão",
-                "Aldeídos"
+                {
+                    "name": "Bergamota",
+                    "value": 66
+                },
+                {
+                    "name": "Limão",
+                    "value": 67
+                },
+                {
+                    "name": "Aldeídos",
+                    "value": 62
+                }
             ],
             "heart": [
-                "Flor Branca",
-                "Tuberosa",
-                "Rosa"
+                {
+                    "name": "Flor Branca",
+                    "value": 81
+                },
+                {
+                    "name": "Tuberosa",
+                    "value": 89
+                },
+                {
+                    "name": "Rosa",
+                    "value": 83
+                }
             ],
             "base": [
-                "Almíscar",
-                "Amadeirado",
-                "Sândalo"
+                {
+                    "name": "Almíscar",
+                    "value": 85
+                },
+                {
+                    "name": "Amadeirado",
+                    "value": 82
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 82
+                }
             ]
         }
     },
@@ -37,19 +64,46 @@ const windowProducts = [
         "description": "Doçura tropical com alma árabe. Uma fragrância irresistivelmente feminina.",
         "notes": {
             "top": [
-                "Pêssego",
-                "Frutas Tropicais",
-                "Lichia"
+                {
+                    "name": "Pêssego",
+                    "value": 67
+                },
+                {
+                    "name": "Frutas Tropicais",
+                    "value": 60
+                },
+                {
+                    "name": "Lichia",
+                    "value": 80
+                }
             ],
             "heart": [
-                "Flor de Laranjeira",
-                "Baunilha",
-                "Rosa"
+                {
+                    "name": "Flor de Laranjeira",
+                    "value": 83
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 93
+                },
+                {
+                    "name": "Rosa",
+                    "value": 84
+                }
             ],
             "base": [
-                "Almíscar Branco",
-                "Atalcado",
-                "Sândalo"
+                {
+                    "name": "Almíscar Branco",
+                    "value": 90
+                },
+                {
+                    "name": "Atalcado",
+                    "value": 80
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 83
+                }
             ]
         }
     },
@@ -64,19 +118,46 @@ const windowProducts = [
         "description": "Intensidade e poder em cada gota. O leão do Oriente Médio.",
         "notes": {
             "top": [
-                "Canela",
-                "Pimenta Preta",
-                "Cardamomo"
+                {
+                    "name": "Canela",
+                    "value": 89
+                },
+                {
+                    "name": "Pimenta Preta",
+                    "value": 83
+                },
+                {
+                    "name": "Cardamomo",
+                    "value": 84
+                }
             ],
             "heart": [
-                "Âmbar",
-                "Oud",
-                "Rosa"
+                {
+                    "name": "Âmbar",
+                    "value": 89
+                },
+                {
+                    "name": "Oud",
+                    "value": 96
+                },
+                {
+                    "name": "Rosa",
+                    "value": 87
+                }
             ],
             "base": [
-                "Baunilha",
-                "Madeira de Cedro",
-                "Almíscar"
+                {
+                    "name": "Baunilha",
+                    "value": 96
+                },
+                {
+                    "name": "Madeira de Cedro",
+                    "value": 84
+                },
+                {
+                    "name": "Almíscar",
+                    "value": 89
+                }
             ]
         }
     },
@@ -91,19 +172,46 @@ const windowProducts = [
         "description": "Sofisticação árabe com doçura envolvente. Uma fragrância que seduz.",
         "notes": {
             "top": [
-                "Cítrico",
-                "Laranja",
-                "Bergamota"
+                {
+                    "name": "Cítrico",
+                    "value": 75
+                },
+                {
+                    "name": "Laranja",
+                    "value": 75
+                },
+                {
+                    "name": "Bergamota",
+                    "value": 83
+                }
             ],
             "heart": [
-                "Caramelo",
-                "Baunilha",
-                "Doce"
+                {
+                    "name": "Caramelo",
+                    "value": 92
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 92
+                },
+                {
+                    "name": "Doce",
+                    "value": 89
+                }
             ],
             "base": [
-                "Almíscar",
-                "Âmbar",
-                "Sândalo"
+                {
+                    "name": "Almíscar",
+                    "value": 85
+                },
+                {
+                    "name": "Âmbar",
+                    "value": 85
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 82
+                }
             ]
         }
     },
@@ -117,9 +225,56 @@ const windowProducts = [
         "glowColor": "rgba(184, 115, 51, 0.3)",
         "description": "Uma indulgência luxuosa que combina a doçura das tâmaras com especiarias quentes e madeiras nobres.",
         "notes": {
-            "top": ["Canela", "Noz-moscada", "Bergamota"],
-            "heart": ["Tâmara", "Pralinê", "Tuberosa", "Mahonial"],
-            "base": ["Baunilha", "Fava Tonka", "Madeira de Âmbar", "Mirra"]
+            "top": [
+                {
+                    "name": "Canela",
+                    "value": 87
+                },
+                {
+                    "name": "Noz-moscada",
+                    "value": 73
+                },
+                {
+                    "name": "Bergamota",
+                    "value": 76
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Tâmara",
+                    "value": 95
+                },
+                {
+                    "name": "Pralinê",
+                    "value": 88
+                },
+                {
+                    "name": "Tuberosa",
+                    "value": 91
+                },
+                {
+                    "name": "Mahonial",
+                    "value": 67
+                }
+            ],
+            "base": [
+                {
+                    "name": "Baunilha",
+                    "value": 94
+                },
+                {
+                    "name": "Fava Tonka",
+                    "value": 80
+                },
+                {
+                    "name": "Madeira de Âmbar",
+                    "value": 73
+                },
+                {
+                    "name": "Mirra",
+                    "value": 81
+                }
+            ]
         }
     },
     {
@@ -132,9 +287,52 @@ const windowProducts = [
         "glowColor": "rgba(255, 182, 193, 0.3)",
         "description": "Uma celebração da feminilidade luminosa. Flores brancas elegantes envolvidas em uma doçura sedutora.",
         "notes": {
-            "top": ["Flor de Laranjeira", "Pêssego", "Maçã", "Pêra"],
-            "heart": ["Jasmim", "Tuberosa", "Rosa"],
-            "base": ["Sândalo", "Baunilha", "Patchouli"]
+            "top": [
+                {
+                    "name": "Flor de Laranjeira",
+                    "value": 64
+                },
+                {
+                    "name": "Pêssego",
+                    "value": 69
+                },
+                {
+                    "name": "Maçã",
+                    "value": 80
+                },
+                {
+                    "name": "Pêra",
+                    "value": 79
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Jasmim",
+                    "value": 81
+                },
+                {
+                    "name": "Tuberosa",
+                    "value": 89
+                },
+                {
+                    "name": "Rosa",
+                    "value": 83
+                }
+            ],
+            "base": [
+                {
+                    "name": "Sândalo",
+                    "value": 82
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 92
+                },
+                {
+                    "name": "Patchouli",
+                    "value": 82
+                }
+            ]
         }
     },
     {
@@ -147,9 +345,40 @@ const windowProducts = [
         "glowColor": "rgba(212, 175, 55, 0.3)",
         "description": "A essência da realeza árabe. Uma mistura hipnotizante de almíscar e notas cítricas cintilantes.",
         "notes": {
-            "top": ["Cítricos", "Notas Verdes", "Almíscar"],
-            "heart": ["Notas Amadeiradas", "Notas Herbais"],
-            "base": ["Notas Especiadas", "Pó"]
+            "top": [
+                {
+                    "name": "Cítricos",
+                    "value": 67
+                },
+                {
+                    "name": "Notas Verdes",
+                    "value": 74
+                },
+                {
+                    "name": "Almíscar",
+                    "value": 88
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Notas Amadeiradas",
+                    "value": 78
+                },
+                {
+                    "name": "Notas Herbais",
+                    "value": 68
+                }
+            ],
+            "base": [
+                {
+                    "name": "Notas Especiadas",
+                    "value": 82
+                },
+                {
+                    "name": "Pó",
+                    "value": 78
+                }
+            ]
         }
     },
     {
@@ -162,9 +391,40 @@ const windowProducts = [
         "glowColor": "rgba(101, 67, 33, 0.3)",
         "description": "Uma sobremesa em forma de perfume. Chocolate rico e viciante com um toque de especiarias quentes.",
         "notes": {
-            "top": ["Chocolate Amargo", "Cacau"],
-            "heart": ["Caramelo", "Baunilha"],
-            "base": ["Almíscar", "Âmbar", "Madeiras"]
+            "top": [
+                {
+                    "name": "Chocolate Amargo",
+                    "value": 96
+                },
+                {
+                    "name": "Cacau",
+                    "value": 94
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Caramelo",
+                    "value": 97
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 97
+                }
+            ],
+            "base": [
+                {
+                    "name": "Almíscar",
+                    "value": 90
+                },
+                {
+                    "name": "Âmbar",
+                    "value": 90
+                },
+                {
+                    "name": "Madeiras",
+                    "value": 69
+                }
+            ]
         }
     },
     {
@@ -177,9 +437,48 @@ const windowProducts = [
         "glowColor": "rgba(168, 50, 121, 0.3)",
         "description": "Feminilidade exótica e cativante. Flores exuberantes banhadas em uma aura misteriosa.",
         "notes": {
-            "top": ["Limão", "Laranja", "Maçã"],
-            "heart": ["Rosa", "Jasmim", "Madeira de Cedro"],
-            "base": ["Almíscar", "Baunilha", "Pralinê"]
+            "top": [
+                {
+                    "name": "Limão",
+                    "value": 61
+                },
+                {
+                    "name": "Laranja",
+                    "value": 83
+                },
+                {
+                    "name": "Maçã",
+                    "value": 62
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Rosa",
+                    "value": 85
+                },
+                {
+                    "name": "Jasmim",
+                    "value": 83
+                },
+                {
+                    "name": "Madeira de Cedro",
+                    "value": 66
+                }
+            ],
+            "base": [
+                {
+                    "name": "Almíscar",
+                    "value": 87
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 94
+                },
+                {
+                    "name": "Pralinê",
+                    "value": 88
+                }
+            ]
         }
     },
     {
@@ -192,9 +491,48 @@ const windowProducts = [
         "glowColor": "rgba(255, 105, 180, 0.3)",
         "description": "Doçura e charme inegáveis. Uma composição efervescente de frutas tropicais e baunilha.",
         "notes": {
-            "top": ["Morango", "Laranja Sanguínea", "Rosa"],
-            "heart": ["Jasmim", "Orquídea", "Mel"],
-            "base": ["Sândalo", "Baunilha", "Almíscar"]
+            "top": [
+                {
+                    "name": "Morango",
+                    "value": 88
+                },
+                {
+                    "name": "Laranja Sanguínea",
+                    "value": 67
+                },
+                {
+                    "name": "Rosa",
+                    "value": 84
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Jasmim",
+                    "value": 82
+                },
+                {
+                    "name": "Orquídea",
+                    "value": 62
+                },
+                {
+                    "name": "Mel",
+                    "value": 82
+                }
+            ],
+            "base": [
+                {
+                    "name": "Sândalo",
+                    "value": 83
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 93
+                },
+                {
+                    "name": "Almíscar",
+                    "value": 86
+                }
+            ]
         }
     },
     {
@@ -207,9 +545,40 @@ const windowProducts = [
         "glowColor": "rgba(221, 160, 221, 0.3)",
         "description": "Um buquê floral oriental sofisticado e atemporal para momentos inesquecíveis.",
         "notes": {
-            "top": ["Bergamota", "Pêra"],
-            "heart": ["Tuberosa", "Flor de Laranjeira"],
-            "base": ["Patchouli", "Vetiver", "Baunilha"]
+            "top": [
+                {
+                    "name": "Bergamota",
+                    "value": 82
+                },
+                {
+                    "name": "Pêra",
+                    "value": 60
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Tuberosa",
+                    "value": 90
+                },
+                {
+                    "name": "Flor de Laranjeira",
+                    "value": 83
+                }
+            ],
+            "base": [
+                {
+                    "name": "Patchouli",
+                    "value": 83
+                },
+                {
+                    "name": "Vetiver",
+                    "value": 64
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 93
+                }
+            ]
         }
     },
     {
@@ -222,9 +591,48 @@ const windowProducts = [
         "glowColor": "rgba(139, 69, 19, 0.3)",
         "description": "Força e nobreza em essência pura. Madeiras preciosas combinadas com couro sensual.",
         "notes": {
-            "top": ["Mandarina Italiana", "Lavanda", "Açafrão"],
-            "heart": ["Gerânio do Egito", "Madeira de Cedro", "Âmbar"],
-            "base": ["Incenso da Somália", "Akigalawood", "Cisto Concreto"]
+            "top": [
+                {
+                    "name": "Mandarina Italiana",
+                    "value": 75
+                },
+                {
+                    "name": "Lavanda",
+                    "value": 70
+                },
+                {
+                    "name": "Açafrão",
+                    "value": 88
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Gerânio do Egito",
+                    "value": 62
+                },
+                {
+                    "name": "Madeira de Cedro",
+                    "value": 70
+                },
+                {
+                    "name": "Âmbar",
+                    "value": 86
+                }
+            ],
+            "base": [
+                {
+                    "name": "Incenso da Somália",
+                    "value": 90
+                },
+                {
+                    "name": "Akigalawood",
+                    "value": 82
+                },
+                {
+                    "name": "Cisto Concreto",
+                    "value": 76
+                }
+            ]
         }
     },
     {
@@ -237,9 +645,44 @@ const windowProducts = [
         "glowColor": "rgba(255, 191, 0, 0.3)",
         "description": "Uma obra-prima reluzente. Âmbar aquecido envolto em notas frutadas e cremosas exuberantes.",
         "notes": {
-            "top": ["Bergamota", "Verde"],
-            "heart": ["Melão", "Abacaxi", "Gourmand"],
-            "base": ["Madeiras", "Baunilha", "Almíscar"]
+            "top": [
+                {
+                    "name": "Bergamota",
+                    "value": 82
+                },
+                {
+                    "name": "Verde",
+                    "value": 73
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Melão",
+                    "value": 63
+                },
+                {
+                    "name": "Abacaxi",
+                    "value": 92
+                },
+                {
+                    "name": "Gourmand",
+                    "value": 87
+                }
+            ],
+            "base": [
+                {
+                    "name": "Madeiras",
+                    "value": 62
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 92
+                },
+                {
+                    "name": "Almíscar",
+                    "value": 85
+                }
+            ]
         }
     },
     {
@@ -252,9 +695,44 @@ const windowProducts = [
         "glowColor": "rgba(255, 20, 147, 0.3)",
         "description": "O frescor de um jardim oriental ao amanhecer. Pétalas de rosa orvalhadas em profusão.",
         "notes": {
-            "top": ["Pimenta Rosa", "Mandarina"],
-            "heart": ["Cacau", "Flor de Laranjeira", "Jasmim Sambac"],
-            "base": ["Baunilha", "Fava Tonka", "Patchouli"]
+            "top": [
+                {
+                    "name": "Pimenta Rosa",
+                    "value": 80
+                },
+                {
+                    "name": "Mandarina",
+                    "value": 73
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Cacau",
+                    "value": 93
+                },
+                {
+                    "name": "Flor de Laranjeira",
+                    "value": 78
+                },
+                {
+                    "name": "Jasmim Sambac",
+                    "value": 66
+                }
+            ],
+            "base": [
+                {
+                    "name": "Baunilha",
+                    "value": 96
+                },
+                {
+                    "name": "Fava Tonka",
+                    "value": 83
+                },
+                {
+                    "name": "Patchouli",
+                    "value": 86
+                }
+            ]
         }
     },
     {
@@ -268,19 +746,46 @@ const windowProducts = [
         "description": "Intensidade e poder em cada gota. O leão do Oriente Médio.",
         "notes": {
             "top": [
-                "Canela",
-                "Pimenta Preta",
-                "Cardamomo"
+                {
+                    "name": "Canela",
+                    "value": 89
+                },
+                {
+                    "name": "Pimenta Preta",
+                    "value": 83
+                },
+                {
+                    "name": "Cardamomo",
+                    "value": 81
+                }
             ],
             "heart": [
-                "Âmbar",
-                "Oud",
-                "Rosa"
+                {
+                    "name": "Âmbar",
+                    "value": 89
+                },
+                {
+                    "name": "Oud",
+                    "value": 96
+                },
+                {
+                    "name": "Rosa",
+                    "value": 87
+                }
             ],
             "base": [
-                "Baunilha",
-                "Madeira de Cedro",
-                "Almíscar"
+                {
+                    "name": "Baunilha",
+                    "value": 96
+                },
+                {
+                    "name": "Madeira de Cedro",
+                    "value": 80
+                },
+                {
+                    "name": "Almíscar",
+                    "value": 89
+                }
             ]
         }
     },
@@ -295,19 +800,46 @@ const windowProducts = [
         "description": "Sofisticação árabe com doçura envolvente. Uma fragrância que seduz.",
         "notes": {
             "top": [
-                "Cítrico",
-                "Laranja",
-                "Bergamota"
+                {
+                    "name": "Cítrico",
+                    "value": 77
+                },
+                {
+                    "name": "Laranja",
+                    "value": 76
+                },
+                {
+                    "name": "Bergamota",
+                    "value": 80
+                }
             ],
             "heart": [
-                "Caramelo",
-                "Baunilha",
-                "Doce"
+                {
+                    "name": "Caramelo",
+                    "value": 97
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 97
+                },
+                {
+                    "name": "Doce",
+                    "value": 94
+                }
             ],
             "base": [
-                "Almíscar",
-                "Âmbar",
-                "Sândalo"
+                {
+                    "name": "Almíscar",
+                    "value": 90
+                },
+                {
+                    "name": "Âmbar",
+                    "value": 90
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 87
+                }
             ]
         }
     },
@@ -322,19 +854,46 @@ const windowProducts = [
         "description": "Uma fragrância floral e amadeirada que evoca a elegância do Oriente em cada nota.",
         "notes": {
             "top": [
-                "Bergamota",
-                "Limão",
-                "Aldeídos"
+                {
+                    "name": "Bergamota",
+                    "value": 79
+                },
+                {
+                    "name": "Limão",
+                    "value": 79
+                },
+                {
+                    "name": "Aldeídos",
+                    "value": 77
+                }
             ],
             "heart": [
-                "Flor Branca",
-                "Tuberosa",
-                "Rosa"
+                {
+                    "name": "Flor Branca",
+                    "value": 77
+                },
+                {
+                    "name": "Tuberosa",
+                    "value": 89
+                },
+                {
+                    "name": "Rosa",
+                    "value": 83
+                }
             ],
             "base": [
-                "Almíscar",
-                "Amadeirado",
-                "Sândalo"
+                {
+                    "name": "Almíscar",
+                    "value": 85
+                },
+                {
+                    "name": "Amadeirado",
+                    "value": 74
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 82
+                }
             ]
         }
     },
@@ -349,19 +908,46 @@ const windowProducts = [
         "description": "Doçura tropical com alma árabe. Uma fragrância irresistivelmente feminina.",
         "notes": {
             "top": [
-                "Pêssego",
-                "Frutas Tropicais",
-                "Lichia"
+                {
+                    "name": "Pêssego",
+                    "value": 67
+                },
+                {
+                    "name": "Frutas Tropicais",
+                    "value": 63
+                },
+                {
+                    "name": "Lichia",
+                    "value": 83
+                }
             ],
             "heart": [
-                "Flor de Laranjeira",
-                "Baunilha",
-                "Rosa"
+                {
+                    "name": "Flor de Laranjeira",
+                    "value": 81
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 93
+                },
+                {
+                    "name": "Rosa",
+                    "value": 84
+                }
             ],
             "base": [
-                "Almíscar Branco",
-                "Atalcado",
-                "Sândalo"
+                {
+                    "name": "Almíscar Branco",
+                    "value": 90
+                },
+                {
+                    "name": "Atalcado",
+                    "value": 84
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 83
+                }
             ]
         }
     },
@@ -376,19 +962,46 @@ const windowProducts = [
         "description": "Intensidade e poder em cada gota. O leão do Oriente Médio.",
         "notes": {
             "top": [
-                "Canela",
-                "Pimenta Preta",
-                "Cardamomo"
+                {
+                    "name": "Canela",
+                    "value": 87
+                },
+                {
+                    "name": "Pimenta Preta",
+                    "value": 79
+                },
+                {
+                    "name": "Cardamomo",
+                    "value": 60
+                }
             ],
             "heart": [
-                "Âmbar",
-                "Oud",
-                "Rosa"
+                {
+                    "name": "Âmbar",
+                    "value": 87
+                },
+                {
+                    "name": "Oud",
+                    "value": 94
+                },
+                {
+                    "name": "Rosa",
+                    "value": 85
+                }
             ],
             "base": [
-                "Baunilha",
-                "Madeira de Cedro",
-                "Almíscar"
+                {
+                    "name": "Baunilha",
+                    "value": 94
+                },
+                {
+                    "name": "Madeira de Cedro",
+                    "value": 84
+                },
+                {
+                    "name": "Almíscar",
+                    "value": 87
+                }
             ]
         }
     },
@@ -403,19 +1016,46 @@ const windowProducts = [
         "description": "Sofisticação árabe com doçura envolvente. Uma fragrância que seduz.",
         "notes": {
             "top": [
-                "Cítrico",
-                "Laranja",
-                "Bergamota"
+                {
+                    "name": "Cítrico",
+                    "value": 81
+                },
+                {
+                    "name": "Laranja",
+                    "value": 72
+                },
+                {
+                    "name": "Bergamota",
+                    "value": 76
+                }
             ],
             "heart": [
-                "Caramelo",
-                "Baunilha",
-                "Doce"
+                {
+                    "name": "Caramelo",
+                    "value": 95
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 95
+                },
+                {
+                    "name": "Doce",
+                    "value": 92
+                }
             ],
             "base": [
-                "Almíscar",
-                "Âmbar",
-                "Sândalo"
+                {
+                    "name": "Almíscar",
+                    "value": 88
+                },
+                {
+                    "name": "Âmbar",
+                    "value": 88
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 85
+                }
             ]
         }
     },
@@ -430,19 +1070,46 @@ const windowProducts = [
         "description": "Uma fragrância floral e amadeirada que evoca a elegância do Oriente em cada nota.",
         "notes": {
             "top": [
-                "Bergamota",
-                "Limão",
-                "Aldeídos"
+                {
+                    "name": "Bergamota",
+                    "value": 79
+                },
+                {
+                    "name": "Limão",
+                    "value": 79
+                },
+                {
+                    "name": "Aldeídos",
+                    "value": 77
+                }
             ],
             "heart": [
-                "Flor Branca",
-                "Tuberosa",
-                "Rosa"
+                {
+                    "name": "Flor Branca",
+                    "value": 77
+                },
+                {
+                    "name": "Tuberosa",
+                    "value": 89
+                },
+                {
+                    "name": "Rosa",
+                    "value": 83
+                }
             ],
             "base": [
-                "Almíscar",
-                "Amadeirado",
-                "Sândalo"
+                {
+                    "name": "Almíscar",
+                    "value": 85
+                },
+                {
+                    "name": "Amadeirado",
+                    "value": 74
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 82
+                }
             ]
         }
     },
@@ -457,19 +1124,46 @@ const windowProducts = [
         "description": "Doçura tropical com alma árabe. Uma fragrância irresistivelmente feminina.",
         "notes": {
             "top": [
-                "Pêssego",
-                "Frutas Tropicais",
-                "Lichia"
+                {
+                    "name": "Pêssego",
+                    "value": 67
+                },
+                {
+                    "name": "Frutas Tropicais",
+                    "value": 63
+                },
+                {
+                    "name": "Lichia",
+                    "value": 83
+                }
             ],
             "heart": [
-                "Flor de Laranjeira",
-                "Baunilha",
-                "Rosa"
+                {
+                    "name": "Flor de Laranjeira",
+                    "value": 81
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 93
+                },
+                {
+                    "name": "Rosa",
+                    "value": 84
+                }
             ],
             "base": [
-                "Almíscar Branco",
-                "Atalcado",
-                "Sândalo"
+                {
+                    "name": "Almíscar Branco",
+                    "value": 90
+                },
+                {
+                    "name": "Atalcado",
+                    "value": 84
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 83
+                }
             ]
         }
     },
@@ -484,19 +1178,46 @@ const windowProducts = [
         "description": "Intensidade e poder em cada gota. O leão do Oriente Médio.",
         "notes": {
             "top": [
-                "Canela",
-                "Pimenta Preta",
-                "Cardamomo"
+                {
+                    "name": "Canela",
+                    "value": 87
+                },
+                {
+                    "name": "Pimenta Preta",
+                    "value": 79
+                },
+                {
+                    "name": "Cardamomo",
+                    "value": 60
+                }
             ],
             "heart": [
-                "Âmbar",
-                "Oud",
-                "Rosa"
+                {
+                    "name": "Âmbar",
+                    "value": 87
+                },
+                {
+                    "name": "Oud",
+                    "value": 94
+                },
+                {
+                    "name": "Rosa",
+                    "value": 85
+                }
             ],
             "base": [
-                "Baunilha",
-                "Madeira de Cedro",
-                "Almíscar"
+                {
+                    "name": "Baunilha",
+                    "value": 94
+                },
+                {
+                    "name": "Madeira de Cedro",
+                    "value": 84
+                },
+                {
+                    "name": "Almíscar",
+                    "value": 87
+                }
             ]
         }
     },
@@ -511,19 +1232,46 @@ const windowProducts = [
         "description": "Sofisticação árabe com doçura envolvente. Uma fragrância que seduz.",
         "notes": {
             "top": [
-                "Cítrico",
-                "Laranja",
-                "Bergamota"
+                {
+                    "name": "Cítrico",
+                    "value": 81
+                },
+                {
+                    "name": "Laranja",
+                    "value": 72
+                },
+                {
+                    "name": "Bergamota",
+                    "value": 76
+                }
             ],
             "heart": [
-                "Caramelo",
-                "Baunilha",
-                "Doce"
+                {
+                    "name": "Caramelo",
+                    "value": 95
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 95
+                },
+                {
+                    "name": "Doce",
+                    "value": 92
+                }
             ],
             "base": [
-                "Almíscar",
-                "Âmbar",
-                "Sândalo"
+                {
+                    "name": "Almíscar",
+                    "value": 88
+                },
+                {
+                    "name": "Âmbar",
+                    "value": 88
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 85
+                }
             ]
         }
     },
@@ -538,19 +1286,46 @@ const windowProducts = [
         "description": "Uma fragrância floral e amadeirada que evoca a elegância do Oriente em cada nota.",
         "notes": {
             "top": [
-                "Bergamota",
-                "Limão",
-                "Aldeídos"
+                {
+                    "name": "Bergamota",
+                    "value": 75
+                },
+                {
+                    "name": "Limão",
+                    "value": 75
+                },
+                {
+                    "name": "Aldeídos",
+                    "value": 81
+                }
             ],
             "heart": [
-                "Flor Branca",
-                "Tuberosa",
-                "Rosa"
+                {
+                    "name": "Flor Branca",
+                    "value": 73
+                },
+                {
+                    "name": "Tuberosa",
+                    "value": 93
+                },
+                {
+                    "name": "Rosa",
+                    "value": 87
+                }
             ],
             "base": [
-                "Almíscar",
-                "Amadeirado",
-                "Sândalo"
+                {
+                    "name": "Almíscar",
+                    "value": 89
+                },
+                {
+                    "name": "Amadeirado",
+                    "value": 70
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 86
+                }
             ]
         }
     },
@@ -565,19 +1340,46 @@ const windowProducts = [
         "description": "Doçura tropical com alma árabe. Uma fragrância irresistivelmente feminina.",
         "notes": {
             "top": [
-                "Pêssego",
-                "Frutas Tropicais",
-                "Lichia"
+                {
+                    "name": "Pêssego",
+                    "value": 63
+                },
+                {
+                    "name": "Frutas Tropicais",
+                    "value": 67
+                },
+                {
+                    "name": "Lichia",
+                    "value": 79
+                }
             ],
             "heart": [
-                "Flor de Laranjeira",
-                "Baunilha",
-                "Rosa"
+                {
+                    "name": "Flor de Laranjeira",
+                    "value": 60
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 97
+                },
+                {
+                    "name": "Rosa",
+                    "value": 88
+                }
             ],
             "base": [
-                "Almíscar Branco",
-                "Atalcado",
-                "Sândalo"
+                {
+                    "name": "Almíscar Branco",
+                    "value": 94
+                },
+                {
+                    "name": "Atalcado",
+                    "value": 80
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 87
+                }
             ]
         }
     },
@@ -592,19 +1394,46 @@ const windowProducts = [
         "description": "Intensidade e poder em cada gota. O leão do Oriente Médio.",
         "notes": {
             "top": [
-                "Canela",
-                "Pimenta Preta",
-                "Cardamomo"
+                {
+                    "name": "Canela",
+                    "value": 85
+                },
+                {
+                    "name": "Pimenta Preta",
+                    "value": 75
+                },
+                {
+                    "name": "Cardamomo",
+                    "value": 64
+                }
             ],
             "heart": [
-                "Âmbar",
-                "Oud",
-                "Rosa"
+                {
+                    "name": "Âmbar",
+                    "value": 85
+                },
+                {
+                    "name": "Oud",
+                    "value": 92
+                },
+                {
+                    "name": "Rosa",
+                    "value": 83
+                }
             ],
             "base": [
-                "Baunilha",
-                "Madeira de Cedro",
-                "Almíscar"
+                {
+                    "name": "Baunilha",
+                    "value": 92
+                },
+                {
+                    "name": "Madeira de Cedro",
+                    "value": 63
+                },
+                {
+                    "name": "Almíscar",
+                    "value": 85
+                }
             ]
         }
     },
@@ -619,19 +1448,46 @@ const windowProducts = [
         "description": "Sofisticação árabe com doçura envolvente. Uma fragrância que seduz.",
         "notes": {
             "top": [
-                "Cítrico",
-                "Laranja",
-                "Bergamota"
+                {
+                    "name": "Cítrico",
+                    "value": 60
+                },
+                {
+                    "name": "Laranja",
+                    "value": 68
+                },
+                {
+                    "name": "Bergamota",
+                    "value": 72
+                }
             ],
             "heart": [
-                "Caramelo",
-                "Baunilha",
-                "Doce"
+                {
+                    "name": "Caramelo",
+                    "value": 93
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 93
+                },
+                {
+                    "name": "Doce",
+                    "value": 90
+                }
             ],
             "base": [
-                "Almíscar",
-                "Âmbar",
-                "Sândalo"
+                {
+                    "name": "Almíscar",
+                    "value": 86
+                },
+                {
+                    "name": "Âmbar",
+                    "value": 86
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 83
+                }
             ]
         }
     },
@@ -646,19 +1502,46 @@ const windowProducts = [
         "description": "Uma fragrância floral e amadeirada que evoca a elegância do Oriente em cada nota.",
         "notes": {
             "top": [
-                "Bergamota",
-                "Limão",
-                "Aldeídos"
+                {
+                    "name": "Bergamota",
+                    "value": 71
+                },
+                {
+                    "name": "Limão",
+                    "value": 71
+                },
+                {
+                    "name": "Aldeídos",
+                    "value": 60
+                }
             ],
             "heart": [
-                "Flor Branca",
-                "Tuberosa",
-                "Rosa"
+                {
+                    "name": "Flor Branca",
+                    "value": 69
+                },
+                {
+                    "name": "Tuberosa",
+                    "value": 91
+                },
+                {
+                    "name": "Rosa",
+                    "value": 85
+                }
             ],
             "base": [
-                "Almíscar",
-                "Amadeirado",
-                "Sândalo"
+                {
+                    "name": "Almíscar",
+                    "value": 87
+                },
+                {
+                    "name": "Amadeirado",
+                    "value": 66
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 84
+                }
             ]
         }
     },
@@ -673,19 +1556,46 @@ const windowProducts = [
         "description": "Doçura tropical com alma árabe. Uma fragrância irresistivelmente feminina.",
         "notes": {
             "top": [
-                "Pêssego",
-                "Frutas Tropicais",
-                "Lichia"
+                {
+                    "name": "Pêssego",
+                    "value": 84
+                },
+                {
+                    "name": "Frutas Tropicais",
+                    "value": 71
+                },
+                {
+                    "name": "Lichia",
+                    "value": 75
+                }
             ],
             "heart": [
-                "Flor de Laranjeira",
-                "Baunilha",
-                "Rosa"
+                {
+                    "name": "Flor de Laranjeira",
+                    "value": 64
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 95
+                },
+                {
+                    "name": "Rosa",
+                    "value": 86
+                }
             ],
             "base": [
-                "Almíscar Branco",
-                "Atalcado",
-                "Sândalo"
+                {
+                    "name": "Almíscar Branco",
+                    "value": 92
+                },
+                {
+                    "name": "Atalcado",
+                    "value": 76
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 85
+                }
             ]
         }
     },
@@ -700,19 +1610,46 @@ const windowProducts = [
         "description": "Intensidade e poder em cada gota. O leão do Oriente Médio.",
         "notes": {
             "top": [
-                "Canela",
-                "Pimenta Preta",
-                "Cardamomo"
+                {
+                    "name": "Canela",
+                    "value": 85
+                },
+                {
+                    "name": "Pimenta Preta",
+                    "value": 75
+                },
+                {
+                    "name": "Cardamomo",
+                    "value": 64
+                }
             ],
             "heart": [
-                "Âmbar",
-                "Oud",
-                "Rosa"
+                {
+                    "name": "Âmbar",
+                    "value": 85
+                },
+                {
+                    "name": "Oud",
+                    "value": 92
+                },
+                {
+                    "name": "Rosa",
+                    "value": 83
+                }
             ],
             "base": [
-                "Baunilha",
-                "Madeira de Cedro",
-                "Almíscar"
+                {
+                    "name": "Baunilha",
+                    "value": 92
+                },
+                {
+                    "name": "Madeira de Cedro",
+                    "value": 63
+                },
+                {
+                    "name": "Almíscar",
+                    "value": 85
+                }
             ]
         }
     },
@@ -727,19 +1664,46 @@ const windowProducts = [
         "description": "Sofisticação árabe com doçura envolvente. Uma fragrância que seduz.",
         "notes": {
             "top": [
-                "Cítrico",
-                "Laranja",
-                "Bergamota"
+                {
+                    "name": "Cítrico",
+                    "value": 60
+                },
+                {
+                    "name": "Laranja",
+                    "value": 68
+                },
+                {
+                    "name": "Bergamota",
+                    "value": 72
+                }
             ],
             "heart": [
-                "Caramelo",
-                "Baunilha",
-                "Doce"
+                {
+                    "name": "Caramelo",
+                    "value": 93
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 93
+                },
+                {
+                    "name": "Doce",
+                    "value": 90
+                }
             ],
             "base": [
-                "Almíscar",
-                "Âmbar",
-                "Sândalo"
+                {
+                    "name": "Almíscar",
+                    "value": 86
+                },
+                {
+                    "name": "Âmbar",
+                    "value": 86
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 83
+                }
             ]
         }
     },
@@ -754,19 +1718,46 @@ const windowProducts = [
         "description": "Uma fragrância floral e amadeirada que evoca a elegância do Oriente em cada nota.",
         "notes": {
             "top": [
-                "Bergamota",
-                "Limão",
-                "Aldeídos"
+                {
+                    "name": "Bergamota",
+                    "value": 71
+                },
+                {
+                    "name": "Limão",
+                    "value": 71
+                },
+                {
+                    "name": "Aldeídos",
+                    "value": 60
+                }
             ],
             "heart": [
-                "Flor Branca",
-                "Tuberosa",
-                "Rosa"
+                {
+                    "name": "Flor Branca",
+                    "value": 69
+                },
+                {
+                    "name": "Tuberosa",
+                    "value": 91
+                },
+                {
+                    "name": "Rosa",
+                    "value": 85
+                }
             ],
             "base": [
-                "Almíscar",
-                "Amadeirado",
-                "Sândalo"
+                {
+                    "name": "Almíscar",
+                    "value": 87
+                },
+                {
+                    "name": "Amadeirado",
+                    "value": 66
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 84
+                }
             ]
         }
     },
@@ -781,19 +1772,46 @@ const windowProducts = [
         "description": "Doçura tropical com alma árabe. Uma fragrância irresistivelmente feminina.",
         "notes": {
             "top": [
-                "Pêssego",
-                "Frutas Tropicais",
-                "Lichia"
+                {
+                    "name": "Pêssego",
+                    "value": 84
+                },
+                {
+                    "name": "Frutas Tropicais",
+                    "value": 71
+                },
+                {
+                    "name": "Lichia",
+                    "value": 75
+                }
             ],
             "heart": [
-                "Flor de Laranjeira",
-                "Baunilha",
-                "Rosa"
+                {
+                    "name": "Flor de Laranjeira",
+                    "value": 64
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 95
+                },
+                {
+                    "name": "Rosa",
+                    "value": 86
+                }
             ],
             "base": [
-                "Almíscar Branco",
-                "Atalcado",
-                "Sândalo"
+                {
+                    "name": "Almíscar Branco",
+                    "value": 92
+                },
+                {
+                    "name": "Atalcado",
+                    "value": 76
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 85
+                }
             ]
         }
     },
@@ -808,19 +1826,46 @@ const windowProducts = [
         "description": "Intensidade e poder em cada gota. O leão do Oriente Médio.",
         "notes": {
             "top": [
-                "Canela",
-                "Pimenta Preta",
-                "Cardamomo"
+                {
+                    "name": "Canela",
+                    "value": 89
+                },
+                {
+                    "name": "Pimenta Preta",
+                    "value": 71
+                },
+                {
+                    "name": "Cardamomo",
+                    "value": 68
+                }
             ],
             "heart": [
-                "Âmbar",
-                "Oud",
-                "Rosa"
+                {
+                    "name": "Âmbar",
+                    "value": 89
+                },
+                {
+                    "name": "Oud",
+                    "value": 96
+                },
+                {
+                    "name": "Rosa",
+                    "value": 87
+                }
             ],
             "base": [
-                "Baunilha",
-                "Madeira de Cedro",
-                "Almíscar"
+                {
+                    "name": "Baunilha",
+                    "value": 96
+                },
+                {
+                    "name": "Madeira de Cedro",
+                    "value": 67
+                },
+                {
+                    "name": "Almíscar",
+                    "value": 89
+                }
             ]
         }
     },
@@ -835,19 +1880,46 @@ const windowProducts = [
         "description": "Sofisticação árabe com doçura envolvente. Uma fragrância que seduz.",
         "notes": {
             "top": [
-                "Cítrico",
-                "Laranja",
-                "Bergamota"
+                {
+                    "name": "Cítrico",
+                    "value": 64
+                },
+                {
+                    "name": "Laranja",
+                    "value": 64
+                },
+                {
+                    "name": "Bergamota",
+                    "value": 68
+                }
             ],
             "heart": [
-                "Caramelo",
-                "Baunilha",
-                "Doce"
+                {
+                    "name": "Caramelo",
+                    "value": 97
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 97
+                },
+                {
+                    "name": "Doce",
+                    "value": 94
+                }
             ],
             "base": [
-                "Almíscar",
-                "Âmbar",
-                "Sândalo"
+                {
+                    "name": "Almíscar",
+                    "value": 90
+                },
+                {
+                    "name": "Âmbar",
+                    "value": 90
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 87
+                }
             ]
         }
     },
@@ -862,19 +1934,46 @@ const windowProducts = [
         "description": "Uma fragrância floral e amadeirada que evoca a elegância do Oriente em cada nota.",
         "notes": {
             "top": [
-                "Bergamota",
-                "Limão",
-                "Aldeídos"
+                {
+                    "name": "Bergamota",
+                    "value": 67
+                },
+                {
+                    "name": "Limão",
+                    "value": 67
+                },
+                {
+                    "name": "Aldeídos",
+                    "value": 64
+                }
             ],
             "heart": [
-                "Flor Branca",
-                "Tuberosa",
-                "Rosa"
+                {
+                    "name": "Flor Branca",
+                    "value": 65
+                },
+                {
+                    "name": "Tuberosa",
+                    "value": 89
+                },
+                {
+                    "name": "Rosa",
+                    "value": 83
+                }
             ],
             "base": [
-                "Almíscar",
-                "Amadeirado",
-                "Sândalo"
+                {
+                    "name": "Almíscar",
+                    "value": 85
+                },
+                {
+                    "name": "Amadeirado",
+                    "value": 62
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 82
+                }
             ]
         }
     },
@@ -889,19 +1988,46 @@ const windowProducts = [
         "description": "Doçura tropical com alma árabe. Uma fragrância irresistivelmente feminina.",
         "notes": {
             "top": [
-                "Pêssego",
-                "Frutas Tropicais",
-                "Lichia"
+                {
+                    "name": "Pêssego",
+                    "value": 80
+                },
+                {
+                    "name": "Frutas Tropicais",
+                    "value": 75
+                },
+                {
+                    "name": "Lichia",
+                    "value": 71
+                }
             ],
             "heart": [
-                "Flor de Laranjeira",
-                "Baunilha",
-                "Rosa"
+                {
+                    "name": "Flor de Laranjeira",
+                    "value": 68
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 93
+                },
+                {
+                    "name": "Rosa",
+                    "value": 84
+                }
             ],
             "base": [
-                "Almíscar Branco",
-                "Atalcado",
-                "Sândalo"
+                {
+                    "name": "Almíscar Branco",
+                    "value": 90
+                },
+                {
+                    "name": "Atalcado",
+                    "value": 72
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 83
+                }
             ]
         }
     },
@@ -916,19 +2042,46 @@ const windowProducts = [
         "description": "Intensidade e poder em cada gota. O leão do Oriente Médio.",
         "notes": {
             "top": [
-                "Canela",
-                "Pimenta Preta",
-                "Cardamomo"
+                {
+                    "name": "Canela",
+                    "value": 87
+                },
+                {
+                    "name": "Pimenta Preta",
+                    "value": 67
+                },
+                {
+                    "name": "Cardamomo",
+                    "value": 72
+                }
             ],
             "heart": [
-                "Âmbar",
-                "Oud",
-                "Rosa"
+                {
+                    "name": "Âmbar",
+                    "value": 87
+                },
+                {
+                    "name": "Oud",
+                    "value": 94
+                },
+                {
+                    "name": "Rosa",
+                    "value": 85
+                }
             ],
             "base": [
-                "Baunilha",
-                "Madeira de Cedro",
-                "Almíscar"
+                {
+                    "name": "Baunilha",
+                    "value": 94
+                },
+                {
+                    "name": "Madeira de Cedro",
+                    "value": 71
+                },
+                {
+                    "name": "Almíscar",
+                    "value": 87
+                }
             ]
         }
     },
@@ -943,19 +2096,46 @@ const windowProducts = [
         "description": "Sofisticação árabe com doçura envolvente. Uma fragrância que seduz.",
         "notes": {
             "top": [
-                "Cítrico",
-                "Laranja",
-                "Bergamota"
+                {
+                    "name": "Cítrico",
+                    "value": 68
+                },
+                {
+                    "name": "Laranja",
+                    "value": 60
+                },
+                {
+                    "name": "Bergamota",
+                    "value": 64
+                }
             ],
             "heart": [
-                "Caramelo",
-                "Baunilha",
-                "Doce"
+                {
+                    "name": "Caramelo",
+                    "value": 95
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 95
+                },
+                {
+                    "name": "Doce",
+                    "value": 92
+                }
             ],
             "base": [
-                "Almíscar",
-                "Âmbar",
-                "Sândalo"
+                {
+                    "name": "Almíscar",
+                    "value": 88
+                },
+                {
+                    "name": "Âmbar",
+                    "value": 88
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 85
+                }
             ]
         }
     }
