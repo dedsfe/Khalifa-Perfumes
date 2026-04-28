@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahara | Essence of Oud</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css?v=5">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <!-- Left: Menu -->
+            <div class="navbar-left">
+                <button class="menu-btn">
+                    <i data-lucide="menu" stroke-width="1.5"></i>
+                    <span class="menu-text">Menu</span>
+                </button>
+            </div>
+
+            <!-- Center: Logo -->
+            <div class="navbar-center">
+                <a href="#" class="logo">
+                    KHALIFA<span class="logo-dot">.</span>
+                </a>
+            </div>
+
+            <!-- Right: Actions -->
+            <div class="navbar-right">
+                <button class="icon-btn">
+                    <i data-lucide="search" stroke-width="1.5"></i>
+                </button>
+                <button class="icon-btn cart-btn">
+                    <i data-lucide="shopping-bag" stroke-width="1.5"></i>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <header class="header">
+        <div class="header-content">
+            <p class="subtitle">A VERDADEIRA ESSÊNCIA</p>
+            <h1 class="title">
+                O Luxo do <br />
+                <span class="gold-text">Oriente</span>
+            </h1>
+            <div class="btn-group">
+                <button class="primary-btn">Explorar Coleção</button>
+                <button class="secondary-btn">Nossa Origem</button>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span class="scroll-text">Role para descobrir</span>
+            <div class="scroll-line"></div>
+        </div>
+    </header>
+
+    <!-- Manifesto / Origem -->
+    <section class="manifesto-section" id="manifesto">
+
+        <div class="manifesto-intro">
+            <span class="manifesto-label">NOSSA ESSÊNCIA</span>
+        </div>
+
+        <div class="manifesto-body">
+            <p class="manifesto-highlight-text" id="manifesto-text">
+                Para os amantes da fragrância, cada gota conta uma história. Especialistas em perfumes árabes originais — trazemos o Oriente Médio até você.
+            </p>
+        </div>
+
+        <div class="manifesto-footer">
+            <span class="footer-tag">Vila Caiçara · Praia Grande · SP</span>
+        </div>
+
+    </section>
+
+    <!-- Showcase Slider / Produtos -->
+    <section class="showcase-section" id="colecao">
+        
+        <!-- Indicador de arraste customizado -->
+        <div class="drag-cursor" id="drag-cursor">Drag</div>
+
+        <div class="showcase-track" id="showcase-track">
+            
+            <!-- Slide 1 -->
+            <div class="showcase-slide">
+                <div class="slide-bg-text">AFEEF</div>
+                <div class="slide-content">
+                    <div class="slide-image-wrapper">
+                        <div class="image-glow"></div>
+                        <img src="./Assets/afeef_ai_nobg.png" alt="Afeef Lattafa" class="slide-image">
+                    </div>
+                    <div class="slide-info">
+                        <div class="slide-header">
+                            <span class="slide-brand">Lattafa</span>
+                            <h2 class="slide-title">Afeef</h2>
+                        </div>
+                        
+                        <div class="slide-stats">
+                            <h3 class="stats-title">Principais Acordes</h3>
+                            
+                            <div class="stat-row">
+                                <span class="stat-label">Floral Branco</span>
+                                <div class="stat-bar-bg"><div class="stat-bar-fill" data-width="85" style="background-color: #d49a89;"></div></div>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">Doce</span>
+                                <div class="stat-bar-bg"><div class="stat-bar-fill" data-width="95" style="background-color: #c97a7e;"></div></div>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">Amadeirado</span>
+                                <div class="stat-bar-bg"><div class="stat-bar-fill" data-width="60" style="background-color: #a67c70;"></div></div>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">Tuberosa</span>
+                                <div class="stat-bar-bg"><div class="stat-bar-fill" data-width="70" style="background-color: #b88b8e;"></div></div>
+                            </div>
+                        </div>
+                        
+                        <button class="primary-btn slide-btn">Descobrir Essência</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="showcase-slide">
+                <div class="slide-bg-text">YARA</div>
+                <div class="slide-content">
+                    <div class="slide-image-wrapper">
+                        <div class="image-glow" style="background: radial-gradient(circle, rgba(201, 122, 126, 0.15) 0%, transparent 60%);"></div>
+                        <img src="./Assets/yara_ai_nobg.png" alt="Yara Lattafa" class="slide-image">
+                    </div>
+                    <div class="slide-info">
+                        <div class="slide-header">
+                            <span class="slide-brand">Lattafa</span>
+                            <h2 class="slide-title">Yara Pink</h2>
+                        </div>
+                        
+                        <div class="slide-stats">
+                            <h3 class="stats-title">Principais Acordes</h3>
+                            
+                            <div class="stat-row">
+                                <span class="stat-label">Doce</span>
+                                <div class="stat-bar-bg"><div class="stat-bar-fill" data-width="90" style="background-color: #c97a7e;"></div></div>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">Baunilha</span>
+                                <div class="stat-bar-bg"><div class="stat-bar-fill" data-width="85" style="background-color: #e5d59a;"></div></div>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">Atalcado</span>
+                                <div class="stat-bar-bg"><div class="stat-bar-fill" data-width="70" style="background-color: #e8e8e8;"></div></div>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">Tropical</span>
+                                <div class="stat-bar-bg"><div class="stat-bar-fill" data-width="60" style="background-color: #d4a96a;"></div></div>
+                            </div>
+                        </div>
+                        
+                        <button class="primary-btn slide-btn">Descobrir Essência</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="showcase-slide">
+                <div class="slide-bg-text">ASAD</div>
+                <div class="slide-content">
+                    <div class="slide-image-wrapper">
+                        <div class="image-glow" style="background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 60%);"></div>
+                        <img src="./Assets/asad_ai_nobg.png" alt="Asad Lattafa" class="slide-image">
+                    </div>
+                    <div class="slide-info">
+                        <div class="slide-header">
+                            <span class="slide-brand">Lattafa</span>
+                            <h2 class="slide-title">Asad</h2>
+                        </div>
+                        
+                        <div class="slide-stats">
+                            <h3 class="stats-title">Principais Acordes</h3>
+                            
+                            <div class="stat-row">
+                                <span class="stat-label">Especiado Quente</span>
+                                <div class="stat-bar-bg"><div class="stat-bar-fill" data-width="95" style="background-color: #8b4a3a;"></div></div>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">Âmbar</span>
+                                <div class="stat-bar-bg"><div class="stat-bar-fill" data-width="80" style="background-color: #c9874a;"></div></div>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">Amadeirado</span>
+                                <div class="stat-bar-bg"><div class="stat-bar-fill" data-width="75" style="background-color: #6e5c53;"></div></div>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">Baunilha</span>
+                                <div class="stat-bar-bg"><div class="stat-bar-fill" data-width="60" style="background-color: #e5d59a;"></div></div>
+                            </div>
+                        </div>
+                        
+                        <button class="primary-btn slide-btn">Descobrir Essência</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="showcase-slide">
+                <div class="slide-bg-text">DALAL</div>
+                <div class="slide-content">
+                    <div class="slide-image-wrapper">
+                        <div class="image-glow" style="background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 60%);"></div>
+                        <img src="./Assets/dalal_ai_nobg.png" alt="Dalal Al Rehab" class="slide-image">
+                    </div>
+                    <div class="slide-info">
+                        <div class="slide-header">
+                            <span class="slide-brand">Al Rehab</span>
+                            <h2 class="slide-title">Dalal</h2>
+                        </div>
+                        
+                        <div class="slide-stats">
+                            <h3 class="stats-title">Principais Acordes</h3>
+                            
+                            <div class="stat-row">
+                                <span class="stat-label">Doce</span>
+                                <div class="stat-bar-bg"><div class="stat-bar-fill" data-width="95" style="background-color: #c97a7e;"></div></div>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">Caramelo</span>
+                                <div class="stat-bar-bg"><div class="stat-bar-fill" data-width="85" style="background-color: #c9874a;"></div></div>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">Cítrico</span>
+                                <div class="stat-bar-bg"><div class="stat-bar-fill" data-width="70" style="background-color: #d4a96a;"></div></div>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">Baunilha</span>
+                                <div class="stat-bar-bg"><div class="stat-bar-fill" data-width="80" style="background-color: #e5d59a;"></div></div>
+                            </div>
+                        </div>
+                        
+                        <button class="primary-btn slide-btn">Descobrir Essência</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="script.js?v=7"></script>
+</body>
+</html>
+
