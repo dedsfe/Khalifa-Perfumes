@@ -1392,6 +1392,149 @@ button {
 }
 
 /* =========================================
+   OLFACTORY PYRAMID SECTION
+   ========================================= */
+.pyramid-section {
+  padding: 120px 40px;
+  background: var(--color-black);
+  position: relative;
+  overflow: hidden;
+}
+
+.pyramid-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 72px;
+}
+
+.pyramid-label {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  letter-spacing: 5px;
+  color: var(--color-gold);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.pyramid-title {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  color: var(--color-white);
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.pyramid-title em {
+  color: var(--color-gold);
+  font-style: italic;
+}
+
+.pyramid-subtitle {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.7;
+}
+
+.pyramid-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.pyramid-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 16px;
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.pyramid-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.pyramid-card:hover {
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(255,255,255,0.12);
+  transform: translateY(-4px);
+}
+
+.pyramid-card:hover::before {
+  opacity: 1;
+}
+
+.pyramid-card--heart {
+  border-color: rgba(212,175,55,0.15);
+  background: rgba(212,175,55,0.03);
+}
+
+.pyramid-card-icon {
+  color: var(--color-gold);
+  opacity: 0.6;
+  margin-bottom: 4px;
+}
+
+.pyramid-card-label {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+}
+
+.pyramid-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: var(--color-white);
+  line-height: 1.2;
+}
+
+.pyramid-card-desc {
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.7;
+}
+
+.pyramid-card-desc strong {
+  color: rgba(255,255,255,0.85);
+}
+
+.pyramid-card-duration {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--color-gold);
+  opacity: 0.7;
+  margin-top: auto;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  letter-spacing: 1px;
+}
+
+@media (max-width: 900px) {
+  .pyramid-grid { grid-template-columns: 1fr; max-width: 500px; }
+  .pyramid-section { padding: 80px 24px; }
+  .pyramid-title { font-size: 2.2rem; }
+  .pyramid-card { padding: 32px 24px; }
+}
+
+/* =========================================
    INSTAGRAM SECTION
    ========================================= */
 .instagram-section {
