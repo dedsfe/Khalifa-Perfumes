@@ -108,273 +108,153 @@ const windowProducts = [
         }
     },
     {
-        "id": "prod_4",
-        "name": "Oud Modest",
-        "brand": "Lattafa",
-        "category": "Amadeirado",
-        "coverImage": "./Assets/afeef_ai_nobg.png",
-        "modalImage": "./Assets/afeef_ai_nobg.png",
-        "glowColor": "rgba(212,154,137,0.3)",
-        "description": "Uma fragrância floral e amadeirada que evoca a elegância do Oriente em cada nota.",
-        "notes": {
-            "top": [
-                "Bergamota",
-                "Limão",
-                "Aldeídos"
-            ],
-            "heart": [
-                "Flor Branca",
-                "Tuberosa",
-                "Rosa"
-            ],
-            "base": [
-                "Almíscar",
-                "Amadeirado",
-                "Sândalo"
-            ]
-        }
-    },
-    {
-        "id": "prod_5",
+        "id": "khamrah",
         "name": "Khamrah",
         "brand": "Lattafa",
         "category": "Doce",
-        "coverImage": "./Assets/yara_ai_nobg.png",
-        "modalImage": "./Assets/yara_ai_nobg.png",
-        "glowColor": "rgba(201,122,126,0.3)",
-        "description": "Doçura tropical com alma árabe. Uma fragrância irresistivelmente feminina.",
+        "coverImage": "./Assets/Khamram_nobg.png",
+        "modalImage": "./Assets/Khamram_nobg.png",
+        "glowColor": "rgba(184, 115, 51, 0.3)",
+        "description": "Uma indulgência luxuosa que combina a doçura das tâmaras com especiarias quentes e madeiras nobres.",
         "notes": {
-            "top": [
-                "Pêssego",
-                "Frutas Tropicais",
-                "Lichia"
-            ],
-            "heart": [
-                "Flor de Laranjeira",
-                "Baunilha",
-                "Rosa"
-            ],
-            "base": [
-                "Almíscar Branco",
-                "Atalcado",
-                "Sândalo"
-            ]
+            "top": ["Canela", "Noz-moscada", "Bergamota"],
+            "heart": ["Tâmara", "Pralinê", "Tuberosa", "Mahonial"],
+            "base": ["Baunilha", "Fava Tonka", "Madeira de Âmbar", "Mirra"]
         }
     },
     {
-        "id": "prod_6",
+        "id": "fakhar",
         "name": "Fakhar",
         "brand": "Lattafa",
         "category": "Floral",
-        "coverImage": "./Assets/asad_ai_nobg.png",
-        "modalImage": "./Assets/asad_ai_nobg.png",
-        "glowColor": "rgba(212,175,55,0.25)",
-        "description": "Intensidade e poder em cada gota. O leão do Oriente Médio.",
+        "coverImage": "./Assets/FakharLattafa_nobg.png",
+        "modalImage": "./Assets/FakharLattafa_nobg.png",
+        "glowColor": "rgba(255, 182, 193, 0.3)",
+        "description": "Uma celebração da feminilidade luminosa. Flores brancas elegantes envolvidas em uma doçura sedutora.",
         "notes": {
-            "top": [
-                "Canela",
-                "Pimenta Preta",
-                "Cardamomo"
-            ],
-            "heart": [
-                "Âmbar",
-                "Oud",
-                "Rosa"
-            ],
-            "base": [
-                "Baunilha",
-                "Madeira de Cedro",
-                "Almíscar"
-            ]
+            "top": ["Flor de Laranjeira", "Pêssego", "Maçã", "Pêra"],
+            "heart": ["Jasmim", "Tuberosa", "Rosa"],
+            "base": ["Sândalo", "Baunilha", "Patchouli"]
         }
     },
     {
-        "id": "prod_7",
-        "name": "Ameer Al Oudh",
-        "brand": "Lattafa",
+        "id": "ameerati",
+        "name": "Ameerati",
+        "brand": "Al Wataniah",
         "category": "Amadeirado",
-        "coverImage": "./Assets/dalal_ai_nobg.png",
-        "modalImage": "./Assets/dalal_ai_nobg.png",
-        "glowColor": "rgba(212,175,55,0.2)",
-        "description": "Sofisticação árabe com doçura envolvente. Uma fragrância que seduz.",
+        "coverImage": "./Assets/Ameerati_nobg.png",
+        "modalImage": "./Assets/Ameerati_nobg.png",
+        "glowColor": "rgba(212, 175, 55, 0.3)",
+        "description": "A essência da realeza árabe. Uma mistura hipnotizante de almíscar e notas cítricas cintilantes.",
         "notes": {
-            "top": [
-                "Cítrico",
-                "Laranja",
-                "Bergamota"
-            ],
-            "heart": [
-                "Caramelo",
-                "Baunilha",
-                "Doce"
-            ],
-            "base": [
-                "Almíscar",
-                "Âmbar",
-                "Sândalo"
-            ]
+            "top": ["Cítricos", "Notas Verdes", "Almíscar"],
+            "heart": ["Notas Amadeiradas", "Notas Herbais"],
+            "base": ["Notas Especiadas", "Pó"]
         }
     },
     {
-        "id": "prod_8",
-        "name": "Bade'e Al Oud",
-        "brand": "Lattafa",
-        "category": "Amadeirado",
-        "coverImage": "./Assets/afeef_ai_nobg.png",
-        "modalImage": "./Assets/afeef_ai_nobg.png",
-        "glowColor": "rgba(212,154,137,0.3)",
-        "description": "Uma fragrância floral e amadeirada que evoca a elegância do Oriente em cada nota.",
-        "notes": {
-            "top": [
-                "Bergamota",
-                "Limão",
-                "Aldeídos"
-            ],
-            "heart": [
-                "Flor Branca",
-                "Tuberosa",
-                "Rosa"
-            ],
-            "base": [
-                "Almíscar",
-                "Amadeirado",
-                "Sândalo"
-            ]
-        }
-    },
-    {
-        "id": "prod_9",
-        "name": "Nebras",
+        "id": "choco_overdose",
+        "name": "Choco Overdose",
         "brand": "Lattafa",
         "category": "Doce",
-        "coverImage": "./Assets/yara_ai_nobg.png",
-        "modalImage": "./Assets/yara_ai_nobg.png",
-        "glowColor": "rgba(201,122,126,0.3)",
-        "description": "Doçura tropical com alma árabe. Uma fragrância irresistivelmente feminina.",
+        "coverImage": "./Assets/ChocoOverdoseLattafa_nobg.png",
+        "modalImage": "./Assets/ChocoOverdoseLattafa_nobg.png",
+        "glowColor": "rgba(101, 67, 33, 0.3)",
+        "description": "Uma sobremesa em forma de perfume. Chocolate rico e viciante com um toque de especiarias quentes.",
         "notes": {
-            "top": [
-                "Pêssego",
-                "Frutas Tropicais",
-                "Lichia"
-            ],
-            "heart": [
-                "Flor de Laranjeira",
-                "Baunilha",
-                "Rosa"
-            ],
-            "base": [
-                "Almíscar Branco",
-                "Atalcado",
-                "Sândalo"
-            ]
+            "top": ["Chocolate Amargo", "Cacau"],
+            "heart": ["Caramelo", "Baunilha"],
+            "base": ["Almíscar", "Âmbar", "Madeiras"]
         }
     },
     {
-        "id": "prod_10",
-        "name": "Maahir",
-        "brand": "Lattafa",
+        "id": "dimmah",
+        "name": "Dimmah",
+        "brand": "Al Wataniah",
         "category": "Floral",
-        "coverImage": "./Assets/asad_ai_nobg.png",
-        "modalImage": "./Assets/asad_ai_nobg.png",
-        "glowColor": "rgba(212,175,55,0.25)",
-        "description": "Intensidade e poder em cada gota. O leão do Oriente Médio.",
+        "coverImage": "./Assets/Dimmah_nobg.png",
+        "modalImage": "./Assets/Dimmah_nobg.png",
+        "glowColor": "rgba(168, 50, 121, 0.3)",
+        "description": "Feminilidade exótica e cativante. Flores exuberantes banhadas em uma aura misteriosa.",
         "notes": {
-            "top": [
-                "Canela",
-                "Pimenta Preta",
-                "Cardamomo"
-            ],
-            "heart": [
-                "Âmbar",
-                "Oud",
-                "Rosa"
-            ],
-            "base": [
-                "Baunilha",
-                "Madeira de Cedro",
-                "Almíscar"
-            ]
+            "top": ["Limão", "Laranja", "Maçã"],
+            "heart": ["Rosa", "Jasmim", "Madeira de Cedro"],
+            "base": ["Almíscar", "Baunilha", "Pralinê"]
         }
     },
     {
-        "id": "prod_11",
-        "name": "Qaa'ed",
-        "brand": "Lattafa",
-        "category": "Amadeirado",
-        "coverImage": "./Assets/dalal_ai_nobg.png",
-        "modalImage": "./Assets/dalal_ai_nobg.png",
-        "glowColor": "rgba(212,175,55,0.2)",
-        "description": "Sofisticação árabe com doçura envolvente. Uma fragrância que seduz.",
-        "notes": {
-            "top": [
-                "Cítrico",
-                "Laranja",
-                "Bergamota"
-            ],
-            "heart": [
-                "Caramelo",
-                "Baunilha",
-                "Doce"
-            ],
-            "base": [
-                "Almíscar",
-                "Âmbar",
-                "Sândalo"
-            ]
-        }
-    },
-    {
-        "id": "prod_12",
-        "name": "Raghba",
+        "id": "haya",
+        "name": "Haya",
         "brand": "Lattafa",
         "category": "Doce",
-        "coverImage": "./Assets/afeef_ai_nobg.png",
-        "modalImage": "./Assets/afeef_ai_nobg.png",
-        "glowColor": "rgba(212,154,137,0.3)",
-        "description": "Uma fragrância floral e amadeirada que evoca a elegância do Oriente em cada nota.",
+        "coverImage": "./Assets/Haya_nobg.png",
+        "modalImage": "./Assets/Haya_nobg.png",
+        "glowColor": "rgba(255, 105, 180, 0.3)",
+        "description": "Doçura e charme inegáveis. Uma composição efervescente de frutas tropicais e baunilha.",
         "notes": {
-            "top": [
-                "Bergamota",
-                "Limão",
-                "Aldeídos"
-            ],
-            "heart": [
-                "Flor Branca",
-                "Tuberosa",
-                "Rosa"
-            ],
-            "base": [
-                "Almíscar",
-                "Amadeirado",
-                "Sândalo"
-            ]
+            "top": ["Morango", "Laranja Sanguínea", "Rosa"],
+            "heart": ["Jasmim", "Orquídea", "Mel"],
+            "base": ["Sândalo", "Baunilha", "Almíscar"]
         }
     },
     {
-        "id": "prod_13",
-        "name": "Ana Abiyedh",
-        "brand": "Lattafa",
+        "id": "milena",
+        "name": "Milena",
+        "brand": "Árabe Clássico",
         "category": "Floral",
-        "coverImage": "./Assets/yara_ai_nobg.png",
-        "modalImage": "./Assets/yara_ai_nobg.png",
-        "glowColor": "rgba(201,122,126,0.3)",
-        "description": "Doçura tropical com alma árabe. Uma fragrância irresistivelmente feminina.",
+        "coverImage": "./Assets/Milena_nobg.png",
+        "modalImage": "./Assets/Milena_nobg.png",
+        "glowColor": "rgba(221, 160, 221, 0.3)",
+        "description": "Um buquê floral oriental sofisticado e atemporal para momentos inesquecíveis.",
         "notes": {
-            "top": [
-                "Pêssego",
-                "Frutas Tropicais",
-                "Lichia"
-            ],
-            "heart": [
-                "Flor de Laranjeira",
-                "Baunilha",
-                "Rosa"
-            ],
-            "base": [
-                "Almíscar Branco",
-                "Atalcado",
-                "Sândalo"
-            ]
+            "top": ["Bergamota", "Pêra"],
+            "heart": ["Tuberosa", "Flor de Laranjeira"],
+            "base": ["Patchouli", "Vetiver", "Baunilha"]
+        }
+    },
+    {
+        "id": "musamam",
+        "name": "Musamam",
+        "brand": "Lattafa",
+        "category": "Amadeirado",
+        "coverImage": "./Assets/Musamam_nobg.png",
+        "modalImage": "./Assets/Musamam_nobg.png",
+        "glowColor": "rgba(139, 69, 19, 0.3)",
+        "description": "Força e nobreza em essência pura. Madeiras preciosas combinadas com couro sensual.",
+        "notes": {
+            "top": ["Mandarina Italiana", "Lavanda", "Açafrão"],
+            "heart": ["Gerânio do Egito", "Madeira de Cedro", "Âmbar"],
+            "base": ["Incenso da Somália", "Akigalawood", "Cisto Concreto"]
+        }
+    },
+    {
+        "id": "royal_amber",
+        "name": "Royal Amber",
+        "brand": "Orientica",
+        "category": "Amadeirado",
+        "coverImage": "./Assets/RoyalAmber_nobg.png",
+        "modalImage": "./Assets/RoyalAmber_nobg.png",
+        "glowColor": "rgba(255, 191, 0, 0.3)",
+        "description": "Uma obra-prima reluzente. Âmbar aquecido envolto em notas frutadas e cremosas exuberantes.",
+        "notes": {
+            "top": ["Bergamota", "Verde"],
+            "heart": ["Melão", "Abacaxi", "Gourmand"],
+            "base": ["Madeiras", "Baunilha", "Almíscar"]
+        }
+    },
+    {
+        "id": "sabah_al_ward",
+        "name": "Sabah Al Ward",
+        "brand": "Al Wataniah",
+        "category": "Floral",
+        "coverImage": "./Assets/SabahAlWard_nobg.png",
+        "modalImage": "./Assets/SabahAlWard_nobg.png",
+        "glowColor": "rgba(255, 20, 147, 0.3)",
+        "description": "O frescor de um jardim oriental ao amanhecer. Pétalas de rosa orvalhadas em profusão.",
+        "notes": {
+            "top": ["Pimenta Rosa", "Mandarina"],
+            "heart": ["Cacau", "Flor de Laranjeira", "Jasmim Sambac"],
+            "base": ["Baunilha", "Fava Tonka", "Patchouli"]
         }
     },
     {
