@@ -193,6 +193,7 @@ const PRODUCTS_PER_PAGE = 12;
 let filteredProducts = [];
 let currentFilter = 'all';
 let searchQuery = '';
+let perfumesToCompare = [];
 
 function initProducts() {
     if (typeof windowProducts === 'undefined') return;
@@ -221,10 +222,17 @@ function initProducts() {
         });
     }
     
-    // Event delegation for opening modal
+    // Event delegation for opening modal & compare
     const grid = document.getElementById('products-grid');
     if (grid) {
         grid.addEventListener('click', (e) => {
+            const compareBtn = e.target.closest('.btn-compare');
+            if (compareBtn) {
+                e.stopPropagation();
+                const card = compareBtn.closest('.pcard');
+                if (card) toggleCompare(card.dataset.id);
+                return;
+            }
             const card = e.target.closest('.pcard');
             if (card) {
                 const p = windowProducts.find(x => x.id === card.dataset.id);
@@ -257,20 +265,27 @@ function renderProductGrid(clear = true) {
     const endIndex = startIndex + PRODUCTS_PER_PAGE;
     const productsToShow = filteredProducts.slice(startIndex, endIndex);
 
-    const html = productsToShow.map((p, index) => `
+    const html = productsToShow.map((p, index) => {
+        const isSelected = perfumesToCompare.includes(p.id);
+        return `
         <div class="pcard" data-id="${p.id}" style="animation-delay: ${index * 0.05}s" role="button" tabindex="0" aria-label="Ver detalhes de ${p.name}">
             <img class="pcard-img" src="${p.coverImage}" alt="${p.name}" loading="lazy">
             <div class="pcard-overlay"></div>
             <div class="pcard-info">
                 <span class="pcard-brand">${p.brand}</span>
                 <span class="pcard-name">${p.name}</span>
-                <div class="pcard-cta">
-                    <div class="pcard-cta-line"></div>
-                    <span class="pcard-cta-text">Ver Detalhes</span>
+                <div class="pcard-cta-group">
+                    <div class="pcard-cta">
+                        <div class="pcard-cta-line"></div>
+                        <span class="pcard-cta-text">Ver Detalhes</span>
+                    </div>
+                    <button class="btn-compare ${isSelected ? 'selected' : ''}" title="Comparar" aria-label="Comparar ${p.name}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                    </button>
                 </div>
             </div>
         </div>
-    `).join('');
+    `}).join('');
 
     if (clear) {
         grid.innerHTML = html;
@@ -400,6 +415,7 @@ if (pOverlay) pOverlay.addEventListener('click', e => { if (e.target === pOverla
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && pModalOpen) closePModal(); });
 
 initProducts();
+initCompare();
 
 // Preloader Scroll Lock
 document.body.style.overflow = 'hidden';
@@ -408,3 +424,115 @@ window.addEventListener('load', () => {
         document.body.style.overflow = '';
     }, 2800);
 });
+
+// ============================================================
+// COMPARE FUNCTIONALITY
+// ============================================================
+
+function toggleCompare(id) {
+    if (perfumesToCompare.includes(id)) {
+        perfumesToCompare = perfumesToCompare.filter(x => x !== id);
+    } else {
+        if (perfumesToCompare.length < 2) {
+            perfumesToCompare.push(id);
+        } else {
+            perfumesToCompare[1] = id;
+        }
+    }
+    updateCompareUI();
+    if (perfumesToCompare.length === 2) {
+        setTimeout(openCompareModal, 350);
+    }
+}
+
+function updateCompareUI() {
+    const bar = document.getElementById('compare-bar');
+    const countText = document.getElementById('compare-count-text');
+    if (!bar) return;
+
+    // Update bar
+    if (perfumesToCompare.length > 0) {
+        bar.classList.add('active');
+        if (countText) countText.textContent = perfumesToCompare.length;
+    } else {
+        bar.classList.remove('active');
+    }
+
+    // Update card button highlights
+    document.querySelectorAll('.btn-compare').forEach(btn => {
+        const card = btn.closest('.pcard');
+        if (card) {
+            btn.classList.toggle('selected', perfumesToCompare.includes(card.dataset.id));
+        }
+    });
+}
+
+function resetCompare() {
+    perfumesToCompare = [];
+    updateCompareUI();
+}
+
+function openCompareModal() {
+    const modal = document.getElementById('compare-modal');
+    const container = document.getElementById('cmodal-container');
+    if (!modal || !container || perfumesToCompare.length !== 2) return;
+
+    const p1 = windowProducts.find(x => x.id === perfumesToCompare[0]);
+    const p2 = windowProducts.find(x => x.id === perfumesToCompare[1]);
+    if (!p1 || !p2) return;
+
+    function renderSide(p) {
+        return `
+            <div class="cmodal-side">
+                <div class="cmodal-img-wrapper">
+                    <img src="${p.coverImage}" class="cmodal-img" alt="${p.name}">
+                </div>
+                <div class="cmodal-brand">${p.brand}</div>
+                <h3 class="cmodal-name">${p.name}</h3>
+                <div class="cmodal-notes-section">
+                    <div class="cmodal-note-group">
+                        <span class="cmodal-note-label">Notas de Topo</span>
+                        <div class="cmodal-note-tags">${p.notes.top.map(n => '<span class="cmodal-note-tag">' + n + '</span>').join('')}</div>
+                    </div>
+                    <div class="cmodal-note-group">
+                        <span class="cmodal-note-label">Notas de Coração</span>
+                        <div class="cmodal-note-tags">${p.notes.heart.map(n => '<span class="cmodal-note-tag">' + n + '</span>').join('')}</div>
+                    </div>
+                    <div class="cmodal-note-group">
+                        <span class="cmodal-note-label">Notas de Fundo</span>
+                        <div class="cmodal-note-tags">${p.notes.base.map(n => '<span class="cmodal-note-tag">' + n + '</span>').join('')}</div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+    container.innerHTML = renderSide(p1) + '<div class="cmodal-vs-badge">vs</div>' + renderSide(p2);
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    lucide.createIcons();
+}
+
+function closeCompareModal() {
+    const modal = document.getElementById('compare-modal');
+    if (modal) modal.classList.remove('active');
+    document.body.style.overflow = '';
+    resetCompare();
+}
+
+function initCompare() {
+    const cancelBtn = document.getElementById('compare-cancel-btn');
+    if (cancelBtn) cancelBtn.addEventListener('click', resetCompare);
+
+    const closeBtn = document.getElementById('cmodal-close');
+    if (closeBtn) closeBtn.addEventListener('click', closeCompareModal);
+
+    const modal = document.getElementById('compare-modal');
+    if (modal) modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeCompareModal();
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal && modal.classList.contains('active')) closeCompareModal();
+    });
+}

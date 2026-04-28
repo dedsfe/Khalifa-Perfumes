@@ -1615,3 +1615,331 @@ button {
   .footer-bg-text { font-size: 28vw; top: 40%; }
   .footer-quote { font-size: 1.4rem; }
 }
+
+/* =========================================
+   COMPARE FLOATING BAR
+   ========================================= */
+.compare-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(5, 5, 5, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  transform: translateY(100%);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 1000;
+  padding: 16px 24px;
+}
+
+.compare-bar.active {
+  transform: translateY(0);
+}
+
+.compare-bar-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.compare-bar-info {
+  font-family: var(--font-sans);
+  color: var(--color-white);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.compare-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: var(--color-gold);
+  color: var(--color-black);
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.compare-label {
+  letter-spacing: 1px;
+}
+
+.compare-bar-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.compare-hint {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+.compare-cancel {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.compare-cancel:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--color-white);
+}
+
+@media (max-width: 700px) {
+  .compare-bar-content {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .compare-hint { display: none; }
+}
+
+/* Compare Toggle Button on Cards */
+.btn-compare {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--color-white);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.btn-compare:hover {
+  background: var(--color-gold);
+  border-color: var(--color-gold);
+  color: var(--color-black);
+}
+
+.btn-compare.selected {
+  background: var(--color-gold);
+  color: var(--color-black);
+  border-color: var(--color-gold);
+}
+
+.pcard-cta-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.pcard-cta-group .pcard-cta {
+  margin-top: 0;
+}
+
+/* =========================================
+   COMPARE MODAL
+   ========================================= */
+.compare-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.compare-modal-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.cmodal-close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cmodal-close:hover {
+  background: var(--color-gold);
+  color: var(--color-black);
+  transform: rotate(90deg);
+}
+
+.cmodal-container {
+  width: 100%;
+  max-width: 1200px;
+  height: 85vh;
+  display: flex;
+  transform: scale(0.95);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+.compare-modal-overlay.active .cmodal-container {
+  transform: scale(1);
+}
+
+.cmodal-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.cmodal-side::-webkit-scrollbar { display: none; }
+
+.cmodal-side:first-child {
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+.cmodal-img-wrapper {
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.cmodal-img {
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5));
+}
+
+.cmodal-brand {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.cmodal-name {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  color: var(--color-white);
+  text-align: center;
+  margin-bottom: 32px;
+  line-height: 1.1;
+}
+
+.cmodal-notes-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cmodal-note-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cmodal-note-label {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  margin-bottom: 12px;
+}
+
+.cmodal-note-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.cmodal-note-tag {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.8);
+  padding: 6px 14px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+}
+
+.cmodal-vs-badge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  background: #000;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--color-gold);
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .cmodal-container {
+    flex-direction: row;
+    height: 90vh;
+  }
+  .cmodal-side { padding: 24px 16px; }
+  .cmodal-name { font-size: 1.8rem; }
+  .cmodal-img-wrapper { height: 25vh; }
+  .cmodal-vs-badge { width: 40px; height: 40px; font-size: 1rem; }
+  .cmodal-close { top: 16px; right: 16px; width: 40px; height: 40px; }
+}
+
+@media (max-width: 500px) {
+  .cmodal-container { flex-direction: column; }
+  .cmodal-side:first-child {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  .cmodal-img-wrapper { height: 20vh; margin-bottom: 16px; }
+  .cmodal-name { font-size: 1.4rem; margin-bottom: 16px; }
+  .cmodal-note-tag { font-size: 0.75rem; padding: 4px 10px; }
+  .cmodal-vs-badge { display: none; }
+}
