@@ -735,4 +735,808 @@ const windowProducts = [
             ]
         }
     },
+    {
+        "id": "ana_abiyedh",
+        "name": "Ana Abiyedh",
+        "brand": "Lattafa",
+        "category": "Doce",
+        "coverImage": "./Assets/AnaAbyied-bg.png",
+        "modalImage": "./Assets/AnaAbyied-bg.png",
+        "glowColor": "rgba(255, 255, 255, 0.2)",
+        "description": "Uma fragrância aveludada e sofisticada que combina a doçura da baunilha com o mistério do almíscar branco.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Bergamota",
+                    "value": 75
+                },
+                {
+                    "name": "Laranja",
+                    "value": 68
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Baunilha",
+                    "value": 92
+                },
+                {
+                    "name": "Pêra",
+                    "value": 70
+                }
+            ],
+            "base": [
+                {
+                    "name": "Almíscar",
+                    "value": 95
+                },
+                {
+                    "name": "Âmbar",
+                    "value": 84
+                }
+            ]
+        }
+    },
+    {
+        "id": "art_of_arabia",
+        "name": "Art of Arabia I",
+        "brand": "Lattafa",
+        "category": "Amadeirado",
+        "coverImage": "./Assets/ArtOfArabia-bg.png",
+        "modalImage": "./Assets/ArtOfArabia-bg.png",
+        "glowColor": "rgba(0, 100, 0, 0.2)",
+        "description": "A arte da perfumaria árabe em sua forma mais pura. Uma sinfonia de frescor e profundidade amadeirada.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Menta",
+                    "value": 88
+                },
+                {
+                    "name": "Bergamota",
+                    "value": 82
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Lavanda",
+                    "value": 75
+                },
+                {
+                    "name": "Chá Preto",
+                    "value": 70
+                }
+            ],
+            "base": [
+                {
+                    "name": "Sândalo",
+                    "value": 85
+                },
+                {
+                    "name": "Incenso",
+                    "value": 92
+                }
+            ]
+        }
+    },
+    {
+        "id": "asad_zanzibar",
+        "name": "Asad Zanzibar",
+        "brand": "Lattafa",
+        "category": "Amadeirado",
+        "coverImage": "./Assets/AsadBourbon-Marrom-bg.png",
+        "modalImage": "./Assets/AsadBourbon-Marrom-bg.png",
+        "glowColor": "rgba(139, 69, 19, 0.25)",
+        "description": "Uma jornada sensorial para as praias de Zanzibar. Onde o sal marinho encontra a cremosidade do coco.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Pimenta Preta",
+                    "value": 85
+                },
+                {
+                    "name": "Lavanda",
+                    "value": 78
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Água de Coco",
+                    "value": 94
+                },
+                {
+                    "name": "Sal Marinho",
+                    "value": 82
+                }
+            ],
+            "base": [
+                {
+                    "name": "Baunilha",
+                    "value": 88
+                },
+                {
+                    "name": "Incenso",
+                    "value": 85
+                }
+            ]
+        }
+    },
+    {
+        "id": "eclaire",
+        "name": "Eclaire",
+        "brand": "Lattafa",
+        "category": "Doce",
+        "coverImage": "./Assets/Eclaire-bg.png",
+        "modalImage": "./Assets/Eclaire-bg.png",
+        "glowColor": "rgba(255, 222, 173, 0.3)",
+        "description": "Puro êxtase gourmet. Um perfume que derrete na pele como um doce de caramelo e leite condensado.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Caramelo",
+                    "value": 98
+                },
+                {
+                    "name": "Leite",
+                    "value": 92
+                },
+                {
+                    "name": "Açúcar",
+                    "value": 85
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Mel",
+                    "value": 90
+                },
+                {
+                    "name": "Flores Brancas",
+                    "value": 65
+                }
+            ],
+            "base": [
+                {
+                    "name": "Baunilha",
+                    "value": 96
+                },
+                {
+                    "name": "Pralinê",
+                    "value": 88
+                }
+            ]
+        }
+    },
+    {
+        "id": "ejazzi",
+        "name": "Ejazzi",
+        "brand": "Lattafa",
+        "category": "Cítrico",
+        "coverImage": "./Assets/Ejazzi-bg.png",
+        "modalImage": "./Assets/Ejazzi-bg.png",
+        "glowColor": "rgba(30, 144, 255, 0.2)",
+        "description": "Vigor e frescor oceânico. Uma fragrância energética feita para o homem moderno e audaz.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Cítricos",
+                    "value": 92
+                },
+                {
+                    "name": "Lavanda",
+                    "value": 80
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Pimenta",
+                    "value": 75
+                },
+                {
+                    "name": "Notas Marinhas",
+                    "value": 88
+                }
+            ],
+            "base": [
+                {
+                    "name": "Ambroxan",
+                    "value": 94
+                },
+                {
+                    "name": "Cedro",
+                    "value": 82
+                }
+            ]
+        }
+    },
+    {
+        "id": "fakhar_gold",
+        "name": "Fakhar Gold Extrait",
+        "brand": "Lattafa",
+        "category": "Floral",
+        "coverImage": "./Assets/FakharLattafaRoseGold-bg.png",
+        "modalImage": "./Assets/FakharLattafaRoseGold-bg.png",
+        "glowColor": "rgba(212, 175, 55, 0.3)",
+        "description": "A versão mais opulenta da linha Fakhar. Ouro líquido em forma de flores brancas e âmbar solar.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Toranja",
+                    "value": 82
+                },
+                {
+                    "name": "Pimenta Rosa",
+                    "value": 78
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Tuberosa",
+                    "value": 95
+                },
+                {
+                    "name": "Notas Solares",
+                    "value": 88
+                }
+            ],
+            "base": [
+                {
+                    "name": "Âmbar",
+                    "value": 92
+                },
+                {
+                    "name": "Couro",
+                    "value": 84
+                }
+            ]
+        }
+    },
+    {
+        "id": "amber_oud_gold",
+        "name": "Amber Oud Gold Edition",
+        "brand": "Al Haramain",
+        "category": "Doce",
+        "coverImage": "./Assets/HaramainAmberOud-bg.png",
+        "modalImage": "./Assets/HaramainAmberOud-bg.png",
+        "glowColor": "rgba(255, 215, 0, 0.3)",
+        "description": "Um ícone mundial. A explosão de frutas tropicais envoltas em um âmbar dourado magnético.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Bergamota",
+                    "value": 80
+                },
+                {
+                    "name": "Notas Verdes",
+                    "value": 72
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Melão",
+                    "value": 96
+                },
+                {
+                    "name": "Abacaxi",
+                    "value": 94
+                },
+                {
+                    "name": "Âmbar",
+                    "value": 88
+                }
+            ],
+            "base": [
+                {
+                    "name": "Baunilha",
+                    "value": 90
+                },
+                {
+                    "name": "Almíscar",
+                    "value": 85
+                }
+            ]
+        }
+    },
+    {
+        "id": "khamrah_qahwa",
+        "name": "Khamrah Qahwa",
+        "brand": "Lattafa",
+        "category": "Doce",
+        "coverImage": "./Assets/KhamrahQahwa-bg.png",
+        "modalImage": "./Assets/KhamrahQahwa-bg.png",
+        "glowColor": "rgba(101, 67, 33, 0.3)",
+        "description": "O lendário Khamrah com um toque de café arábica. Quente, especiado e viciante.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Gengibre",
+                    "value": 88
+                },
+                {
+                    "name": "Canela",
+                    "value": 90
+                },
+                {
+                    "name": "Cardamomo",
+                    "value": 82
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Pralinê",
+                    "value": 92
+                },
+                {
+                    "name": "Flores Brancas",
+                    "value": 60
+                }
+            ],
+            "base": [
+                {
+                    "name": "Café Arábica",
+                    "value": 96
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 90
+                },
+                {
+                    "name": "Tonka",
+                    "value": 88
+                }
+            ]
+        }
+    },
+    {
+        "id": "the_kingdom",
+        "name": "The Kingdom",
+        "brand": "Lattafa",
+        "category": "Amadeirado",
+        "coverImage": "./Assets/TheKingdomLattafa-bg.png",
+        "modalImage": "./Assets/TheKingdomLattafa-bg.png",
+        "glowColor": "rgba(75, 0, 130, 0.2)",
+        "description": "O reino das especiarias. Uma fragrância poderosa que exala autoridade e mistério.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Sálvia",
+                    "value": 85
+                },
+                {
+                    "name": "Lavanda",
+                    "value": 82
+                },
+                {
+                    "name": "Hortelã",
+                    "value": 78
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Tabaco",
+                    "value": 92
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 85
+                }
+            ],
+            "base": [
+                {
+                    "name": "Tonka",
+                    "value": 88
+                },
+                {
+                    "name": "Benzoin",
+                    "value": 84
+                }
+            ]
+        }
+    },
+    {
+        "id": "victoria",
+        "name": "Victoria",
+        "brand": "Al Wataniah",
+        "category": "Doce",
+        "coverImage": "./Assets/Victoria-bg.png",
+        "modalImage": "./Assets/Victoria-bg.png",
+        "glowColor": "rgba(255, 192, 203, 0.25)",
+        "description": "Elegância vitoriana com alma árabe. Um gourmand refinado com notas de sobremesa fina.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Torta de Limão",
+                    "value": 94
+                },
+                {
+                    "name": "Notas Cítricas",
+                    "value": 80
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Neroli",
+                    "value": 82
+                },
+                {
+                    "name": "Jasmim",
+                    "value": 75
+                }
+            ],
+            "base": [
+                {
+                    "name": "Baunilha",
+                    "value": 95
+                },
+                {
+                    "name": "Almíscar",
+                    "value": 84
+                }
+            ]
+        }
+    },
+    {
+        "id": "veneno_bianco",
+        "name": "Veneno Bianco",
+        "brand": "Fragrance World",
+        "category": "Floral",
+        "coverImage": "./Assets/VenenoBianco-bg.png",
+        "modalImage": "./Assets/VenenoBianco-bg.png",
+        "glowColor": "rgba(240, 248, 255, 0.2)",
+        "description": "Um 'veneno' branco irresistível. Cremoso, floral e extremamente sedutor.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Neroli",
+                    "value": 85
+                },
+                {
+                    "name": "Leite",
+                    "value": 90
+                },
+                {
+                    "name": "Bergamota",
+                    "value": 75
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Flores Brancas",
+                    "value": 92
+                },
+                {
+                    "name": "Ylang Ylang",
+                    "value": 88
+                }
+            ],
+            "base": [
+                {
+                    "name": "Coco",
+                    "value": 94
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 92
+                }
+            ]
+        }
+    },
+    {
+        "id": "alhambra_avant",
+        "name": "Maison Alhambra Avant",
+        "brand": "Maison Alhambra",
+        "category": "Cítrico",
+        "coverImage": "./Assets/AlhambraAvant.png",
+        "modalImage": "./Assets/AlhambraAvant.png",
+        "glowColor": "rgba(192, 192, 192, 0.2)",
+        "description": "O espírito da aventura. Um tributo à força e ao sucesso com notas vibrantes de abacaxi e bétula.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Abacaxi",
+                    "value": 95
+                },
+                {
+                    "name": "Bergamota",
+                    "value": 88
+                },
+                {
+                    "name": "Maçã",
+                    "value": 82
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Bétula",
+                    "value": 90
+                },
+                {
+                    "name": "Patchouli",
+                    "value": 85
+                },
+                {
+                    "name": "Jasmim",
+                    "value": 70
+                }
+            ],
+            "base": [
+                {
+                    "name": "Almíscar",
+                    "value": 88
+                },
+                {
+                    "name": "Âmbar Cinzento",
+                    "value": 92
+                }
+            ]
+        }
+    },
+    {
+        "id": "durrat_al_aroos",
+        "name": "Durrat Al Aroos",
+        "brand": "Al Wataniah",
+        "category": "Doce",
+        "coverImage": "./Assets/DurratAlAroos.png",
+        "modalImage": "./Assets/DurratAlAroos.png",
+        "glowColor": "rgba(255, 250, 240, 0.3)",
+        "description": "A pérola da noiva. Uma fragrância suave, atalcada e profundamente romântica.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Almíscar Branco",
+                    "value": 94
+                },
+                {
+                    "name": "Nagarmotha",
+                    "value": 78
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Açafrão",
+                    "value": 90
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 92
+                }
+            ],
+            "base": [
+                {
+                    "name": "Coumarina",
+                    "value": 88
+                },
+                {
+                    "name": "Madeira Guaiac",
+                    "value": 85
+                }
+            ]
+        }
+    },
+    {
+        "id": "hacoa_for_him",
+        "name": "Hacoa For Him",
+        "brand": "Hacoupian",
+        "category": "Amadeirado",
+        "coverImage": "./Assets/HacoaForHim-bg.png",
+        "modalImage": "./Assets/HacoaForHim-bg.png",
+        "glowColor": "rgba(105, 105, 105, 0.2)",
+        "description": "Sofisticação clássica para o homem de negócios. Amadeirado seco e elegante.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Laranja Amarga",
+                    "value": 85
+                },
+                {
+                    "name": "Sálvia",
+                    "value": 82
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Pimenta Preta",
+                    "value": 88
+                },
+                {
+                    "name": "Cardamomo",
+                    "value": 75
+                }
+            ],
+            "base": [
+                {
+                    "name": "Cedro da Virgínia",
+                    "value": 90
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 86
+                }
+            ]
+        }
+    },
+    {
+        "id": "hacoa_for_him_ice",
+        "name": "Hacoa For Him Ice",
+        "brand": "Hacoupian",
+        "category": "Cítrico",
+        "coverImage": "./Assets/HacoasFormHimIce-bg.png",
+        "modalImage": "./Assets/HacoasFormHimIce-bg.png",
+        "glowColor": "rgba(173, 216, 230, 0.3)",
+        "description": "O choque térmico do Oriente. Uma explosão glacial de cítricos e menta.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Menta Gelada",
+                    "value": 95
+                },
+                {
+                    "name": "Limão",
+                    "value": 90
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Maçã Verde",
+                    "value": 82
+                },
+                {
+                    "name": "Notas Aquáticas",
+                    "value": 88
+                }
+            ],
+            "base": [
+                {
+                    "name": "Almíscar",
+                    "value": 80
+                },
+                {
+                    "name": "Âmbar",
+                    "value": 75
+                }
+            ]
+        }
+    },
+    {
+        "id": "pisa",
+        "name": "Pisa",
+        "brand": "Al Wataniah",
+        "category": "Cítrico",
+        "coverImage": "./Assets/pisa-bg.png",
+        "modalImage": "./Assets/pisa-bg.png",
+        "glowColor": "rgba(255, 255, 0, 0.2)",
+        "description": "Luminosidade mediterrânea sob o sol árabe. Uma fragrância cítrica solar e atemporal.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Mandarina",
+                    "value": 90
+                },
+                {
+                    "name": "Limão",
+                    "value": 85
+                },
+                {
+                    "name": "Bergamota",
+                    "value": 82
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Cedro",
+                    "value": 88
+                },
+                {
+                    "name": "Notas Verdes",
+                    "value": 70
+                }
+            ],
+            "base": [
+                {
+                    "name": "Sândalo",
+                    "value": 85
+                },
+                {
+                    "name": "Âmbar",
+                    "value": 80
+                }
+            ]
+        }
+    },
+    {
+        "id": "vulcan_feu",
+        "name": "Maison Alhambra Vulcan Feu",
+        "brand": "Maison Alhambra",
+        "category": "Amadeirado",
+        "coverImage": "./Assets/VulcanFeu-bg.png",
+        "modalImage": "./Assets/VulcanFeu-bg.png",
+        "glowColor": "rgba(255, 69, 0, 0.3)",
+        "description": "O fogo das arábias. Uma fragrância quente e vulcânica de manga e gengibre picante.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Manga",
+                    "value": 96
+                },
+                {
+                    "name": "Gengibre",
+                    "value": 92
+                },
+                {
+                    "name": "Ruibarbo",
+                    "value": 85
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Pralinê",
+                    "value": 88
+                },
+                {
+                    "name": "Violeta",
+                    "value": 70
+                }
+            ],
+            "base": [
+                {
+                    "name": "Tonka",
+                    "value": 90
+                },
+                {
+                    "name": "Âmbar Cinzento",
+                    "value": 92
+                }
+            ]
+        }
+    },
+    {
+        "id": "vulcan_baie",
+        "name": "Maison Alhambra Vulcan Baie",
+        "brand": "Maison Alhambra",
+        "category": "Doce",
+        "coverImage": "./Assets/VulcanBaie.png",
+        "modalImage": "./Assets/VulcanBaie.png",
+        "glowColor": "rgba(148, 0, 211, 0.25)",
+        "description": "Uma explosão de frutas negras e vodka. Audacioso, frutado e levemente inebriante.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Amora",
+                    "value": 94
+                },
+                {
+                    "name": "Groselha Preta",
+                    "value": 92
+                },
+                {
+                    "name": "Vodka",
+                    "value": 85
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Framboesa",
+                    "value": 90
+                },
+                {
+                    "name": "Lírio-do-vale",
+                    "value": 65
+                }
+            ],
+            "base": [
+                {
+                    "name": "Morango",
+                    "value": 88
+                },
+                {
+                    "name": "Pêssego",
+                    "value": 85
+                },
+                {
+                    "name": "Almíscar",
+                    "value": 82
+                }
+            ]
+        }
+    }
 ];
