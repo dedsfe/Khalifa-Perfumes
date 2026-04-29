@@ -199,7 +199,7 @@ if (track) {
 // PRODUCTS GRID + MODAL
 // ============================================================
 
-const WHATSAPP = '5513999999999';
+const WHATSAPP = '5513988618110';
 
 let currentPage = 1;
 const PRODUCTS_PER_PAGE = 12;

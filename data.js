@@ -909,7 +909,7 @@ const windowProducts = [
     },
     {
         "id": "ejazzi",
-        "name": "Ejazzi",
+        "name": "Ejaazi",
         "brand": "Lattafa",
         "category": "Cítrico",
         "coverImage": "./Assets/Ejazzi_nobg.png",
@@ -1223,7 +1223,7 @@ const windowProducts = [
     },
     {
         "id": "alhambra_avant",
-        "name": "Maison Alhambra Avant",
+        "name": "Avant",
         "brand": "Maison Alhambra",
         "category": "Cítrico",
         "coverImage": "./Assets/AlhambraAvant_nobg.png",
@@ -1445,7 +1445,7 @@ const windowProducts = [
     },
     {
         "id": "vulcan_feu",
-        "name": "Maison Alhambra Vulcan Feu",
+        "name": "Vulcan Feu",
         "brand": "Maison Alhambra",
         "category": "Amadeirado",
         "coverImage": "./Assets/VulcanFeu_nobg.png",
@@ -1491,7 +1491,7 @@ const windowProducts = [
     },
     {
         "id": "vulcan_baie",
-        "name": "Maison Alhambra Vulcan Baie",
+        "name": "Vulcan Baie",
         "brand": "Maison Alhambra",
         "category": "Doce",
         "coverImage": "./Assets/VulcanBaie_nobg.png",
