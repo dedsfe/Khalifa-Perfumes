@@ -1098,12 +1098,7 @@ button {
   pointer-events: none;
 }
 
-/* Hover: dim siblings */
-.products-grid:hover .pcard:not(:hover) {
-  filter: brightness(0.5);
-}
-
-.pcard:hover { filter: brightness(1) !important; }
+/* Hover effect removed per user request */
 
 .pcard:hover .pcard-img {
   transform: scale(1.07);
