@@ -241,6 +241,7 @@ function initProducts() {
         grid.addEventListener('click', (e) => {
             const compareBtn = e.target.closest('.btn-compare');
             if (compareBtn) {
+                e.preventDefault();
                 e.stopPropagation();
                 const card = compareBtn.closest('.pcard');
                 if (card) toggleCompare(card.dataset.id);
@@ -248,6 +249,7 @@ function initProducts() {
             }
             const card = e.target.closest('.pcard');
             if (card) {
+                e.preventDefault();
                 if (perfumesToCompare.length > 0) {
                     toggleCompare(card.dataset.id);
                 } else {
@@ -432,7 +434,8 @@ function openPModal(product) {
             pCompareBtn.style.borderColor = 'rgba(255, 255, 255, 0.2)';
         }
         
-        pCompareBtn.onclick = () => {
+        pCompareBtn.onclick = (e) => {
+            e.preventDefault();
             if (!perfumesToCompare.includes(currentProductId) && perfumesToCompare.length < 2) {
                 toggleCompare(currentProductId);
             } else if (perfumesToCompare.includes(currentProductId)) {
@@ -441,8 +444,6 @@ function openPModal(product) {
                 alert("Você já selecionou 2 perfumes para comparar.");
             }
             closePModal();
-            // Scroll to the collection section so the user can see the comparison bar and other products
-            document.getElementById('produtos').scrollIntoView({ behavior: 'smooth' });
         };
     }
 
