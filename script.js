@@ -248,8 +248,12 @@ function initProducts() {
             }
             const card = e.target.closest('.pcard');
             if (card) {
-                const p = windowProducts.find(x => x.id === card.dataset.id);
-                if (p) openPModal(p);
+                if (perfumesToCompare.length > 0) {
+                    toggleCompare(card.dataset.id);
+                } else {
+                    const p = windowProducts.find(x => x.id === card.dataset.id);
+                    if (p) openPModal(p);
+                }
             }
         });
         grid.addEventListener('keydown', (e) => {
@@ -257,8 +261,12 @@ function initProducts() {
                 const card = e.target.closest('.pcard');
                 if (card) {
                     e.preventDefault();
-                    const p = windowProducts.find(x => x.id === card.dataset.id);
-                    if (p) openPModal(p);
+                    if (perfumesToCompare.length > 0) {
+                        toggleCompare(card.dataset.id);
+                    } else {
+                        const p = windowProducts.find(x => x.id === card.dataset.id);
+                        if (p) openPModal(p);
+                    }
                 }
             }
         });
@@ -434,7 +442,7 @@ function openPModal(product) {
             }
             closePModal();
             // Scroll to the collection section so the user can see the comparison bar and other products
-            document.getElementById('colecao').scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('produtos').scrollIntoView({ behavior: 'smooth' });
         };
     }
 
@@ -500,11 +508,13 @@ function updateCompareUI() {
         bar.classList.remove('active');
     }
 
-    // Update card button highlights
+    // Update card button highlights and card borders
     document.querySelectorAll('.btn-compare').forEach(btn => {
         const card = btn.closest('.pcard');
         if (card) {
-            btn.classList.toggle('selected', perfumesToCompare.includes(card.dataset.id));
+            const isSelected = perfumesToCompare.includes(card.dataset.id);
+            btn.classList.toggle('selected', isSelected);
+            card.classList.toggle('selected-for-compare', isSelected);
         }
     });
 }

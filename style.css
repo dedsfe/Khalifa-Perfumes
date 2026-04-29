@@ -2558,3 +2558,13 @@ button {
     font-size: 2rem;
   }
 }
+
+/* Compare Mode Visual Feedback */
+.pcard.selected-for-compare {
+  border: 1px solid var(--color-gold) !important;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+.pcard.selected-for-compare .pcard-overlay {
+  background: linear-gradient(0deg, rgba(10,10,10,0.9) 0%, rgba(212, 175, 55, 0.15) 100%);
+}
