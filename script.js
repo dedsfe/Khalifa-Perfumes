@@ -405,7 +405,7 @@ function openPModal(product) {
     pName.textContent  = product.name;
     pDesc.textContent  = product.description;
     pGlow.style.background = `radial-gradient(circle, ${product.glowColor} 0%, transparent 65%)`;
-    pWaBtn.href = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent('Olá! Tenho interesse no perfume ' + product.name + ' (' + product.brand + ').')}`;
+    pWaBtn.href = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent('Olá, eu vim do site! Tenho interesse no perfume ' + product.name + ' (' + product.brand + ').')}`;
 
     const tags = (el, arr) => { el.innerHTML = arr.map(n => `<span class="pnote-tag">${n.name}</span>`).join(''); };
     tags(pTagsTop, product.notes.top);
