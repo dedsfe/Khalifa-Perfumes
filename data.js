@@ -164,7 +164,7 @@ const windowProducts = [
     {
         "id": "dalal",
         "name": "Dalal",
-        "brand": "Al Rehab",
+        "brand": "Lattafa",
         "category": "Doce",
         "coverImage": "./Assets/dalal_ai_nobg.png",
         "modalImage": "./Assets/dalal_ai_nobg.png",
@@ -538,7 +538,7 @@ const windowProducts = [
     {
         "id": "milena",
         "name": "Milena",
-        "brand": "Árabe Clássico",
+        "brand": "Ard Al Zaafaran",
         "category": "Floral",
         "coverImage": "./Assets/Milena_nobg.png",
         "modalImage": "./Assets/Milena_nobg.png",
