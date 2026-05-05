@@ -570,6 +570,7 @@ function openCompareModal() {
                 </div>
                 <div class="cmodal-brand">${p.brand}</div>
                 <h3 class="cmodal-name">${p.name}</h3>
+                <div class="cmodal-price">${p.price || 'Consultar'}</div>
                 <div class="cmodal-notes-section">
                     ${renderNoteSliders(p.notes.top, 'Notas de Topo')}
                     ${renderNoteSliders(p.notes.heart, 'Notas de Coração')}
