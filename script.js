@@ -297,6 +297,7 @@ function renderProductGrid(clear = true) {
             <div class="pcard-info">
                 <span class="pcard-brand">${p.brand}</span>
                 <span class="pcard-name">${p.name}</span>
+                <span class="pcard-price">${p.price || 'Consultar'}</span>
                 <div class="pcard-cta-group">
                     <div class="pcard-cta">
                         <div class="pcard-cta-line"></div>
@@ -397,6 +398,7 @@ const pImg     = document.getElementById('pmodal-img');
 const pGlow    = document.getElementById('pmodal-glow');
 const pBrand   = document.getElementById('pmodal-brand');
 const pName    = document.getElementById('pmodal-name');
+const pPrice   = document.getElementById('pmodal-price');
 const pDesc    = document.getElementById('pmodal-desc');
 const pTagsTop = document.getElementById('pnote-tags-top');
 const pTagsHrt = document.getElementById('pnote-tags-heart');
@@ -416,6 +418,7 @@ function openPModal(product) {
     pImg.alt   = product.name;
     pBrand.textContent = product.brand;
     pName.textContent  = product.name;
+    if (pPrice) pPrice.textContent = product.price || 'Consultar';
     pDesc.textContent  = product.description;
     pGlow.style.background = `radial-gradient(circle, ${product.glowColor} 0%, transparent 65%)`;
     pWaBtn.href = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent('Olá, eu vim do site! Tenho interesse no perfume ' + product.name + ' (' + product.brand + ').')}`;
