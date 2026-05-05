@@ -2519,57 +2519,6 @@ const windowProducts = [
         }
     },
     {
-        "id": "bodysplash_mayar",
-        "name": "Mayar Body Splash",
-        "brand": "Lattafa",
-        "category": "Doce",
-        "gender": "Feminino",
-        "coverImage": "./Assets/bodysplash-mayar.png",
-        "modalImage": "./Assets/bodysplash-mayar.png",
-        "glowColor": "rgba(255,182,193,0.25)",
-        "description": "A versão refrescante do icônico Mayar. Framboesa e lichia em uma névoa leve e duradoura, perfeita para o dia a dia.",
-        "notes": {
-            "top": [
-                {
-                    "name": "Framboesa",
-                    "value": 90
-                },
-                {
-                    "name": "Lichia",
-                    "value": 88
-                },
-                {
-                    "name": "Groselha Preta",
-                    "value": 82
-                }
-            ],
-            "heart": [
-                {
-                    "name": "Rosa",
-                    "value": 92
-                },
-                {
-                    "name": "Magnólia",
-                    "value": 85
-                },
-                {
-                    "name": "Benjoim",
-                    "value": 78
-                }
-            ],
-            "base": [
-                {
-                    "name": "Âmbar",
-                    "value": 88
-                },
-                {
-                    "name": "Patchouli",
-                    "value": 84
-                }
-            ]
-        }
-    },
-    {
         "id": "bodysplash_mayar_cherry",
         "name": "Mayar Cherry Intense Mist",
         "brand": "Lattafa",
