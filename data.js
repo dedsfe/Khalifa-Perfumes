@@ -2458,5 +2458,225 @@ const windowProducts = [
                 }
             ]
         }
+    },
+    {
+        "id": "bodysplash_angham",
+        "name": "Angham Mist",
+        "brand": "Lattafa",
+        "category": "Doce",
+        "gender": "Unissex",
+        "coverImage": "./Assets/bodysplash-angham.png",
+        "modalImage": "./Assets/bodysplash-angham.png",
+        "glowColor": "rgba(255,165,0,0.25)",
+        "description": "Um body splash oriental e viciante. Pimenta rosa e gengibre evoluem para um coração gourmand de cacau e pralinê, com uma base quente de baunilha e âmbar.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Pimenta Rosa",
+                    "value": 85
+                },
+                {
+                    "name": "Gengibre",
+                    "value": 82
+                },
+                {
+                    "name": "Mandarina",
+                    "value": 80
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Lavanda",
+                    "value": 78
+                },
+                {
+                    "name": "Cacau",
+                    "value": 92
+                },
+                {
+                    "name": "Pralinê",
+                    "value": 90
+                },
+                {
+                    "name": "Jasmim",
+                    "value": 75
+                }
+            ],
+            "base": [
+                {
+                    "name": "Baunilha",
+                    "value": 95
+                },
+                {
+                    "name": "Âmbar",
+                    "value": 88
+                },
+                {
+                    "name": "Almíscar",
+                    "value": 85
+                }
+            ]
+        }
+    },
+    {
+        "id": "bodysplash_mayar",
+        "name": "Mayar Body Splash",
+        "brand": "Lattafa",
+        "category": "Doce",
+        "gender": "Feminino",
+        "coverImage": "./Assets/bodysplash-mayar.png",
+        "modalImage": "./Assets/bodysplash-mayar.png",
+        "glowColor": "rgba(255,182,193,0.25)",
+        "description": "A versão refrescante do icônico Mayar. Framboesa e lichia em uma névoa leve e duradoura, perfeita para o dia a dia.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Framboesa",
+                    "value": 90
+                },
+                {
+                    "name": "Lichia",
+                    "value": 88
+                },
+                {
+                    "name": "Groselha Preta",
+                    "value": 82
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Rosa",
+                    "value": 92
+                },
+                {
+                    "name": "Magnólia",
+                    "value": 85
+                },
+                {
+                    "name": "Benjoim",
+                    "value": 78
+                }
+            ],
+            "base": [
+                {
+                    "name": "Âmbar",
+                    "value": 88
+                },
+                {
+                    "name": "Patchouli",
+                    "value": 84
+                }
+            ]
+        }
+    },
+    {
+        "id": "bodysplash_mayar_cherry",
+        "name": "Mayar Cherry Intense Mist",
+        "brand": "Lattafa",
+        "category": "Doce",
+        "gender": "Feminino",
+        "coverImage": "./Assets/bodysplash-mayar-cherry-intense.png",
+        "modalImage": "./Assets/bodysplash-mayar-cherry-intense.png",
+        "glowColor": "rgba(178,34,34,0.25)",
+        "description": "Uma névoa frutada intensa com alma gourmand. Morango e bergamota se fundem com geleia de cereja e cacau numa explosão de doçura.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Morango",
+                    "value": 90
+                },
+                {
+                    "name": "Bergamota",
+                    "value": 82
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Geleia de Cereja",
+                    "value": 95
+                },
+                {
+                    "name": "Cacau",
+                    "value": 90
+                }
+            ],
+            "base": [
+                {
+                    "name": "Baunilha",
+                    "value": 92
+                },
+                {
+                    "name": "Âmbar",
+                    "value": 86
+                },
+                {
+                    "name": "Patchouli",
+                    "value": 80
+                }
+            ]
+        }
+    },
+    {
+        "id": "bodysplash_mayar_natural",
+        "name": "Mayar Natural Intense Mist",
+        "brand": "Lattafa",
+        "category": "Floral",
+        "gender": "Feminino",
+        "coverImage": "./Assets/bodysplash-mayar-natural-intense.png",
+        "modalImage": "./Assets/bodysplash-mayar-natural-intense.png",
+        "glowColor": "rgba(34,139,34,0.2)",
+        "description": "A versão mist do Mayar Natural Intense. Figo e água de coco em uma brisa tropical com flores de lótus e sândalo.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Figo",
+                    "value": 88
+                },
+                {
+                    "name": "Tangerina Verde",
+                    "value": 82
+                },
+                {
+                    "name": "Melão",
+                    "value": 78
+                },
+                {
+                    "name": "Água de Coco",
+                    "value": 90
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Flor de Lótus",
+                    "value": 92
+                },
+                {
+                    "name": "Nenúfar",
+                    "value": 85
+                },
+                {
+                    "name": "Jasmim",
+                    "value": 80
+                }
+            ],
+            "base": [
+                {
+                    "name": "Ambroxan",
+                    "value": 86
+                },
+                {
+                    "name": "Almíscar",
+                    "value": 84
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 88
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 90
+                }
+            ]
+        }
     }
 ];
