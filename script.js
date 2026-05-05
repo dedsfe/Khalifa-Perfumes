@@ -333,14 +333,17 @@ function updateLoadMoreVisibility() {
 function applyFiltersAndSearch() {
     let results = [...windowProducts];
 
-    // 1. Filter by category
+    // 1. Filter by category/brand/gender
     if (currentFilter !== 'all') {
         if (currentFilter.startsWith('brand-')) {
-            const brand = currentFilter.split('-')[1];
+            const brand = currentFilter.substring(6);
             results = results.filter(p => p.brand === brand);
         } else if (currentFilter.startsWith('cat-')) {
-            const cat = currentFilter.split('-')[1];
+            const cat = currentFilter.substring(4);
             results = results.filter(p => p.category === cat);
+        } else if (currentFilter.startsWith('gender-')) {
+            const gender = currentFilter.substring(7);
+            results = results.filter(p => p.gender === gender);
         }
     }
 

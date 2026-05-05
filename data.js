@@ -51,15 +51,16 @@ const windowProducts = [
                     "value": 82
                 }
             ]
-        }
+        },
+        "gender": "Unissex"
     },
     {
         "id": "yara",
         "name": "Yara Pink",
         "brand": "Lattafa",
         "category": "Doce",
-        "coverImage": "./Assets/yara_ai_nobg.png",
-        "modalImage": "./Assets/yara_ai_nobg.png",
+        "coverImage": "./Assets/YaraOriginal_nobg.png",
+        "modalImage": "./Assets/YaraOriginal_nobg.png",
         "glowColor": "rgba(201,122,126,0.3)",
         "description": "Doçura tropical com alma árabe. Uma fragrância irresistivelmente feminina.",
         "notes": {
@@ -105,15 +106,16 @@ const windowProducts = [
                     "value": 83
                 }
             ]
-        }
+        },
+        "gender": "Feminino"
     },
     {
         "id": "asad",
         "name": "Asad",
         "brand": "Lattafa",
         "category": "Amadeirado",
-        "coverImage": "./Assets/asad_ai_nobg.png",
-        "modalImage": "./Assets/asad_ai_nobg.png",
+        "coverImage": "./Assets/AsadOriginal_nobg.png",
+        "modalImage": "./Assets/AsadOriginal_nobg.png",
         "glowColor": "rgba(212,175,55,0.25)",
         "description": "Intensidade e poder em cada gota. O leão do Oriente Médio.",
         "notes": {
@@ -159,7 +161,8 @@ const windowProducts = [
                     "value": 89
                 }
             ]
-        }
+        },
+        "gender": "Masculino"
     },
     {
         "id": "dalal",
@@ -213,7 +216,8 @@ const windowProducts = [
                     "value": 82
                 }
             ]
-        }
+        },
+        "gender": "Feminino"
     },
     {
         "id": "khamrah",
@@ -275,7 +279,8 @@ const windowProducts = [
                     "value": 81
                 }
             ]
-        }
+        },
+        "gender": "Unissex"
     },
     {
         "id": "fakhar",
@@ -333,7 +338,8 @@ const windowProducts = [
                     "value": 82
                 }
             ]
-        }
+        },
+        "gender": "Unissex"
     },
     {
         "id": "ameerati",
@@ -379,7 +385,8 @@ const windowProducts = [
                     "value": 78
                 }
             ]
-        }
+        },
+        "gender": "Unissex"
     },
     {
         "id": "choco_overdose",
@@ -425,7 +432,8 @@ const windowProducts = [
                     "value": 69
                 }
             ]
-        }
+        },
+        "gender": "Unissex"
     },
     {
         "id": "dimmah",
@@ -479,7 +487,8 @@ const windowProducts = [
                     "value": 88
                 }
             ]
-        }
+        },
+        "gender": "Feminino"
     },
     {
         "id": "haya",
@@ -533,7 +542,8 @@ const windowProducts = [
                     "value": 86
                 }
             ]
-        }
+        },
+        "gender": "Feminino"
     },
     {
         "id": "milena",
@@ -579,7 +589,8 @@ const windowProducts = [
                     "value": 93
                 }
             ]
-        }
+        },
+        "gender": "Feminino"
     },
     {
         "id": "musamam",
@@ -633,7 +644,8 @@ const windowProducts = [
                     "value": 76
                 }
             ]
-        }
+        },
+        "gender": "Masculino"
     },
     {
         "id": "royal_amber",
@@ -683,7 +695,8 @@ const windowProducts = [
                     "value": 85
                 }
             ]
-        }
+        },
+        "gender": "Unissex"
     },
     {
         "id": "sabah_al_ward",
@@ -733,7 +746,8 @@ const windowProducts = [
                     "value": 86
                 }
             ]
-        }
+        },
+        "gender": "Feminino"
     },
     {
         "id": "ana_abiyedh",
@@ -775,7 +789,8 @@ const windowProducts = [
                     "value": 84
                 }
             ]
-        }
+        },
+        "gender": "Unissex"
     },
     {
         "id": "art_of_arabia",
@@ -817,15 +832,16 @@ const windowProducts = [
                     "value": 92
                 }
             ]
-        }
+        },
+        "gender": "Masculino"
     },
     {
         "id": "asad_zanzibar",
         "name": "Asad Zanzibar",
         "brand": "Lattafa",
         "category": "Amadeirado",
-        "coverImage": "./Assets/AsadBourbon-Marrom_nobg.png",
-        "modalImage": "./Assets/AsadBourbon-Marrom_nobg.png",
+        "coverImage": "./Assets/AsadZanzibar_nobg.png",
+        "modalImage": "./Assets/AsadZanzibar_nobg.png",
         "glowColor": "rgba(139, 69, 19, 0.25)",
         "description": "Uma jornada sensorial para as praias de Zanzibar. Onde o sal marinho encontra a cremosidade do coco.",
         "notes": {
@@ -859,7 +875,8 @@ const windowProducts = [
                     "value": 85
                 }
             ]
-        }
+        },
+        "gender": "Masculino"
     },
     {
         "id": "eclaire",
@@ -905,7 +922,8 @@ const windowProducts = [
                     "value": 88
                 }
             ]
-        }
+        },
+        "gender": "Feminino"
     },
     {
         "id": "ejazzi",
@@ -947,7 +965,8 @@ const windowProducts = [
                     "value": 82
                 }
             ]
-        }
+        },
+        "gender": "Unissex"
     },
     {
         "id": "fakhar_gold",
@@ -989,7 +1008,8 @@ const windowProducts = [
                     "value": 84
                 }
             ]
-        }
+        },
+        "gender": "Masculino"
     },
     {
         "id": "amber_oud_gold",
@@ -1035,7 +1055,8 @@ const windowProducts = [
                     "value": 85
                 }
             ]
-        }
+        },
+        "gender": "Unissex"
     },
     {
         "id": "khamrah_qahwa",
@@ -1085,7 +1106,8 @@ const windowProducts = [
                     "value": 88
                 }
             ]
-        }
+        },
+        "gender": "Unissex"
     },
     {
         "id": "the_kingdom",
@@ -1131,7 +1153,8 @@ const windowProducts = [
                     "value": 84
                 }
             ]
-        }
+        },
+        "gender": "Feminino"
     },
     {
         "id": "victoria",
@@ -1173,7 +1196,8 @@ const windowProducts = [
                     "value": 84
                 }
             ]
-        }
+        },
+        "gender": "Unissex"
     },
     {
         "id": "veneno_bianco",
@@ -1219,7 +1243,8 @@ const windowProducts = [
                     "value": 92
                 }
             ]
-        }
+        },
+        "gender": "Unissex"
     },
     {
         "id": "alhambra_avant",
@@ -1269,7 +1294,8 @@ const windowProducts = [
                     "value": 92
                 }
             ]
-        }
+        },
+        "gender": "Masculino"
     },
     {
         "id": "durrat_al_aroos",
@@ -1311,7 +1337,8 @@ const windowProducts = [
                     "value": 85
                 }
             ]
-        }
+        },
+        "gender": "Feminino"
     },
     {
         "id": "hacoa_for_him",
@@ -1353,7 +1380,8 @@ const windowProducts = [
                     "value": 86
                 }
             ]
-        }
+        },
+        "gender": "Masculino"
     },
     {
         "id": "hacoa_for_him_ice",
@@ -1395,7 +1423,8 @@ const windowProducts = [
                     "value": 75
                 }
             ]
-        }
+        },
+        "gender": "Masculino"
     },
     {
         "id": "pisa",
@@ -1441,7 +1470,8 @@ const windowProducts = [
                     "value": 80
                 }
             ]
-        }
+        },
+        "gender": "Masculino"
     },
     {
         "id": "vulcan_feu",
@@ -1487,7 +1517,8 @@ const windowProducts = [
                     "value": 92
                 }
             ]
-        }
+        },
+        "gender": "Unissex"
     },
     {
         "id": "vulcan_baie",
@@ -1535,6 +1566,109 @@ const windowProducts = [
                 {
                     "name": "Almíscar",
                     "value": 82
+                }
+            ]
+        },
+        "gender": "Unissex"
+    },
+    {
+        "id": "yara_moi",
+        "name": "Yara Moi",
+        "brand": "Lattafa",
+        "category": "Doce",
+        "gender": "Feminino",
+        "coverImage": "./Assets/YaraMoi_nobg.png",
+        "modalImage": "./Assets/YaraMoi_nobg.png",
+        "glowColor": "rgba(255,255,255,0.2)",
+        "description": "Elegância pura em branco e ouro. Uma fragrância sofisticada que combina frescor floral com uma doçura aveludada.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Jasmim",
+                    "value": 88
+                },
+                {
+                    "name": "Pêssego",
+                    "value": 82
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Caramelo",
+                    "value": 90
+                },
+                {
+                    "name": "Âmbar",
+                    "value": 85
+                }
+            ],
+            "base": [
+                {
+                    "name": "Patchouli",
+                    "value": 80
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 86
+                }
+            ]
+        }
+    },
+    {
+        "id": "asad_elixir",
+        "name": "Asad Elixir",
+        "brand": "Lattafa",
+        "category": "Amadeirado",
+        "gender": "Masculino",
+        "coverImage": "./Assets/AsadElixir_nobg.png",
+        "modalImage": "./Assets/AsadElixir_nobg.png",
+        "glowColor": "rgba(192,192,192,0.2)",
+        "description": "A evolução do leão. Uma versão elixir intensa e refinada que eleva o Asad original a um nível superior de sofisticação.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Pimenta Rosa",
+                    "value": 85
+                },
+                {
+                    "name": "Açafrão",
+                    "value": 88
+                },
+                {
+                    "name": "Grapefruit",
+                    "value": 78
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Tabaco",
+                    "value": 92
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 90
+                },
+                {
+                    "name": "Cedro",
+                    "value": 84
+                }
+            ],
+            "base": [
+                {
+                    "name": "Âmbar Claro",
+                    "value": 88
+                },
+                {
+                    "name": "Olíbano",
+                    "value": 86
+                },
+                {
+                    "name": "Patchouli",
+                    "value": 82
+                },
+                {
+                    "name": "Cashmeran",
+                    "value": 80
                 }
             ]
         }
