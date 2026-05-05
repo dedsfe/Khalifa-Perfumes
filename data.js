@@ -1672,5 +1672,217 @@ const windowProducts = [
                 }
             ]
         }
+    },
+    {
+        "id": "armaf_iconic",
+        "name": "Club de Nuit Iconic",
+        "brand": "Armaf",
+        "category": "Amadeirado",
+        "gender": "Masculino",
+        "coverImage": "./Assets/ArmafIconic_nobg.png",
+        "modalImage": "./Assets/ArmafIconic_nobg.png",
+        "glowColor": "rgba(0,51,153,0.3)",
+        "description": "Uma lufada de frescor cítrico e amadeirado. Uma fragrância icônica para o homem moderno e audacioso.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Toranja",
+                    "value": 88
+                },
+                {
+                    "name": "Menta",
+                    "value": 85
+                },
+                {
+                    "name": "Pimenta Rosa",
+                    "value": 82
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Gengibre",
+                    "value": 90
+                },
+                {
+                    "name": "Melão",
+                    "value": 84
+                },
+                {
+                    "name": "Jasmim",
+                    "value": 80
+                }
+            ],
+            "base": [
+                {
+                    "name": "Incenso",
+                    "value": 85
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 88
+                },
+                {
+                    "name": "Patchouli",
+                    "value": 86
+                }
+            ]
+        }
+    },
+    {
+        "id": "armaf_intense_man",
+        "name": "Club de Nuit Intense Man",
+        "brand": "Armaf",
+        "category": "Amadeirado",
+        "gender": "Masculino",
+        "coverImage": "./Assets/ArmafIntenseMan_nobg.png",
+        "modalImage": "./Assets/ArmafIntenseMan_nobg.png",
+        "glowColor": "rgba(30,30,30,0.3)",
+        "description": "O clássico atemporal. Uma abertura frutada marcante que evolui para um coração defumado e amadeirado, exalando confiança e mistério.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Limão",
+                    "value": 90
+                },
+                {
+                    "name": "Abacaxi",
+                    "value": 95
+                },
+                {
+                    "name": "Groselha Preta",
+                    "value": 85
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Bétula",
+                    "value": 95
+                },
+                {
+                    "name": "Jasmim",
+                    "value": 80
+                },
+                {
+                    "name": "Rosa",
+                    "value": 78
+                }
+            ],
+            "base": [
+                {
+                    "name": "Almíscar",
+                    "value": 88
+                },
+                {
+                    "name": "Âmbar Cinzento",
+                    "value": 90
+                },
+                {
+                    "name": "Patchouli",
+                    "value": 86
+                }
+            ]
+        }
+    },
+    {
+        "id": "armaf_intense_man_le",
+        "name": "Club de Nuit Intense Man L.E.",
+        "brand": "Armaf",
+        "category": "Amadeirado",
+        "gender": "Masculino",
+        "coverImage": "./Assets/ArmafIntenseManLE_nobg.png",
+        "modalImage": "./Assets/ArmafIntenseManLE_nobg.png",
+        "glowColor": "rgba(200,0,0,0.2)",
+        "description": "A versão Parfum Limited Edition. Uma concentração mais rica, refinada e suave do lendário aroma, perfeita para ocasiões exclusivas.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Abacaxi",
+                    "value": 92
+                },
+                {
+                    "name": "Limão",
+                    "value": 88
+                },
+                {
+                    "name": "Pimenta Rosa",
+                    "value": 84
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Rosa",
+                    "value": 82
+                },
+                {
+                    "name": "Lírio-do-vale",
+                    "value": 80
+                },
+                {
+                    "name": "Jasmim",
+                    "value": 78
+                }
+            ],
+            "base": [
+                {
+                    "name": "Ambroxan",
+                    "value": 95
+                },
+                {
+                    "name": "Couro",
+                    "value": 88
+                },
+                {
+                    "name": "Almíscar Branco",
+                    "value": 90
+                }
+            ]
+        }
+    },
+    {
+        "id": "tharwah_gold",
+        "name": "Tharwah Gold",
+        "brand": "Lattafa",
+        "category": "Floral",
+        "gender": "Feminino",
+        "coverImage": "./Assets/TharwahGold_nobg.png",
+        "modalImage": "./Assets/TharwahGold_nobg.png",
+        "glowColor": "rgba(255,215,0,0.2)",
+        "description": "A riqueza dourada encapsulada. Uma fragrância floral doce e envolvente que irradia sofisticação e empoderamento feminino.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Lavanda",
+                    "value": 90
+                },
+                {
+                    "name": "Bergamota",
+                    "value": 85
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Flor de Laranjeira",
+                    "value": 92
+                },
+                {
+                    "name": "Jasmim Egípcio",
+                    "value": 88
+                }
+            ],
+            "base": [
+                {
+                    "name": "Baunilha",
+                    "value": 95
+                },
+                {
+                    "name": "Âmbar",
+                    "value": 86
+                },
+                {
+                    "name": "Vetiver",
+                    "value": 80
+                }
+            ]
+        }
     }
 ];
