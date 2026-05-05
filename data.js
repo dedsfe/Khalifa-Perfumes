@@ -4,8 +4,8 @@ const windowProducts = [
         "name": "Afeef",
         "brand": "Lattafa",
         "category": "Amadeirado",
-        "coverImage": "./Assets/afeef_ai_nobg.png",
-        "modalImage": "./Assets/afeef_ai_nobg.png",
+        "coverImage": "./Assets/afeef.png",
+        "modalImage": "./Assets/afeef.png",
         "glowColor": "rgba(212,154,137,0.3)",
         "description": "Uma fragrância floral e amadeirada que evoca a elegância do Oriente em cada nota.",
         "notes": {
@@ -59,8 +59,8 @@ const windowProducts = [
         "name": "Yara Pink",
         "brand": "Lattafa",
         "category": "Doce",
-        "coverImage": "./Assets/YaraOriginal_nobg.png",
-        "modalImage": "./Assets/YaraOriginal_nobg.png",
+        "coverImage": "./Assets/yara-pink.png",
+        "modalImage": "./Assets/yara-pink.png",
         "glowColor": "rgba(201,122,126,0.3)",
         "description": "Doçura tropical com alma árabe. Uma fragrância irresistivelmente feminina.",
         "notes": {
@@ -114,8 +114,8 @@ const windowProducts = [
         "name": "Asad",
         "brand": "Lattafa",
         "category": "Amadeirado",
-        "coverImage": "./Assets/AsadOriginal_nobg.png",
-        "modalImage": "./Assets/AsadOriginal_nobg.png",
+        "coverImage": "./Assets/asad.png",
+        "modalImage": "./Assets/asad.png",
         "glowColor": "rgba(212,175,55,0.25)",
         "description": "Intensidade e poder em cada gota. O leão do Oriente Médio.",
         "notes": {
@@ -169,8 +169,8 @@ const windowProducts = [
         "name": "Dalal",
         "brand": "Lattafa",
         "category": "Doce",
-        "coverImage": "./Assets/dalal_ai_nobg.png",
-        "modalImage": "./Assets/dalal_ai_nobg.png",
+        "coverImage": "./Assets/dalal.png",
+        "modalImage": "./Assets/dalal.png",
         "glowColor": "rgba(212,175,55,0.2)",
         "description": "Sofisticação árabe com doçura envolvente. Uma fragrância que seduz.",
         "notes": {
@@ -224,8 +224,8 @@ const windowProducts = [
         "name": "Khamrah",
         "brand": "Lattafa",
         "category": "Doce",
-        "coverImage": "./Assets/Khamram_nobg.png",
-        "modalImage": "./Assets/Khamram_nobg.png",
+        "coverImage": "./Assets/khamrah.png",
+        "modalImage": "./Assets/khamrah.png",
         "glowColor": "rgba(184, 115, 51, 0.3)",
         "description": "Uma indulgência luxuosa que combina a doçura das tâmaras com especiarias quentes e madeiras nobres.",
         "notes": {
@@ -287,8 +287,8 @@ const windowProducts = [
         "name": "Fakhar",
         "brand": "Lattafa",
         "category": "Floral",
-        "coverImage": "./Assets/FakharLattafa_nobg.png",
-        "modalImage": "./Assets/FakharLattafa_nobg.png",
+        "coverImage": "./Assets/fakhar.png",
+        "modalImage": "./Assets/fakhar.png",
         "glowColor": "rgba(255, 182, 193, 0.3)",
         "description": "Uma celebração da feminilidade luminosa. Flores brancas elegantes envolvidas em uma doçura sedutora.",
         "notes": {
@@ -346,8 +346,8 @@ const windowProducts = [
         "name": "Ameerati",
         "brand": "Al Wataniah",
         "category": "Amadeirado",
-        "coverImage": "./Assets/Ameerati_nobg.png",
-        "modalImage": "./Assets/Ameerati_nobg.png",
+        "coverImage": "./Assets/ameerati.png",
+        "modalImage": "./Assets/ameerati.png",
         "glowColor": "rgba(212, 175, 55, 0.3)",
         "description": "A essência da realeza árabe. Uma mistura hipnotizante de almíscar e notas cítricas cintilantes.",
         "notes": {
@@ -393,8 +393,8 @@ const windowProducts = [
         "name": "Choco Overdose",
         "brand": "Lattafa",
         "category": "Doce",
-        "coverImage": "./Assets/ChocoOverdoseLattafa_nobg.png",
-        "modalImage": "./Assets/ChocoOverdoseLattafa_nobg.png",
+        "coverImage": "./Assets/choco-overdose.png",
+        "modalImage": "./Assets/choco-overdose.png",
         "glowColor": "rgba(101, 67, 33, 0.3)",
         "description": "Uma sobremesa em forma de perfume. Chocolate rico e viciante com um toque de especiarias quentes.",
         "notes": {
@@ -440,8 +440,8 @@ const windowProducts = [
         "name": "Dimmah",
         "brand": "Al Wataniah",
         "category": "Floral",
-        "coverImage": "./Assets/Dimmah_nobg.png",
-        "modalImage": "./Assets/Dimmah_nobg.png",
+        "coverImage": "./Assets/dimmah.png",
+        "modalImage": "./Assets/dimmah.png",
         "glowColor": "rgba(168, 50, 121, 0.3)",
         "description": "Feminilidade exótica e cativante. Flores exuberantes banhadas em uma aura misteriosa.",
         "notes": {
@@ -495,8 +495,8 @@ const windowProducts = [
         "name": "Haya",
         "brand": "Lattafa",
         "category": "Doce",
-        "coverImage": "./Assets/Haya_nobg.png",
-        "modalImage": "./Assets/Haya_nobg.png",
+        "coverImage": "./Assets/haya.png",
+        "modalImage": "./Assets/haya.png",
         "glowColor": "rgba(255, 105, 180, 0.3)",
         "description": "Doçura e charme inegáveis. Uma composição efervescente de frutas tropicais e baunilha.",
         "notes": {
@@ -550,8 +550,8 @@ const windowProducts = [
         "name": "Milena",
         "brand": "Ard Al Zaafaran",
         "category": "Floral",
-        "coverImage": "./Assets/Milena_nobg.png",
-        "modalImage": "./Assets/Milena_nobg.png",
+        "coverImage": "./Assets/milena.png",
+        "modalImage": "./Assets/milena.png",
         "glowColor": "rgba(221, 160, 221, 0.3)",
         "description": "Um buquê floral oriental sofisticado e atemporal para momentos inesquecíveis.",
         "notes": {
@@ -597,8 +597,8 @@ const windowProducts = [
         "name": "Musamam",
         "brand": "Lattafa",
         "category": "Amadeirado",
-        "coverImage": "./Assets/Musamam_nobg.png",
-        "modalImage": "./Assets/Musamam_nobg.png",
+        "coverImage": "./Assets/musamam.png",
+        "modalImage": "./Assets/musamam.png",
         "glowColor": "rgba(139, 69, 19, 0.3)",
         "description": "Força e nobreza em essência pura. Madeiras preciosas combinadas com couro sensual.",
         "notes": {
@@ -652,8 +652,8 @@ const windowProducts = [
         "name": "Royal Amber",
         "brand": "Orientica",
         "category": "Amadeirado",
-        "coverImage": "./Assets/RoyalAmber_nobg.png",
-        "modalImage": "./Assets/RoyalAmber_nobg.png",
+        "coverImage": "./Assets/royal-amber.png",
+        "modalImage": "./Assets/royal-amber.png",
         "glowColor": "rgba(255, 191, 0, 0.3)",
         "description": "Uma obra-prima reluzente. Âmbar aquecido envolto em notas frutadas e cremosas exuberantes.",
         "notes": {
@@ -703,8 +703,8 @@ const windowProducts = [
         "name": "Sabah Al Ward",
         "brand": "Al Wataniah",
         "category": "Floral",
-        "coverImage": "./Assets/SabahAlWard_nobg.png",
-        "modalImage": "./Assets/SabahAlWard_nobg.png",
+        "coverImage": "./Assets/sabah-al-ward.png",
+        "modalImage": "./Assets/sabah-al-ward.png",
         "glowColor": "rgba(255, 20, 147, 0.3)",
         "description": "O frescor de um jardim oriental ao amanhecer. Pétalas de rosa orvalhadas em profusão.",
         "notes": {
@@ -754,8 +754,8 @@ const windowProducts = [
         "name": "Ana Abiyedh",
         "brand": "Lattafa",
         "category": "Doce",
-        "coverImage": "./Assets/AnaAbyied_nobg.png",
-        "modalImage": "./Assets/AnaAbyied_nobg.png",
+        "coverImage": "./Assets/ana-abiyedh.png",
+        "modalImage": "./Assets/ana-abiyedh.png",
         "glowColor": "rgba(255, 255, 255, 0.2)",
         "description": "Uma fragrância aveludada e sofisticada que combina a doçura da baunilha com o mistério do almíscar branco.",
         "notes": {
@@ -797,8 +797,8 @@ const windowProducts = [
         "name": "Art of Arabia I",
         "brand": "Lattafa",
         "category": "Amadeirado",
-        "coverImage": "./Assets/ArtOfArabia_nobg.png",
-        "modalImage": "./Assets/ArtOfArabia_nobg.png",
+        "coverImage": "./Assets/art-of-arabia.png",
+        "modalImage": "./Assets/art-of-arabia.png",
         "glowColor": "rgba(0, 100, 0, 0.2)",
         "description": "A arte da perfumaria árabe em sua forma mais pura. Uma sinfonia de frescor e profundidade amadeirada.",
         "notes": {
@@ -840,8 +840,8 @@ const windowProducts = [
         "name": "Asad Zanzibar",
         "brand": "Lattafa",
         "category": "Amadeirado",
-        "coverImage": "./Assets/AsadZanzibar_nobg.png",
-        "modalImage": "./Assets/AsadZanzibar_nobg.png",
+        "coverImage": "./Assets/asad-zanzibar.png",
+        "modalImage": "./Assets/asad-zanzibar.png",
         "glowColor": "rgba(139, 69, 19, 0.25)",
         "description": "Uma jornada sensorial para as praias de Zanzibar. Onde o sal marinho encontra a cremosidade do coco.",
         "notes": {
@@ -883,8 +883,8 @@ const windowProducts = [
         "name": "Eclaire",
         "brand": "Lattafa",
         "category": "Doce",
-        "coverImage": "./Assets/Eclaire_nobg.png",
-        "modalImage": "./Assets/Eclaire_nobg.png",
+        "coverImage": "./Assets/eclaire.png",
+        "modalImage": "./Assets/eclaire.png",
         "glowColor": "rgba(255, 222, 173, 0.3)",
         "description": "Puro êxtase gourmet. Um perfume que derrete na pele como um doce de caramelo e leite condensado.",
         "notes": {
@@ -930,8 +930,8 @@ const windowProducts = [
         "name": "Ejaazi",
         "brand": "Lattafa",
         "category": "Cítrico",
-        "coverImage": "./Assets/Ejazzi_nobg.png",
-        "modalImage": "./Assets/Ejazzi_nobg.png",
+        "coverImage": "./Assets/ejaazi.png",
+        "modalImage": "./Assets/ejaazi.png",
         "glowColor": "rgba(30, 144, 255, 0.2)",
         "description": "Vigor e frescor oceânico. Uma fragrância energética feita para o homem moderno e audaz.",
         "notes": {
@@ -973,8 +973,8 @@ const windowProducts = [
         "name": "Fakhar Gold Extrait",
         "brand": "Lattafa",
         "category": "Floral",
-        "coverImage": "./Assets/FakharLattafaRoseGold_nobg.png",
-        "modalImage": "./Assets/FakharLattafaRoseGold_nobg.png",
+        "coverImage": "./Assets/fakhar-gold.png",
+        "modalImage": "./Assets/fakhar-gold.png",
         "glowColor": "rgba(212, 175, 55, 0.3)",
         "description": "A versão mais opulenta da linha Fakhar. Ouro líquido em forma de flores brancas e âmbar solar.",
         "notes": {
@@ -1016,8 +1016,8 @@ const windowProducts = [
         "name": "Amber Oud Gold Edition",
         "brand": "Al Haramain",
         "category": "Doce",
-        "coverImage": "./Assets/HaramainAmberOud_nobg.png",
-        "modalImage": "./Assets/HaramainAmberOud_nobg.png",
+        "coverImage": "./Assets/amber-oud-gold.png",
+        "modalImage": "./Assets/amber-oud-gold.png",
         "glowColor": "rgba(255, 215, 0, 0.3)",
         "description": "Um ícone mundial. A explosão de frutas tropicais envoltas em um âmbar dourado magnético.",
         "notes": {
@@ -1063,8 +1063,8 @@ const windowProducts = [
         "name": "Khamrah Qahwa",
         "brand": "Lattafa",
         "category": "Doce",
-        "coverImage": "./Assets/KhamrahQahwa_nobg.png",
-        "modalImage": "./Assets/KhamrahQahwa_nobg.png",
+        "coverImage": "./Assets/khamrah-qahwa.png",
+        "modalImage": "./Assets/khamrah-qahwa.png",
         "glowColor": "rgba(101, 67, 33, 0.3)",
         "description": "O lendário Khamrah com um toque de café arábica. Quente, especiado e viciante.",
         "notes": {
@@ -1114,8 +1114,8 @@ const windowProducts = [
         "name": "The Kingdom",
         "brand": "Lattafa",
         "category": "Amadeirado",
-        "coverImage": "./Assets/TheKingdomLattafa_nobg.png",
-        "modalImage": "./Assets/TheKingdomLattafa_nobg.png",
+        "coverImage": "./Assets/the-kingdom.png",
+        "modalImage": "./Assets/the-kingdom.png",
         "glowColor": "rgba(75, 0, 130, 0.2)",
         "description": "O reino das especiarias. Uma fragrância poderosa que exala autoridade e mistério.",
         "notes": {
@@ -1161,8 +1161,8 @@ const windowProducts = [
         "name": "Victoria",
         "brand": "Al Wataniah",
         "category": "Doce",
-        "coverImage": "./Assets/Victoria_nobg.png",
-        "modalImage": "./Assets/Victoria_nobg.png",
+        "coverImage": "./Assets/victoria.png",
+        "modalImage": "./Assets/victoria.png",
         "glowColor": "rgba(255, 192, 203, 0.25)",
         "description": "Elegância vitoriana com alma árabe. Um gourmand refinado com notas de sobremesa fina.",
         "notes": {
@@ -1204,8 +1204,8 @@ const windowProducts = [
         "name": "Veneno Bianco",
         "brand": "Fragrance World",
         "category": "Floral",
-        "coverImage": "./Assets/VenenoBianco_nobg.png",
-        "modalImage": "./Assets/VenenoBianco_nobg.png",
+        "coverImage": "./Assets/veneno-bianco.png",
+        "modalImage": "./Assets/veneno-bianco.png",
         "glowColor": "rgba(240, 248, 255, 0.2)",
         "description": "Um 'veneno' branco irresistível. Cremoso, floral e extremamente sedutor.",
         "notes": {
@@ -1251,8 +1251,8 @@ const windowProducts = [
         "name": "Avant",
         "brand": "Maison Alhambra",
         "category": "Cítrico",
-        "coverImage": "./Assets/AlhambraAvant_nobg.png",
-        "modalImage": "./Assets/AlhambraAvant_nobg.png",
+        "coverImage": "./Assets/avant.png",
+        "modalImage": "./Assets/avant.png",
         "glowColor": "rgba(192, 192, 192, 0.2)",
         "description": "O espírito da aventura. Um tributo à força e ao sucesso com notas vibrantes de abacaxi e bétula.",
         "notes": {
@@ -1302,8 +1302,8 @@ const windowProducts = [
         "name": "Durrat Al Aroos",
         "brand": "Al Wataniah",
         "category": "Doce",
-        "coverImage": "./Assets/DurratAlAroos_nobg.png",
-        "modalImage": "./Assets/DurratAlAroos_nobg.png",
+        "coverImage": "./Assets/durrat-al-aroos.png",
+        "modalImage": "./Assets/durrat-al-aroos.png",
         "glowColor": "rgba(255, 250, 240, 0.3)",
         "description": "A pérola da noiva. Uma fragrância suave, atalcada e profundamente romântica.",
         "notes": {
@@ -1345,8 +1345,8 @@ const windowProducts = [
         "name": "Hacoa For Him",
         "brand": "Hacoupian",
         "category": "Amadeirado",
-        "coverImage": "./Assets/HacoaForHim_nobg.png",
-        "modalImage": "./Assets/HacoaForHim_nobg.png",
+        "coverImage": "./Assets/hacoa-for-him.png",
+        "modalImage": "./Assets/hacoa-for-him.png",
         "glowColor": "rgba(105, 105, 105, 0.2)",
         "description": "Sofisticação clássica para o homem de negócios. Amadeirado seco e elegante.",
         "notes": {
@@ -1388,8 +1388,8 @@ const windowProducts = [
         "name": "Hacoa For Him Ice",
         "brand": "Hacoupian",
         "category": "Cítrico",
-        "coverImage": "./Assets/HacoasFormHimIce_nobg.png",
-        "modalImage": "./Assets/HacoasFormHimIce_nobg.png",
+        "coverImage": "./Assets/hacoa-for-him-ice.png",
+        "modalImage": "./Assets/hacoa-for-him-ice.png",
         "glowColor": "rgba(173, 216, 230, 0.3)",
         "description": "O choque térmico do Oriente. Uma explosão glacial de cítricos e menta.",
         "notes": {
@@ -1431,8 +1431,8 @@ const windowProducts = [
         "name": "Pisa",
         "brand": "Al Wataniah",
         "category": "Cítrico",
-        "coverImage": "./Assets/pisa_nobg.png",
-        "modalImage": "./Assets/pisa_nobg.png",
+        "coverImage": "./Assets/pisa.png",
+        "modalImage": "./Assets/pisa.png",
         "glowColor": "rgba(255, 255, 0, 0.2)",
         "description": "Luminosidade mediterrânea sob o sol árabe. Uma fragrância cítrica solar e atemporal.",
         "notes": {
@@ -1478,8 +1478,8 @@ const windowProducts = [
         "name": "Vulcan Feu",
         "brand": "Maison Alhambra",
         "category": "Amadeirado",
-        "coverImage": "./Assets/VulcanFeu_nobg.png",
-        "modalImage": "./Assets/VulcanFeu_nobg.png",
+        "coverImage": "./Assets/vulcan-feu.png",
+        "modalImage": "./Assets/vulcan-feu.png",
         "glowColor": "rgba(255, 69, 0, 0.3)",
         "description": "O fogo das arábias. Uma fragrância quente e vulcânica de manga e gengibre picante.",
         "notes": {
@@ -1525,8 +1525,8 @@ const windowProducts = [
         "name": "Vulcan Baie",
         "brand": "Maison Alhambra",
         "category": "Doce",
-        "coverImage": "./Assets/VulcanBaie_nobg.png",
-        "modalImage": "./Assets/VulcanBaie_nobg.png",
+        "coverImage": "./Assets/vulcan-baie.png",
+        "modalImage": "./Assets/vulcan-baie.png",
         "glowColor": "rgba(148, 0, 211, 0.25)",
         "description": "Uma explosão de frutas negras e vodka. Audacioso, frutado e levemente inebriante.",
         "notes": {
@@ -1577,8 +1577,8 @@ const windowProducts = [
         "brand": "Lattafa",
         "category": "Doce",
         "gender": "Feminino",
-        "coverImage": "./Assets/YaraMoi_nobg.png",
-        "modalImage": "./Assets/YaraMoi_nobg.png",
+        "coverImage": "./Assets/yara-moi.png",
+        "modalImage": "./Assets/yara-moi.png",
         "glowColor": "rgba(255,255,255,0.2)",
         "description": "Elegância pura em branco e ouro. Uma fragrância sofisticada que combina frescor floral com uma doçura aveludada.",
         "notes": {
@@ -1620,8 +1620,8 @@ const windowProducts = [
         "brand": "Lattafa",
         "category": "Amadeirado",
         "gender": "Masculino",
-        "coverImage": "./Assets/AsadElixir_nobg.png",
-        "modalImage": "./Assets/AsadElixir_nobg.png",
+        "coverImage": "./Assets/asad-elixir.png",
+        "modalImage": "./Assets/asad-elixir.png",
         "glowColor": "rgba(192,192,192,0.2)",
         "description": "A evolução do leão. Uma versão elixir intensa e refinada que eleva o Asad original a um nível superior de sofisticação.",
         "notes": {
@@ -1679,8 +1679,8 @@ const windowProducts = [
         "brand": "Armaf",
         "category": "Amadeirado",
         "gender": "Masculino",
-        "coverImage": "./Assets/ArmafIconic_nobg.png",
-        "modalImage": "./Assets/ArmafIconic_nobg.png",
+        "coverImage": "./Assets/armaf-iconic.png",
+        "modalImage": "./Assets/armaf-iconic.png",
         "glowColor": "rgba(0,51,153,0.3)",
         "description": "Uma lufada de frescor cítrico e amadeirado. Uma fragrância icônica para o homem moderno e audacioso.",
         "notes": {
@@ -1734,8 +1734,8 @@ const windowProducts = [
         "brand": "Armaf",
         "category": "Amadeirado",
         "gender": "Masculino",
-        "coverImage": "./Assets/ArmafIntenseMan_nobg.png",
-        "modalImage": "./Assets/ArmafIntenseMan_nobg.png",
+        "coverImage": "./Assets/armaf-intense-man.png",
+        "modalImage": "./Assets/armaf-intense-man.png",
         "glowColor": "rgba(30,30,30,0.3)",
         "description": "O clássico atemporal. Uma abertura frutada marcante que evolui para um coração defumado e amadeirado, exalando confiança e mistério.",
         "notes": {
@@ -1789,8 +1789,8 @@ const windowProducts = [
         "brand": "Armaf",
         "category": "Amadeirado",
         "gender": "Masculino",
-        "coverImage": "./Assets/ArmafIntenseManLE_nobg.png",
-        "modalImage": "./Assets/ArmafIntenseManLE_nobg.png",
+        "coverImage": "./Assets/armaf-intense-man-le.png",
+        "modalImage": "./Assets/armaf-intense-man-le.png",
         "glowColor": "rgba(200,0,0,0.2)",
         "description": "A versão Parfum Limited Edition. Uma concentração mais rica, refinada e suave do lendário aroma, perfeita para ocasiões exclusivas.",
         "notes": {
@@ -1844,8 +1844,8 @@ const windowProducts = [
         "brand": "Lattafa",
         "category": "Floral",
         "gender": "Feminino",
-        "coverImage": "./Assets/TharwahGold_nobg.png",
-        "modalImage": "./Assets/TharwahGold_nobg.png",
+        "coverImage": "./Assets/tharwah-gold.png",
+        "modalImage": "./Assets/tharwah-gold.png",
         "glowColor": "rgba(255,215,0,0.2)",
         "description": "A riqueza dourada encapsulada. Uma fragrância floral doce e envolvente que irradia sofisticação e empoderamento feminino.",
         "notes": {
@@ -1881,6 +1881,580 @@ const windowProducts = [
                 {
                     "name": "Vetiver",
                     "value": 80
+                }
+            ]
+        }
+    },
+    {
+        "id": "delilah_pour_femme",
+        "name": "Delilah Pour Femme",
+        "brand": "Maison Alhambra",
+        "category": "Floral",
+        "gender": "Feminino",
+        "coverImage": "./Assets/delilah-pour-femme.png",
+        "modalImage": "./Assets/delilah-pour-femme.png",
+        "glowColor": "rgba(219,112,147,0.3)",
+        "description": "Uma fragrância floral frutada encantadora. Pétalas de rosa turca e peônia envolvidas em uma base cremosa e aveludada.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Ruibarbo",
+                    "value": 85
+                },
+                {
+                    "name": "Lichia",
+                    "value": 90
+                },
+                {
+                    "name": "Bergamota",
+                    "value": 82
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Rosa Turca",
+                    "value": 95
+                },
+                {
+                    "name": "Peônia",
+                    "value": 88
+                },
+                {
+                    "name": "Lírio",
+                    "value": 80
+                }
+            ],
+            "base": [
+                {
+                    "name": "Almíscar Branco",
+                    "value": 90
+                },
+                {
+                    "name": "Cashmeran",
+                    "value": 85
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 88
+                }
+            ]
+        }
+    },
+    {
+        "id": "layaan",
+        "name": "Layaan",
+        "brand": "Lattafa",
+        "category": "Floral",
+        "gender": "Feminino",
+        "coverImage": "./Assets/layaan.png",
+        "modalImage": "./Assets/layaan.png",
+        "glowColor": "rgba(144,238,144,0.2)",
+        "description": "Frescor floral delicado e feminino. A leveza da pera verde encontra a elegância da gardênia em uma composição moderna.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Pera Verde",
+                    "value": 88
+                },
+                {
+                    "name": "Mandarina",
+                    "value": 82
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Gardênia",
+                    "value": 90
+                },
+                {
+                    "name": "Jasmim",
+                    "value": 86
+                },
+                {
+                    "name": "Lírio-do-vale",
+                    "value": 84
+                }
+            ],
+            "base": [
+                {
+                    "name": "Almíscar",
+                    "value": 88
+                },
+                {
+                    "name": "Cedro",
+                    "value": 80
+                }
+            ]
+        }
+    },
+    {
+        "id": "mayar",
+        "name": "Mayar",
+        "brand": "Lattafa",
+        "category": "Doce",
+        "gender": "Feminino",
+        "coverImage": "./Assets/mayar.png",
+        "modalImage": "./Assets/mayar.png",
+        "glowColor": "rgba(255,182,193,0.25)",
+        "description": "Doçura frutada e irresistível. Framboesa e lichia dançam sobre um coração floral romântico e uma base almiscarada.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Lichia",
+                    "value": 90
+                },
+                {
+                    "name": "Framboesa",
+                    "value": 88
+                },
+                {
+                    "name": "Folha de Violeta",
+                    "value": 72
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Rosa",
+                    "value": 92
+                },
+                {
+                    "name": "Peônia",
+                    "value": 85
+                },
+                {
+                    "name": "Jasmim",
+                    "value": 80
+                }
+            ],
+            "base": [
+                {
+                    "name": "Baunilha",
+                    "value": 94
+                },
+                {
+                    "name": "Almíscar",
+                    "value": 88
+                }
+            ]
+        }
+    },
+    {
+        "id": "mayar_natural_intense",
+        "name": "Mayar Natural Intense",
+        "brand": "Lattafa",
+        "category": "Floral",
+        "gender": "Feminino",
+        "coverImage": "./Assets/mayar-natural-intense.png",
+        "modalImage": "./Assets/mayar-natural-intense.png",
+        "glowColor": "rgba(34,139,34,0.2)",
+        "description": "Uma versão aquática e tropical do Mayar. Água de coco e figo fundem-se com flores de lótus numa composição refrescante e sensual.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Figo",
+                    "value": 88
+                },
+                {
+                    "name": "Tangerina Verde",
+                    "value": 82
+                },
+                {
+                    "name": "Água de Coco",
+                    "value": 90
+                },
+                {
+                    "name": "Melão",
+                    "value": 78
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Flor de Lótus",
+                    "value": 92
+                },
+                {
+                    "name": "Nenúfar",
+                    "value": 85
+                },
+                {
+                    "name": "Jasmim",
+                    "value": 80
+                }
+            ],
+            "base": [
+                {
+                    "name": "Sândalo",
+                    "value": 86
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 90
+                },
+                {
+                    "name": "Ambroxan",
+                    "value": 84
+                },
+                {
+                    "name": "Almíscar",
+                    "value": 82
+                }
+            ]
+        }
+    },
+    {
+        "id": "al_noble_ameer",
+        "name": "Al Noble Ameer",
+        "brand": "Lattafa",
+        "category": "Amadeirado",
+        "gender": "Unissex",
+        "coverImage": "./Assets/al-noble-ameer.png",
+        "modalImage": "./Assets/al-noble-ameer.png",
+        "glowColor": "rgba(139,0,0,0.25)",
+        "description": "A nobreza do príncipe. Pimenta rosa e alecrim abrem caminho para um coração de cravo e uma base profunda de oud e patchouli.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Pimenta Rosa",
+                    "value": 88
+                },
+                {
+                    "name": "Maçã",
+                    "value": 82
+                },
+                {
+                    "name": "Alecrim",
+                    "value": 78
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Cravo",
+                    "value": 90
+                },
+                {
+                    "name": "Notas Florais",
+                    "value": 82
+                }
+            ],
+            "base": [
+                {
+                    "name": "Oud",
+                    "value": 95
+                },
+                {
+                    "name": "Patchouli",
+                    "value": 88
+                },
+                {
+                    "name": "Ládano",
+                    "value": 82
+                },
+                {
+                    "name": "Vetiver",
+                    "value": 80
+                },
+                {
+                    "name": "Cipreste",
+                    "value": 75
+                }
+            ]
+        }
+    },
+    {
+        "id": "al_noble_safeer",
+        "name": "Al Noble Safeer",
+        "brand": "Lattafa",
+        "category": "Doce",
+        "gender": "Unissex",
+        "coverImage": "./Assets/al-noble-safeer.png",
+        "modalImage": "./Assets/al-noble-safeer.png",
+        "glowColor": "rgba(75,0,130,0.25)",
+        "description": "O embaixador das fragrâncias. Toranja e gengibre se fundem com um coração gourmand de caramelo e heliotropo numa composição sofisticada.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Toranja",
+                    "value": 85
+                },
+                {
+                    "name": "Bergamota",
+                    "value": 82
+                },
+                {
+                    "name": "Gengibre",
+                    "value": 80
+                },
+                {
+                    "name": "Pimenta Preta",
+                    "value": 78
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Caramelo",
+                    "value": 92
+                },
+                {
+                    "name": "Jasmim",
+                    "value": 85
+                },
+                {
+                    "name": "Heliotropo",
+                    "value": 80
+                }
+            ],
+            "base": [
+                {
+                    "name": "Madeira Guaiac",
+                    "value": 88
+                },
+                {
+                    "name": "Almíscar",
+                    "value": 86
+                },
+                {
+                    "name": "Cashmeran",
+                    "value": 82
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 90
+                }
+            ]
+        }
+    },
+    {
+        "id": "al_noble_wazeer",
+        "name": "Al Noble Wazeer",
+        "brand": "Lattafa",
+        "category": "Amadeirado",
+        "gender": "Masculino",
+        "coverImage": "./Assets/al-noble-wazeer.png",
+        "modalImage": "./Assets/al-noble-wazeer.png",
+        "glowColor": "rgba(101,67,33,0.3)",
+        "description": "A autoridade do vizir. Conhaque e açafrão criam uma abertura intoxicante, evoluindo para madeiras nobres e whisky numa composição imponente.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Conhaque",
+                    "value": 92
+                },
+                {
+                    "name": "Açafrão",
+                    "value": 90
+                },
+                {
+                    "name": "Noz-moscada",
+                    "value": 82
+                },
+                {
+                    "name": "Maçã",
+                    "value": 78
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Cedro",
+                    "value": 88
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 86
+                },
+                {
+                    "name": "Whisky",
+                    "value": 90
+                },
+                {
+                    "name": "Carvalho",
+                    "value": 84
+                }
+            ],
+            "base": [
+                {
+                    "name": "Mirra",
+                    "value": 88
+                },
+                {
+                    "name": "Ambroxan",
+                    "value": 92
+                },
+                {
+                    "name": "Baunilha",
+                    "value": 86
+                },
+                {
+                    "name": "Almíscar",
+                    "value": 84
+                }
+            ]
+        }
+    },
+    {
+        "id": "ameerat_al_arab",
+        "name": "Ameerat Al Arab",
+        "brand": "Asdaaf",
+        "category": "Amadeirado",
+        "gender": "Unissex",
+        "coverImage": "./Assets/ameerat-al-arab.png",
+        "modalImage": "./Assets/ameerat-al-arab.png",
+        "glowColor": "rgba(212,175,55,0.3)",
+        "description": "A princesa das Arábias. Uma fragrância majestosa que combina a luminosidade dos cítricos com a profundidade mística do oud e madeiras preciosas.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Cítricos",
+                    "value": 85
+                },
+                {
+                    "name": "Bergamota",
+                    "value": 82
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Almíscar Branco",
+                    "value": 90
+                },
+                {
+                    "name": "Aloe Vera",
+                    "value": 78
+                }
+            ],
+            "base": [
+                {
+                    "name": "Jasmim",
+                    "value": 86
+                },
+                {
+                    "name": "Almíscar",
+                    "value": 88
+                },
+                {
+                    "name": "Oud",
+                    "value": 94
+                },
+                {
+                    "name": "Notas Amadeiradas",
+                    "value": 85
+                }
+            ]
+        }
+    },
+    {
+        "id": "ameerat_al_arab_prive_rose",
+        "name": "Ameerat Al Arab Privé Rose",
+        "brand": "Asdaaf",
+        "category": "Floral",
+        "gender": "Feminino",
+        "coverImage": "./Assets/ameerat-al-arab-prive-rose.png",
+        "modalImage": "./Assets/ameerat-al-arab-prive-rose.png",
+        "glowColor": "rgba(220,20,60,0.25)",
+        "description": "A versão rosé da princesa. Morango e uva abrem uma cortina de pétalas e gardênia, repousando sobre uma base quente de tonka e âmbar.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Morango",
+                    "value": 90
+                },
+                {
+                    "name": "Uva",
+                    "value": 85
+                },
+                {
+                    "name": "Laranja",
+                    "value": 80
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Rosa",
+                    "value": 95
+                },
+                {
+                    "name": "Almíscar Branco",
+                    "value": 88
+                },
+                {
+                    "name": "Jasmim",
+                    "value": 85
+                },
+                {
+                    "name": "Gardênia",
+                    "value": 82
+                },
+                {
+                    "name": "Ylang Ylang",
+                    "value": 78
+                }
+            ],
+            "base": [
+                {
+                    "name": "Fava Tonka",
+                    "value": 90
+                },
+                {
+                    "name": "Âmbar",
+                    "value": 88
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 85
+                }
+            ]
+        }
+    },
+    {
+        "id": "andaleeb",
+        "name": "Andaleeb",
+        "brand": "Asdaaf",
+        "category": "Floral",
+        "gender": "Unissex",
+        "coverImage": "./Assets/andaleeb.png",
+        "modalImage": "./Assets/andaleeb.png",
+        "glowColor": "rgba(255,140,0,0.25)",
+        "description": "O canto do rouxinol. Uma harmonia cítrica de laranja e bergamota que floresce em jasmim e rosa, repousando em madeiras nobres e vetiver.",
+        "notes": {
+            "top": [
+                {
+                    "name": "Laranja",
+                    "value": 88
+                },
+                {
+                    "name": "Bergamota",
+                    "value": 85
+                },
+                {
+                    "name": "Mandarina",
+                    "value": 82
+                }
+            ],
+            "heart": [
+                {
+                    "name": "Jasmim",
+                    "value": 92
+                },
+                {
+                    "name": "Rosa",
+                    "value": 90
+                }
+            ],
+            "base": [
+                {
+                    "name": "Patchouli",
+                    "value": 88
+                },
+                {
+                    "name": "Sândalo",
+                    "value": 86
+                },
+                {
+                    "name": "Vetiver",
+                    "value": 82
+                },
+                {
+                    "name": "Almíscar",
+                    "value": 84
                 }
             ]
         }
