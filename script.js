@@ -201,8 +201,6 @@ if (track) {
 
 const WHATSAPP = '5513988618110';
 
-let currentPage = 1;
-const PRODUCTS_PER_PAGE = 12;
 let filteredProducts = [];
 let currentFilter = 'all';
 let searchQuery = '';
@@ -227,13 +225,7 @@ function initProducts() {
         });
     }
     
-    const loadMoreBtn = document.getElementById('load-more-btn');
-    if (loadMoreBtn) {
-        loadMoreBtn.addEventListener('click', () => {
-            currentPage++;
-            renderProductGrid(false);
-        });
-    }
+
     
     // Event delegation for opening modal & compare
     const grid = document.getElementById('products-grid');
@@ -281,12 +273,9 @@ function renderProductGrid(clear = true) {
 
     if (clear) {
         grid.innerHTML = '';
-        currentPage = 1;
     }
 
-    const startIndex = (currentPage - 1) * PRODUCTS_PER_PAGE;
-    const endIndex = startIndex + PRODUCTS_PER_PAGE;
-    const productsToShow = filteredProducts.slice(startIndex, endIndex);
+    const productsToShow = filteredProducts;
 
     const html = productsToShow.map((p, index) => {
         const isSelected = perfumesToCompare.includes(p.id);
@@ -315,19 +304,6 @@ function renderProductGrid(clear = true) {
         grid.innerHTML = html;
     } else {
         grid.insertAdjacentHTML('beforeend', html);
-    }
-    
-    updateLoadMoreVisibility();
-}
-
-function updateLoadMoreVisibility() {
-    const loadMoreContainer = document.getElementById('products-load-more');
-    if (!loadMoreContainer) return;
-    
-    if (currentPage * PRODUCTS_PER_PAGE >= filteredProducts.length) {
-        loadMoreContainer.style.display = 'none';
-    } else {
-        loadMoreContainer.style.display = 'flex';
     }
 }
 
